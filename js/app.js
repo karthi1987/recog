@@ -33377,6 +33377,10 @@
 
 	var _sharedDate2 = _interopRequireDefault(_sharedDate);
 
+	var _moment = __webpack_require__(260);
+
+	var _moment2 = _interopRequireDefault(_moment);
+
 	//scss
 
 	__webpack_require__(239);
@@ -33669,7 +33673,7 @@
 
 
 	// module
-	exports.push([module.id, ".local-time {\n  display: inline-block;\n  padding: 0 !important; }\n  .local-time .city-hours {\n    width: 20px;\n    display: inline-block !important;\n    padding: 0 !important;\n    border-right: 0 !important; }\n  .local-time .divider {\n    width: 10px;\n    display: inline-block !important;\n    padding: 0 !important; }\n  .local-time .city-month {\n    width: 100px;\n    display: inline-block !important;\n    padding: 0 !important;\n    border-right: 0 !important; }\n", ""]);
+	exports.push([module.id, ".local-time {\n  display: inline-block;\n  padding: 0 !important; }\n  .local-time .city-hours {\n    width: 35px;\n    display: inline-block !important;\n    padding: 0 !important;\n    border-right: 0 !important; }\n  .local-time .divider {\n    width: 10px;\n    display: inline-block !important;\n    padding: 0 !important; }\n  .local-time .city-month {\n    width: 150px;\n    display: inline-block !important;\n    padding: 0 !important;\n    border-right: 0 !important;\n    margin-right: 10px; }\n", ""]);
 
 	// exports
 
@@ -34092,7 +34096,7 @@
 
 
 	// module
-	exports.push([module.id, ".header {\n  height: 140px;\n  border: 1px solid #333;\n  padding: 0 4%;\n  background: #30353a; }\n  .header .logo-and-icon, .header .date-and-time {\n    float: left;\n    width: 50%;\n    height: 140px; }\n  .header .logo-span {\n    display: block;\n    margin-top: 22%;\n    border-right: 1px solid #CCC; }\n  .header .date-and-time {\n    text-align: right; }\n  .header .logo {\n    width: 160px;\n    display: inline-block; }\n    .header .logo span {\n      display: block;\n      padding-left: 14%; }\n  .header .icon {\n    width: 200px;\n    display: inline-block; }\n    .header .icon span {\n      margin-left: 10%; }\n  .header .date {\n    display: inline-block;\n    width: 35%; }\n    .header .date span {\n      display: block;\n      margin-top: 28%;\n      padding-right: 10%;\n      border-right: 1px solid #CCC; }\n  .header .time {\n    display: inline-block;\n    width: 25%; }\n    .header .time span {\n      display: block;\n      padding-left: 14%;\n      text-align: left; }\n", ""]);
+	exports.push([module.id, ".header {\n  height: 140px;\n  border: 1px solid #333;\n  padding: 0 4%;\n  background: #30353a; }\n  .header .logo-and-icon, .header .date-and-time {\n    float: left;\n    width: 50%;\n    height: 140px; }\n  .header .logo-span {\n    display: block;\n    margin-top: 22%;\n    border-right: 1px solid #CCC; }\n  .header .date-and-time {\n    text-align: right; }\n  .header .logo {\n    width: 160px;\n    display: inline-block; }\n    .header .logo span {\n      display: block;\n      padding-left: 14%; }\n  .header .icon {\n    width: 200px;\n    display: inline-block; }\n    .header .icon span {\n      margin-left: 10%; }\n  .header .date {\n    display: inline-block;\n    font-size: 30px;\n    width: 35%; }\n    .header .date span {\n      display: block;\n      margin-top: 40px;\n      padding-right: 10%;\n      border-right: 1px solid #CCC; }\n  .header .time {\n    display: inline-block;\n    font-size: 30px;\n    width: 25%; }\n    .header .time span {\n      display: block;\n      padding-left: 14%;\n      text-align: left; }\n", ""]);
 
 	// exports
 
@@ -34112,8 +34116,6 @@
 	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError('Cannot destructure undefined'); }
 
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) arr2[i] = arr[i]; return arr2; } else { return Array.from(arr); } }
 
@@ -34222,12 +34224,10 @@
 					_react2['default'].createElement(
 						'div',
 						{ className: 'content-left' },
-						this.state.receiver && _react2['default'].createElement(
+						this.state.products && this.state.products.length && _react2['default'].createElement(
 							'div',
 							null,
-							_react2['default'].createElement(RecognitionHeader, { item: this.state.receiver, 'default': false }),
-							_react2['default'].createElement(RecognitionHeartContent, { item: this.state.receiver }),
-							_react2['default'].createElement(RecognitionFooter, { item: this.state.giver })
+							_react2['default'].createElement(ReactLeftSlickDemo, { item: this.state.products })
 						)
 					),
 					_react2['default'].createElement(
@@ -34256,7 +34256,7 @@
 			this.state = {
 				"header": {
 					"image": {
-						"transform": "translate3d(0, " + 250 + "px,  0 )"
+						"transform": "translate3d(0, " + 0 + "px,  0 )"
 					}
 				}
 
@@ -34273,33 +34273,7 @@
 
 		_createClass(RecognitionHeader, [{
 			key: 'componentWillReceiveProps',
-			value: function componentWillReceiveProps(nextState, nextProps) {
-				var _this = this;
-
-				this.setState({
-					"header": {
-						"image": {
-							'transformStyle': 'preserve-3d',
-							'transition': 'all 2.9s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
-							"transform": "translate3d(0, " + 250 + "px,  0 )"
-						}
-					}
-				});
-
-				if (nextState.item.name) {
-					setTimeout(function () {
-						_this.setState({
-							"header": {
-								"image": {
-									'transformStyle': 'preserve-3d',
-									'transition': 'all 2.9s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
-									"transform": "translate3d(0, " + 50 + "px,  0 )"
-								}
-							}
-						});
-					}, 500);
-				}
-			}
+			value: function componentWillReceiveProps(nextState, nextProps) {}
 		}, {
 			key: 'render',
 			value: function render() {
@@ -34318,26 +34292,26 @@
 				return _react2['default'].createElement(
 					'div',
 					{ className: 'content-header' },
-					name ? _react2['default'].createElement(
+					this.props.item.firstName ? _react2['default'].createElement(
 						'div',
 						null,
 						_react2['default'].createElement(
 							'div',
-							{ className: recImage, style: this.state.header.image },
-							_react2['default'].createElement('img', { src: avatar })
+							{ className: recImage },
+							_react2['default'].createElement('img', { src: this.props.item.avatarUrl })
 						),
 						_react2['default'].createElement(
 							'div',
 							{ className: 'recognitionby-username-tagline' },
 							_react2['default'].createElement(
 								'p',
-								{ className: recName, style: this.state.header.image },
-								name
+								{ className: recName },
+								this.props.item.firstName + " " + this.props.item.lastName
 							),
 							_react2['default'].createElement(
 								'p',
-								{ className: recTagline, style: this.state.header.image },
-								tagline
+								{ className: recTagline },
+								this.props.tagline.text
 							)
 						),
 						_react2['default'].createElement(
@@ -34345,9 +34319,9 @@
 							{ className: 'recognitionby-time', ref: 'time' },
 							_react2['default'].createElement(
 								'p',
-								{ className: recTime, style: this.state.header.image },
+								{ className: recTime },
 								' ',
-								(0, _moment2['default'])(time).startOf('hour').fromNow(),
+								(0, _moment2['default'])(this.props.dateSentBy).startOf('hour').fromNow(),
 								' '
 							)
 						)
@@ -34374,7 +34348,7 @@
 			this.state = {
 				avatar: props.avatar || null,
 				recogninized: {
-					'transform': "translate3d(0, " + 550 + "px,  0 )"
+					'transform': "translate3d(0, " + 0 + "px,  0 )"
 				}
 			};
 		}
@@ -34389,49 +34363,25 @@
 
 		_createClass(RecognitionHeartContent, [{
 			key: 'componentWillReceiveProps',
-			value: function componentWillReceiveProps(nextState, nextProps) {
-				var _this2 = this;
-
-				this.setState({
-					"avatar": nextState.item.avatar,
-					"recogninized": {
-						'transformStyle': 'preserve-3d',
-						//'transition': 'all 2s ease-in-out',
-						"transform": "translate3d(0, " + 550 + "px,  0 )"
-					}
-				});
-
-				if (nextState.item && nextState.item.name) {
-					setTimeout(function () {
-						_this2.setState({
-							"avatar": nextState.item.avatar,
-							"recogninized": {
-								'transformStyle': 'preserve-3d',
-								'transition': 'all 2.9s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
-								"transform": "translate3d(0, " + 50 + "px,  0 )"
-							}
-						});
-					}, 500);
-				}
-			}
+			value: function componentWillReceiveProps(nextState, nextProps) {}
 		}, {
 			key: 'render',
 			value: function render() {
 				var _props$item2 = this.props.item;
-				var message = _props$item2.message;
+				var comments = _props$item2.comments;
 				var eCardUrl = _props$item2.eCardUrl;
 
 				return _react2['default'].createElement(
 					'div',
 					{ className: 'content-main' },
-					this.props.item ? _react2['default'].createElement(
+					this.props.item.comments ? _react2['default'].createElement(
 						'div',
-						{ className: 'recognized-message-content', style: this.state.recogninized },
-						_react2['default'].createElement('img', { src: eCardUrl }),
+						{ className: 'recognized-message-content' },
+						_react2['default'].createElement('img', { src: this.props.item.eCardUrl }),
 						_react2['default'].createElement(
 							'p',
 							{ className: 'recogninized-text' },
-							_react2['default'].createElement('span', { dangerouslySetInnerHTML: { __html: message } })
+							_react2['default'].createElement('span', { dangerouslySetInnerHTML: { __html: this.props.item.comments } })
 						)
 					) : _react2['default'].createElement(
 						'span',
@@ -34456,7 +34406,7 @@
 			this.state = {
 				avatar: props.avatar || null,
 				giver: {
-					'transform': "translate3d(0, " + 350 + "px,  0 )"
+					'transform': "translate3d(0, " + 0 + "px,  0 )"
 				}
 			};
 		}
@@ -34471,31 +34421,7 @@
 
 		_createClass(RecognitionFooter, [{
 			key: 'componentWillReceiveProps',
-			value: function componentWillReceiveProps(nextState, nextProps) {
-				var _this3 = this;
-
-				this.setState({
-					"avatar": nextState.item.avatar,
-					"giver": {
-						'transformStyle': 'preserve-3d',
-						'transition': 'all 2s ease-in-out',
-						"transform": "translate3d(0, " + 350 + "px,  0 )"
-					}
-				});
-
-				if (nextState.item && nextState.item.name) {
-					setTimeout(function () {
-						_this3.setState({
-							"avatar": nextState.item.avatar,
-							"giver": {
-								'transformStyle': 'preserve-3d',
-								'transition': 'all 2.9s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
-								"transform": "translate3d(0, " + 0 + "px,  0 )"
-							}
-						});
-					}, 500);
-				}
-			}
+			value: function componentWillReceiveProps(nextState, nextProps) {}
 		}, {
 			key: 'render',
 			value: function render() {
@@ -34506,9 +34432,9 @@
 				return _react2['default'].createElement(
 					'div',
 					{ className: 'content-footer' },
-					this.props.item ? _react2['default'].createElement(
+					this.props.item.firstName ? _react2['default'].createElement(
 						'div',
-						{ className: 'recognized-by', style: this.state.giver },
+						{ className: 'recognized-by' },
 						_react2['default'].createElement(
 							'div',
 							{ className: 'recognized-sentby' },
@@ -34520,14 +34446,15 @@
 									'span',
 									null,
 									' ',
-									name
+									this.props.item.firstName + " " + this.props.item.lastName,
+									' '
 								)
 							)
 						),
 						_react2['default'].createElement(
 							'div',
 							{ className: 'recognizedby-image' },
-							_react2['default'].createElement('img', { src: avatar })
+							_react2['default'].createElement('img', { src: this.props.item.avatarUrl })
 						)
 					) : null
 				);
@@ -34704,6 +34631,7 @@
 					{ style: {
 							"margin": "0 auto",
 							"color": "#333",
+							"padding": "0",
 							"height": "700px"
 						} },
 					_react2['default'].createElement(
@@ -34732,57 +34660,74 @@
 		return ReactSlickDemo;
 	})(_react2['default'].Component);
 
-	var ParallaxComponentUI = (function (_React$Component8) {
-		_inherits(ParallaxComponentUI, _React$Component8);
+	var ReactLeftSlickDemo = (function (_React$Component8) {
+		_inherits(ReactLeftSlickDemo, _React$Component8);
 
-		function ParallaxComponentUI(props) {
-			_classCallCheck(this, ParallaxComponentUI);
+		function ReactLeftSlickDemo() {
+			_classCallCheck(this, ReactLeftSlickDemo);
 
-			_get(Object.getPrototypeOf(ParallaxComponentUI.prototype), 'constructor', this).call(this, props);
-
-			this.state = {
-				width: "300"
-			};
+			_get(Object.getPrototypeOf(ReactLeftSlickDemo.prototype), 'constructor', this).apply(this, arguments);
 		}
 
-		_createClass(ParallaxComponentUI, [{
-			key: 'componentWillReceiveProps',
-			value: function componentWillReceiveProps(nextProps) {}
-		}, {
+		_createClass(ReactLeftSlickDemo, [{
 			key: 'render',
 			value: function render() {
-				_objectDestructuringEmpty(this.props);
+				var products = this.props.item.products;
 
-				var index = 1;
-				var left = 40;
+				var self = this;
+				var interval = "";
 
-				var fontStyle2 = {
-					fontFamily: 'Helvetica Neue, Arial, sans-serif',
-					textAlign: 'center',
-					fontWeight: 100,
-					color: 'darkgrey'
+				var settings = {
+					arrows: true,
+					dots: false,
+					infinite: true,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					vertical: true,
+					autoplay: true,
+					speed: 1500,
+					autoplaySpeed: 5000,
+					centerMode: true,
+					rtl: false,
+					initialSlide: 0,
+					beforeChange: function beforeChange(currentSlide, nextSlide) {
+						//self.highlightActiveItem(nextSlide);
+					},
+					afterChange: function afterChange(currentSlide) {
+						//self.highlightActiveItem(currentSlide);
+						//updateLeftSlider(products[currentSlide], products);
+					}
 				};
 
-				var wrap = {
-					height: window.innerHeight * 10
-				};
 				return _react2['default'].createElement(
-					'section',
-					null,
+					'div',
+					{ style: {
+							"margin": "0 auto",
+							"padding": "0",
+							"height": "900px"
+						} },
 					_react2['default'].createElement(
-						Parallax,
-						{ className: 'parallax', speedDivider: '5' },
-						_react2['default'].createElement(
-							'div',
-							null,
-							'Hello World!'
-						)
+						'ul',
+						null,
+						this.props.item && this.props.item.length > 0 ? _react2['default'].createElement(
+							_reactSlick2['default'],
+							settings,
+							this.props.item.map(function (item, index) {
+								return _react2['default'].createElement(
+									'div',
+									{ 'data-index': index, key: index },
+									_react2['default'].createElement(RecognitionHeader, { item: item.recievers[0], dateSentBy: item.recognitionDate, tagline: item.behavior[0], 'default': false }),
+									_react2['default'].createElement(RecognitionHeartContent, { item: item }),
+									_react2['default'].createElement(RecognitionFooter, { item: item.giver })
+								);
+							})
+						) : null
 					)
 				);
 			}
 		}]);
 
-		return ParallaxComponentUI;
+		return ReactLeftSlickDemo;
 	})(_react2['default'].Component);
 
 	exports['default'] = Nav;
@@ -51055,7 +51000,7 @@
 
 
 	// module
-	exports.push([module.id, ".content {\n  width: 100%; }\n  .content .content-left {\n    width: 70%;\n    padding: 0 0 0 4%;\n    float: left; }\n    .content .content-left .content-header {\n      width: 100%;\n      /*min-height: 20%;*/\n      min-height: 200px;\n      border-bottom: 1px solid #CCC; }\n      .content .content-left .content-header .recognitionby-image {\n        position: relative;\n        width: 10%;\n        float: left;\n        margin-top: 1.5%; }\n        .content .content-left .content-header .recognitionby-image img {\n          height: 15%; }\n      .content .content-left .content-header .recognitionby-username-tagline {\n        position: relative;\n        width: 50%;\n        float: left;\n        margin-top: 2%; }\n        .content .content-left .content-header .recognitionby-username-tagline .recognitionby-username {\n          position: absolute;\n          font-size: 1em;\n          color: #f06424;\n          margin-left: 2%; }\n        .content .content-left .content-header .recognitionby-username-tagline .recognitionby-tagline {\n          position: absolute;\n          font-size: 0.7em; }\n      .content .content-left .content-header .recognitionby-time {\n        position: relative;\n        float: right;\n        width: 20%;\n        margin-top: 8%;\n        text-align: right; }\n      .content .content-left .content-header .parallax-anime {\n        transform-style: preserve-3d !important;\n        transition: all 2.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;\n        transform: translate3d(0, 50px, 0) !important; }\n    .content .content-left .content-main {\n      clear: both;\n      /*min-height: 40%;*/\n      min-height: 500px;\n      border-bottom: 1px solid #CCC; }\n      .content .content-left .content-main .recognized-message-content img {\n        display: inline-block; }\n      .content .content-left .content-main .recognized-message-content .recogninized-text {\n        display: inline-block;\n        font-size: 2em;\n        text-align: left;\n        vertical-align: top;\n        margin-left: 2%; }\n    .content .content-left .content-footer {\n      float: left;\n      width: 100%;\n      min-height: 25%; }\n      .content .content-left .content-footer .recognized-by {\n        float: right;\n        text-align: right;\n        width: 16%;\n        margin-top: 2%; }\n        .content .content-left .content-footer .recognized-by .recognized-sentby {\n          float: left;\n          padding-right: 4%; }\n          .content .content-left .content-footer .recognized-by .recognized-sentby span {\n            display: block;\n            color: #f06424; }\n        .content .content-left .content-footer .recognized-by .recognizedby-image {\n          float: left; }\n  .content .content-right {\n    width: 23%;\n    padding: 0 2% 0 0;\n    float: left; }\n    .content .content-right .recognized-items {\n      margin-top: 17%;\n      margin-left: 10%;\n      height: 700px;\n      overflow-y: auto; }\n      .content .content-right .recognized-items ul {\n        margin: 0;\n        padding: 0;\n        list-style: none; }\n        .content .content-right .recognized-items ul .recognized-list {\n          clear: both;\n          /*min-height: 12%;*/\n          min-height: 110px;\n          background: #484d52;\n          width: 100%;\n          margin-bottom: 4%;\n          border-radius: 1%; }\n          .content .content-right .recognized-items ul .recognized-list .recognized-list-info {\n            display: block;\n            color: #f06424; }\n            .content .content-right .recognized-items ul .recognized-list .recognized-list-info .recognized-list-image {\n              float: left;\n              margin: 4%; }\n              .content .content-right .recognized-items ul .recognized-list .recognized-list-info .recognized-list-image img {\n                height: 8%; }\n              .content .content-right .recognized-items ul .recognized-list .recognized-list-info .recognized-list-image .more-people {\n                display: inline-block;\n                min-height: 8%;\n                width: 80px;\n                background: #CCC;\n                height: 80px;\n                border-radius: 50%; }\n            .content .content-right .recognized-items ul .recognized-list .recognized-list-info .recognized-list-message {\n              float: left;\n              margin-top: 7%;\n              font-size: 0.7em;\n              display: table;\n              min-height: 80px; }\n              .content .content-right .recognized-items ul .recognized-list .recognized-list-info .recognized-list-message span {\n                display: table-cell;\n                vertical-align: middle; }\n        .content .content-right .recognized-items ul li.selected {\n          background: #f06424; }\n          .content .content-right .recognized-items ul li.selected a {\n            color: #FFF; }\n            .content .content-right .recognized-items ul li.selected a span {\n              color: #FFF; }\n", ""]);
+	exports.push([module.id, ".content {\n  width: 100%; }\n  .content .content-left {\n    width: 70%;\n    padding: 0 0 0 4%;\n    float: left; }\n    .content .content-left .content-header {\n      width: 100%;\n      min-height: 200px;\n      border-bottom: 1px solid #CCC; }\n      .content .content-left .content-header .recognitionby-image {\n        position: relative;\n        width: 10%;\n        float: left;\n        margin-top: 5%; }\n        .content .content-left .content-header .recognitionby-image img {\n          height: 15%;\n          border-radius: 50%; }\n      .content .content-left .content-header .recognitionby-username-tagline {\n        width: 50%;\n        float: left;\n        margin-top: 6%;\n        margin-left: 20px;\n        font-weight: 500; }\n        .content .content-left .content-header .recognitionby-username-tagline .recognitionby-username {\n          font-size: 36px;\n          color: #f06424; }\n        .content .content-left .content-header .recognitionby-username-tagline .recognitionby-tagline {\n          font-size: 18px;\n          color: #FFF;\n          font-style: italic;\n          margin-top: 2%; }\n      .content .content-left .content-header .recognitionby-time {\n        float: right;\n        width: 20%;\n        margin-top: 16%;\n        text-align: right;\n        color: #86939e;\n        font-size: 18px; }\n      .content .content-left .content-header .parallax-anime {\n        transform-style: preserve-3d !important;\n        transition: all 2.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;\n        transform: translate3d(0, 50px, 0) !important; }\n      .content .content-left .content-header .slick-list {\n        padding: 0 !important; }\n    .content .content-left .content-main {\n      clear: both;\n      /*min-height: 40%;*/\n      min-height: 500px;\n      border-bottom: 1px solid #CCC; }\n      .content .content-left .content-main .recognized-message-content img {\n        display: inline-block;\n        margin-top: 30px; }\n      .content .content-left .content-main .recognized-message-content .recogninized-text, .content .content-left .content-main .recognized-message-content p {\n        display: inline-block;\n        text-align: left;\n        vertical-align: top;\n        margin-left: 2%;\n        color: #FFF;\n        font-size: 30px; }\n    .content .content-left .content-footer {\n      float: left;\n      width: 100%;\n      min-height: 25%; }\n      .content .content-left .content-footer .recognized-by {\n        float: right;\n        text-align: right;\n        width: 16%;\n        margin-top: 2%; }\n        .content .content-left .content-footer .recognized-by .recognized-sentby {\n          float: left;\n          padding-right: 4%; }\n          .content .content-left .content-footer .recognized-by .recognized-sentby span {\n            display: block;\n            color: #f06424; }\n        .content .content-left .content-footer .recognized-by .recognizedby-image {\n          float: left; }\n  .content .content-right {\n    width: 23%;\n    padding: 0 2% 0 0;\n    float: left; }\n    .content .content-right .recognized-items {\n      margin-top: 17%;\n      margin-left: 10%;\n      height: 700px;\n      overflow-y: auto; }\n      .content .content-right .recognized-items ul {\n        margin: 0;\n        padding: 0;\n        list-style: none; }\n        .content .content-right .recognized-items ul .recognized-list {\n          clear: both;\n          min-height: 110px;\n          background: #484d52;\n          width: 100%;\n          margin-bottom: 4%;\n          border-radius: 1%; }\n          .content .content-right .recognized-items ul .recognized-list .recognized-list-info {\n            display: block;\n            color: #f06424; }\n            .content .content-right .recognized-items ul .recognized-list .recognized-list-info .recognized-list-image {\n              float: left;\n              margin: 4%; }\n              .content .content-right .recognized-items ul .recognized-list .recognized-list-info .recognized-list-image img {\n                height: 8%;\n                border-radius: 50%; }\n              .content .content-right .recognized-items ul .recognized-list .recognized-list-info .recognized-list-image .more-people {\n                display: inline-block;\n                min-height: 8%;\n                width: 80px;\n                background: #CCC;\n                height: 80px;\n                border-radius: 50%; }\n            .content .content-right .recognized-items ul .recognized-list .recognized-list-info .recognized-list-message {\n              float: left;\n              margin-top: 7%;\n              font-size: 0.7em;\n              display: table;\n              min-height: 80px; }\n              .content .content-right .recognized-items ul .recognized-list .recognized-list-info .recognized-list-message span {\n                display: table-cell;\n                vertical-align: middle;\n                font-size: 20px;\n                font-weight: 500;\n                font-style: normal; }\n        .content .content-right .recognized-items ul li.selected {\n          background: #f06424; }\n          .content .content-right .recognized-items ul li.selected a {\n            color: #FFF; }\n            .content .content-right .recognized-items ul li.selected a span {\n              color: #FFF; }\n", ""]);
 
 	// exports
 

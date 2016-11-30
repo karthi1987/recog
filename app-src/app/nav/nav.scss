@@ -10,7 +10,6 @@
 
 		.content-header {
 			width:100%;
-			/*min-height: 20%;*/
 			min-height: 200px;
 			border-bottom:1px solid #CCC;
 
@@ -18,39 +17,45 @@
 				position: relative;
 				width:10%;
 				float:left;
-				margin-top: 1.5%;
+				margin-top: 5%;
 				img {
 					height:15%;
+					border-radius: 50%;
 				}
 			}
 			.recognitionby-username-tagline {
-				position: relative;
 				width:50%;
 				float:left;
-				margin-top: 2%;
+				margin-top: 6%;
+				margin-left: 20px;
+				font-weight: 500;
 				.recognitionby-username {
-					position: absolute;
-					font-size: 1em;
+					font-size: 36px;
 					color: #f06424;
-					margin-left: 2%;
 				}
 				.recognitionby-tagline {
-					position: absolute;
-					font-size: 0.7em;
+					font-size: 18px;
+					color: #FFF;
+					font-style: italic;
+					margin-top: 2%;
 				}
 			}
 			.recognitionby-time {
-				position: relative;
 				float:right;
 				width:20%;
-				margin-top: 8%;
+				margin-top: 16%;
 				text-align:right;
+				color: #86939e;
+				font-size: 18px;
 			}
 
 			.parallax-anime {
 				transform-style: preserve-3d !important;
 				transition: all 2.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
 				transform: translate3d(0, 50px, 0) !important;
+			}
+			.slick-list {
+				padding: 0 !important;
 			}
 
 		}
@@ -65,14 +70,16 @@
 
 				img {
 					display: inline-block;
+					margin-top: 30px;
 				}
 
-				.recogninized-text {
+				.recogninized-text, p {
 					display: inline-block;
-					font-size: 2em;
 					text-align: left;
 					vertical-align: top;
 					margin-left: 2%;
+					color: #FFF;
+					font-size: 30px;
 				}
 
 			}
@@ -119,7 +126,6 @@
 
 				.recognized-list {
 					clear:both;
-					/*min-height: 12%;*/
 					min-height: 110px;
 					background: #484d52;
 					width:100%;
@@ -133,6 +139,7 @@
 							margin: 4%;
 							img {
 								height: 8%;
+								border-radius: 50%;
 							}
 						    .more-people {
 						    	display:inline-block;
@@ -152,6 +159,9 @@
 						    span {
 								display: table-cell;
 								vertical-align: middle;
+								font-size: 20px;
+								font-weight: 500;
+								font-style: normal;
 						    }
 						}
 					}

@@ -69,12 +69,10 @@ class Nav extends React.Component{
     		<div className="content">
 				<div className="content-left">
 				{
-					this.state.receiver
+					this.state.products && this.state.products.length
 					&&
 					<div>
-						<RecognitionHeader item={this.state.receiver} default={false} />
-						<RecognitionHeartContent item={this.state.receiver} />
-						<RecognitionFooter item={this.state.giver} />
+						<ReactLeftSlickDemo item={this.state.products} />
 					</div>
 				}
     			</div>
@@ -108,7 +106,7 @@ class RecognitionHeader extends React.Component{
         this.state = {
 	       "header" : {
 	       		"image" : {
-	       			"transform":  "translate3d(0, "+ ( 250 ) +"px,  0 )"
+	       			"transform":  "translate3d(0, "+ ( 0 ) +"px,  0 )"
 	       		}
 	       }
 
@@ -116,32 +114,7 @@ class RecognitionHeader extends React.Component{
     }
 
     componentWillReceiveProps(nextState, nextProps) {
-	    this.setState({
-	       "header" : {
-	       		"image" : {
-					'transformStyle': 'preserve-3d',
-					'transition': 'all 2.9s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
-	       			"transform":  "translate3d(0, "+ ( 250 ) +"px,  0 )"
-	       		}
-	       }
-	    });
-
-    	if ( nextState.item.name ){
-    		setTimeout(
-			() => {
-			    this.setState({
-			       "header" : {
-			       		"image" : {
-							'transformStyle': 'preserve-3d',
-							'transition': 'all 2.9s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
-			       			"transform":  "translate3d(0, "+ ( 50 ) +"px,  0 )"
-			       		}
-			       }
-			    })
-			},
-			500
-		)
-    	}
+	   
     }
 
     render(){
@@ -155,22 +128,22 @@ class RecognitionHeader extends React.Component{
 
 			<div className="content-header">
 			{
-				name
+				this.props.item.firstName
 				?
 				<div>
-					<div className={recImage} style={this.state.header.image}>
-						<img src={avatar} />
+					<div className={recImage}>
+						<img src={this.props.item.avatarUrl} />
 					</div>
 					<div className="recognitionby-username-tagline">
-						<p className={recName} style={this.state.header.image}>
-							{name}
+						<p className={recName}>
+							{this.props.item.firstName +" "+this.props.item.lastName}
 						</p>
-						<p className={recTagline} style={this.state.header.image}>
-							{tagline}
+						<p className={recTagline}>
+							{this.props.tagline.text}
 						</p>
 					</div>
 					<div className="recognitionby-time" ref="time">
-						<p className={recTime} style={this.state.header.image}> {Moment(time).startOf('hour').fromNow()} </p>
+						<p className={recTime}> {Moment(this.props.dateSentBy).startOf('hour').fromNow()} </p>
 					</div>
 				</div>
 				:
@@ -197,51 +170,29 @@ class RecognitionHeartContent extends React.Component{
         this.state = {
         	avatar: props.avatar || null,
         	recogninized: {
-				'transform': "translate3d(0, "+ ( 550 ) +"px,  0 )",
+				'transform': "translate3d(0, "+ ( 0 ) +"px,  0 )",
         	}
         }
     }
 
     componentWillReceiveProps(nextState, nextProps) {
 
-		this.setState({
-		   "avatar":nextState.item.avatar,
-		   "recogninized" : {
-				'transformStyle': 'preserve-3d',
-				//'transition': 'all 2s ease-in-out',
-				"transform":  "translate3d(0, "+ ( 550 ) +"px,  0 )"
-		   }
-		})
-
-    	if ( nextState.item && nextState.item.name ){
-    		setTimeout(
-			() => {
-			    this.setState({
-			       "avatar":nextState.item.avatar,
-			       "recogninized" : {
-						'transformStyle': 'preserve-3d',
-						'transition': 'all 2.9s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
-		       			"transform":  "translate3d(0, "+ ( 50 ) +"px,  0 )"
-			       }
-			    })
-			},
-			500
-		)
-    	}
+		
     }
 
     render(){
-    	let {message, eCardUrl} = this.props.item;
+    	let {comments, eCardUrl} = this.props.item;
+
         return(
 
 			<div className="content-main">
 				{
-					this.props.item
+					this.props.item.comments
 					?
-					<div className="recognized-message-content" style={this.state.recogninized}>
-					<img src={eCardUrl} />
+					<div className="recognized-message-content">
+					<img src={this.props.item.eCardUrl} />
 					<p className="recogninized-text" >
-						<span dangerouslySetInnerHTML={{__html: message}} />
+						<span dangerouslySetInnerHTML={{__html: this.props.item.comments}} />
 					</p>
 					</div>
 					:
@@ -269,38 +220,13 @@ class RecognitionFooter extends React.Component {
         this.state = {
         	avatar: props.avatar || null,
         	giver: {
-				'transform': "translate3d(0, "+ ( 350 ) +"px,  0 )",
+				'transform': "translate3d(0, "+ ( 0 ) +"px,  0 )",
         	}
         }
     }
 
     componentWillReceiveProps(nextState, nextProps) {
 
-		this.setState({
-			"avatar":nextState.item.avatar,
-			"giver" : {
-			'transformStyle': 'preserve-3d',
-			'transition': 'all 2s ease-in-out',
-				"transform":  "translate3d(0, "+ ( 350 ) +"px,  0 )"
-			}
-		});
-
-
-    	if ( nextState.item && nextState.item.name ){
-    		setTimeout(
-			() => {
-			    this.setState({
-			       "avatar":nextState.item.avatar,
-			       "giver" : {
-						'transformStyle': 'preserve-3d',
-						'transition': 'all 2.9s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
-		       			"transform":  "translate3d(0, "+ ( 0 ) +"px,  0 )"
-			       }
-			    })
-			},
-			500
-		)
-    	}
     }
 
     render(){
@@ -309,16 +235,16 @@ class RecognitionFooter extends React.Component {
 
 			<div className="content-footer">
 				{
-					this.props.item 
+					this.props.item.firstName
 					?
-					<div className="recognized-by" style={this.state.giver}>
+					<div className="recognized-by">
 						<div className="recognized-sentby">
 							<p> sent by
-								<span> {name}</span>
+								<span> {this.props.item.firstName +" "+this.props.item.lastName} </span>
 							</p>
 						</div>
 						<div className="recognizedby-image">
-							<img src={avatar} />
+							<img src={this.props.item.avatarUrl} />
 						</div>
 					</div>
 					:
@@ -447,6 +373,7 @@ class ReactSlickDemo extends React.Component{
       		{
       			"margin": "0 auto",
 			    "color": "#333",
+			    "padding": "0",
 			    "height": "700px"
 			}
 		}>
@@ -485,43 +412,68 @@ class ReactSlickDemo extends React.Component{
  *
  */
 
- class ParallaxComponentUI extends React.Component {
- 	constructor( props ){
-        super( props );
+class ReactLeftSlickDemo extends React.Component{
+   render(){
 
-        this.state = {
-        	width: "300"
-        }
-    }
+	let {products} = this.props.item;
 
-    componentWillReceiveProps(nextProps) {
+	let self = this;
+	let interval = "";
 
-    }
+    const settings = {
+    	arrows: true,
+		dots: false,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		vertical: true,
+		autoplay: true,
+		speed: 1500,
+		autoplaySpeed: 5000,
+		centerMode: true,
+		rtl:false,
+		initialSlide: 0,
+		beforeChange: function (currentSlide, nextSlide) {
+			//self.highlightActiveItem(nextSlide);
+		},
+		afterChange: function (currentSlide) {
+			//self.highlightActiveItem(currentSlide);
+			//updateLeftSlider(products[currentSlide], products);
+		}
+    };
 
-    render() {
-    	let {} = this.props;
-    	let index = 1;
-    	let left = 40;
-
-		let fontStyle2 = {
-			fontFamily: 'Helvetica Neue, Arial, sans-serif',
-			textAlign: 'center',
-			fontWeight: 100,
-			color: 'darkgrey'
-		};
-
-		const wrap = {
-	      height: window.innerHeight * 10,
-	    };
-        return(
-	        <section>
-	            <Parallax className="parallax" speedDivider="5">
-	                <div>Hello World!</div>
-	            </Parallax>
-	        </section>
-        )
-    }
-}
+      return (
+      	<div style={
+      		{
+      			"margin": "0 auto",
+      			"padding": "0",
+			    "height": "900px"
+			}
+		}>
+		<ul>
+		{
+			this.props.item && this.props.item.length > 0
+			?
+			 <Slider {...settings}>
+	         { 
+	         	this.props.item.map(
+     				     ( item, index ) =>
+	     				    <div data-index={index} key={index}>
+								<RecognitionHeader item={item.recievers[0]} dateSentBy={item.recognitionDate} tagline={item.behavior[0]} default={false} />
+								<RecognitionHeartContent item={item} />
+								<RecognitionFooter item={item.giver} />
+							</div>
+     					)
+	         }
+			</Slider>
+			:
+			null
+		}
+		</ul>
+        </div>
+    )
+   }
+ }
 
 
 

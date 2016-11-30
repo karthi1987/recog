@@ -3,6 +3,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import Time from '../shared/time';
 import DateTime from '../shared/date';
+import Moment from 'moment';
 
 
 //scss

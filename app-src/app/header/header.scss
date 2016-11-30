@@ -39,14 +39,16 @@
 
 	.date {
 		display: inline-block;
+		font-size: 30px;
 		width: 35%;
 		span {
-			display: block; margin-top: 28%; padding-right: 10%; border-right: 1px solid #CCC;
+			display: block; margin-top: 40px; padding-right: 10%; border-right: 1px solid #CCC;
 		}
 	}
 
 	.time {
 		display: inline-block;
+		font-size: 30px;
 		width: 25%;
 		span {
 			display: block; padding-left: 14%; text-align: left;
