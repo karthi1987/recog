@@ -1,0 +1,55 @@
+@import '../../assets/scss/mixins.scss';
+
+.header {
+	height: 140px;
+	border: 1px solid #333;
+	padding:0 4%;
+	background: #30353a;
+
+	.logo-and-icon, .date-and-time {
+		float:left;
+		width: 50%;
+		height:140px;
+	}
+	.logo-span {
+		display: block;
+		margin-top: 22%;
+		border-right: 1px solid #CCC;
+	}
+
+	.date-and-time {
+		text-align: right;
+	}
+
+	.logo {
+		width: 160px;
+		display: inline-block;
+		span {
+			display: block;
+			padding-left: 14%;
+		}
+	}
+	.icon {
+		width: 200px;
+		display: inline-block;
+		span {
+			margin-left: 10%;
+		}
+	}
+
+	.date {
+		display: inline-block;
+		width: 35%;
+		span {
+			display: block; margin-top: 28%; padding-right: 10%; border-right: 1px solid #CCC;
+		}
+	}
+
+	.time {
+		display: inline-block;
+		width: 25%;
+		span {
+			display: block; padding-left: 14%; text-align: left;
+		}
+	}
+}

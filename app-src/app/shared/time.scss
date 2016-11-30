@@ -1,0 +1,24 @@
+
+.local-time {
+	display:inline-block;
+	padding:0 !important;
+
+	.city-hours {
+		width:20px;
+		display:inline-block !important;
+		padding:0 !important;
+		border-right: 0 !important;
+	}
+	.divider {
+		width:10px;
+		display:inline-block !important;
+		padding:0 !important;
+	}
+	.city-month {
+		width:100px;
+		display:inline-block !important;
+		padding:0 !important;
+		border-right: 0 !important;
+	}
+
+}
