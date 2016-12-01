@@ -355,15 +355,16 @@ class ReactSlickDemo extends React.Component{
 		slidesToScroll: 1,
 		vertical: true,
 		autoplay: true,
-		speed: 1500,
-		autoplaySpeed: 5000,
+		speed: 1000,
+		autoplaySpeed: 4400,
 		rtl:false,
 		initialSlide: 0,
+		easing: 'easeOutBounce',
 		beforeChange: function (currentSlide, nextSlide) {
 			//self.highlightActiveItem(nextSlide);
 		},
 		afterChange: function (currentSlide) {
-			self.highlightActiveItem(currentSlide);
+			//self.highlightActiveItem(currentSlide);
 			updateLeftSlider(products[currentSlide], products);
 		}
     };
@@ -371,10 +372,10 @@ class ReactSlickDemo extends React.Component{
       return (
       	<div style={
       		{
-      			"margin": "0 auto",
-			    "color": "#333",
-			    "padding": "0",
-			    "height": "700px"
+				"margin": "0 auto",
+				"padding": "0",
+				"height": "850px",
+				"overflow": "hidden"
 			}
 		}>
 		<ul>
@@ -428,11 +429,13 @@ class ReactLeftSlickDemo extends React.Component{
 		slidesToScroll: 1,
 		vertical: true,
 		autoplay: true,
-		speed: 1500,
-		autoplaySpeed: 5000,
-		centerMode: true,
+		speed: 1000,
+		autoplaySpeed: 4800,
 		rtl:false,
 		initialSlide: 0,
+		easing: 'easeOutBounce',
+		className: 'recognition-inner-slides',
+		adaptiveHeight: true,
 		beforeChange: function (currentSlide, nextSlide) {
 			//self.highlightActiveItem(nextSlide);
 		},
@@ -445,9 +448,10 @@ class ReactLeftSlickDemo extends React.Component{
       return (
       	<div style={
       		{
-      			"margin": "0 auto",
-      			"padding": "0",
-			    "height": "900px"
+				"margin": "0 auto",
+				"padding": "0",
+				"height": "850px",
+				"overflow": "hidden"
 			}
 		}>
 		<ul>

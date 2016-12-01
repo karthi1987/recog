@@ -85,7 +85,7 @@
 
 	var _headerHeader2 = _interopRequireDefault(_headerHeader);
 
-	var _navNav = __webpack_require__(241);
+	var _navNav = __webpack_require__(345);
 
 	var _navNav2 = _interopRequireDefault(_navNav);
 
@@ -33377,13 +33377,13 @@
 
 	var _sharedDate2 = _interopRequireDefault(_sharedDate);
 
-	var _moment = __webpack_require__(260);
+	var _moment = __webpack_require__(239);
 
 	var _moment2 = _interopRequireDefault(_moment);
 
 	//scss
 
-	__webpack_require__(239);
+	__webpack_require__(343);
 
 	var Header = (function (_React$Component) {
 		_inherits(Header, _React$Component);
@@ -34063,2862 +34063,6 @@
 
 /***/ },
 /* 239 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(240);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(237)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/autoprefixer-loader/index.js?{browsers:[\"last 2 version\", \"Explorer > 8\"]}!./../../../node_modules/sass-loader/index.js!./header.scss", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/autoprefixer-loader/index.js?{browsers:[\"last 2 version\", \"Explorer > 8\"]}!./../../../node_modules/sass-loader/index.js!./header.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 240 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(236)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".header {\n  height: 140px;\n  border: 1px solid #333;\n  padding: 0 4%;\n  background: #30353a; }\n  .header .logo-and-icon, .header .date-and-time {\n    float: left;\n    width: 50%;\n    height: 140px; }\n  .header .logo-span {\n    display: block;\n    margin-top: 22%;\n    border-right: 1px solid #CCC; }\n  .header .date-and-time {\n    text-align: right; }\n  .header .logo {\n    width: 160px;\n    display: inline-block; }\n    .header .logo span {\n      display: block;\n      padding-left: 14%; }\n  .header .icon {\n    width: 200px;\n    display: inline-block; }\n    .header .icon span {\n      margin-left: 10%; }\n  .header .date {\n    display: inline-block;\n    font-size: 30px;\n    width: 35%; }\n    .header .date span {\n      display: block;\n      margin-top: 40px;\n      padding-right: 10%;\n      border-right: 1px solid #CCC; }\n  .header .time {\n    display: inline-block;\n    font-size: 30px;\n    width: 25%; }\n    .header .time span {\n      display: block;\n      padding-left: 14%;\n      text-align: left; }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 241 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-		value: true
-	});
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) arr2[i] = arr[i]; return arr2; } else { return Array.from(arr); } }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDom = __webpack_require__(158);
-
-	var _reactSlick = __webpack_require__(242);
-
-	var _reactSlick2 = _interopRequireDefault(_reactSlick);
-
-	var _jquery = __webpack_require__(202);
-
-	var _jquery2 = _interopRequireDefault(_jquery);
-
-	var _moment = __webpack_require__(260);
-
-	var _moment2 = _interopRequireDefault(_moment);
-
-	//scss
-
-	__webpack_require__(364);
-
-	var Nav = (function (_React$Component) {
-		_inherits(Nav, _React$Component);
-
-		function Nav(props) {
-			_classCallCheck(this, Nav);
-
-			_get(Object.getPrototypeOf(Nav.prototype), 'constructor', this).call(this, props);
-
-			this.state = {
-				giver: {
-					avatar: null,
-					name: null
-				},
-				receiver: {
-					eCardUrl: null,
-					avatar: null,
-					name: null,
-					tagline: null,
-					time: null,
-					message: null
-				},
-				products: null
-			};
-		}
-
-		/*
-	  *
-	  *   2. Right Slider
-	  *
-	  *   List view of the Recoginition
-	  *
-	  */
-
-		_createClass(Nav, [{
-			key: 'componentWillReceiveProps',
-			value: function componentWillReceiveProps(nextProps) {
-				var items = nextProps.products || [];
-				if (items.length) {
-					this.updateStateAsWhenNeeded(items[0], items);
-				}
-			}
-		}, {
-			key: 'updateStateAsWhenNeeded',
-			value: function updateStateAsWhenNeeded(item, products) {
-				this.setState({
-					"giver": {
-						"name": item.giver.firstName + " " + item.giver.lastName,
-						"avatar": item.giver.avatarUrl
-					},
-					"receiver": {
-						"eCardUrl": item.eCardUrl,
-						"name": item.recievers[0].firstName + " " + item.recievers[0].lastName,
-						"avatar": item.recievers[0].avatarUrl,
-						"tagline": null,
-						"time": item.recognitionDate,
-						"message": item.comments
-					},
-					"products": products
-				});
-			}
-		}, {
-			key: 'updateLeftSlider',
-			value: function updateLeftSlider(props, products) {
-				this.updateStateAsWhenNeeded(props, products);
-			}
-		}, {
-			key: 'render',
-			value: function render() {
-				var _state = this.state;
-				var giver = _state.giver;
-				var receiver = _state.receiver;
-				var products = _state.products;
-
-				return _react2['default'].createElement(
-					'div',
-					{ className: 'content' },
-					_react2['default'].createElement(
-						'div',
-						{ className: 'content-left' },
-						this.state.products && this.state.products.length && _react2['default'].createElement(
-							'div',
-							null,
-							_react2['default'].createElement(ReactLeftSlickDemo, { item: this.state.products })
-						)
-					),
-					_react2['default'].createElement(
-						'div',
-						{ className: 'content-right' },
-						_react2['default'].createElement(
-							'div',
-							{ className: 'recognized-items' },
-							this.state.products && this.state.products.length && _react2['default'].createElement(ReactSlickDemo, { products: this.state.products, updateLeftSlider: this.updateLeftSlider.bind(this) })
-						)
-					)
-				);
-			}
-		}]);
-
-		return Nav;
-	})(_react2['default'].Component);
-
-	var RecognitionHeader = (function (_React$Component2) {
-		_inherits(RecognitionHeader, _React$Component2);
-
-		function RecognitionHeader(props) {
-			_classCallCheck(this, RecognitionHeader);
-
-			_get(Object.getPrototypeOf(RecognitionHeader.prototype), 'constructor', this).call(this, props);
-			this.state = {
-				"header": {
-					"image": {
-						"transform": "translate3d(0, " + 0 + "px,  0 )"
-					}
-				}
-
-			};
-		}
-
-		/*
-	  *
-	  *   2. Right Slider
-	  *
-	  *   List view of the Recoginition
-	  *
-	  */
-
-		_createClass(RecognitionHeader, [{
-			key: 'componentWillReceiveProps',
-			value: function componentWillReceiveProps(nextState, nextProps) {}
-		}, {
-			key: 'render',
-			value: function render() {
-				var _props$item = this.props.item;
-				var avatar = _props$item.avatar;
-				var name = _props$item.name;
-				var tagline = _props$item.tagline;
-				var time = _props$item.time;
-				var eCardUrl = _props$item.eCardUrl;
-
-				var recImage = "recognitionby-image ";
-				var recTagline = "recognitionby-tagline";
-				var recName = "recognitionby-username";
-				var recTime = "time-standard";
-
-				return _react2['default'].createElement(
-					'div',
-					{ className: 'content-header' },
-					this.props.item.firstName ? _react2['default'].createElement(
-						'div',
-						null,
-						_react2['default'].createElement(
-							'div',
-							{ className: recImage },
-							_react2['default'].createElement('img', { src: this.props.item.avatarUrl })
-						),
-						_react2['default'].createElement(
-							'div',
-							{ className: 'recognitionby-username-tagline' },
-							_react2['default'].createElement(
-								'p',
-								{ className: recName },
-								this.props.item.firstName + " " + this.props.item.lastName
-							),
-							_react2['default'].createElement(
-								'p',
-								{ className: recTagline },
-								this.props.tagline.text
-							)
-						),
-						_react2['default'].createElement(
-							'div',
-							{ className: 'recognitionby-time', ref: 'time' },
-							_react2['default'].createElement(
-								'p',
-								{ className: recTime },
-								' ',
-								(0, _moment2['default'])(this.props.dateSentBy).startOf('hour').fromNow(),
-								' '
-							)
-						)
-					) : _react2['default'].createElement(
-						'span',
-						null,
-						'No Results'
-					)
-				);
-			}
-		}]);
-
-		return RecognitionHeader;
-	})(_react2['default'].Component);
-
-	var RecognitionHeartContent = (function (_React$Component3) {
-		_inherits(RecognitionHeartContent, _React$Component3);
-
-		function RecognitionHeartContent(props) {
-			_classCallCheck(this, RecognitionHeartContent);
-
-			_get(Object.getPrototypeOf(RecognitionHeartContent.prototype), 'constructor', this).call(this, props);
-
-			this.state = {
-				avatar: props.avatar || null,
-				recogninized: {
-					'transform': "translate3d(0, " + 0 + "px,  0 )"
-				}
-			};
-		}
-
-		/*
-	  *
-	  *   2. Right Slider
-	  *
-	  *   List view of the Recoginition
-	  *
-	  */
-
-		_createClass(RecognitionHeartContent, [{
-			key: 'componentWillReceiveProps',
-			value: function componentWillReceiveProps(nextState, nextProps) {}
-		}, {
-			key: 'render',
-			value: function render() {
-				var _props$item2 = this.props.item;
-				var comments = _props$item2.comments;
-				var eCardUrl = _props$item2.eCardUrl;
-
-				return _react2['default'].createElement(
-					'div',
-					{ className: 'content-main' },
-					this.props.item.comments ? _react2['default'].createElement(
-						'div',
-						{ className: 'recognized-message-content' },
-						_react2['default'].createElement('img', { src: this.props.item.eCardUrl }),
-						_react2['default'].createElement(
-							'p',
-							{ className: 'recogninized-text' },
-							_react2['default'].createElement('span', { dangerouslySetInnerHTML: { __html: this.props.item.comments } })
-						)
-					) : _react2['default'].createElement(
-						'span',
-						null,
-						'No Results'
-					)
-				);
-			}
-		}]);
-
-		return RecognitionHeartContent;
-	})(_react2['default'].Component);
-
-	var RecognitionFooter = (function (_React$Component4) {
-		_inherits(RecognitionFooter, _React$Component4);
-
-		function RecognitionFooter(props) {
-			_classCallCheck(this, RecognitionFooter);
-
-			_get(Object.getPrototypeOf(RecognitionFooter.prototype), 'constructor', this).call(this, props);
-
-			this.state = {
-				avatar: props.avatar || null,
-				giver: {
-					'transform': "translate3d(0, " + 0 + "px,  0 )"
-				}
-			};
-		}
-
-		/*
-	  *
-	  *   2. Right Slider
-	  *
-	  *   List view of the Recoginition
-	  *
-	  */
-
-		_createClass(RecognitionFooter, [{
-			key: 'componentWillReceiveProps',
-			value: function componentWillReceiveProps(nextState, nextProps) {}
-		}, {
-			key: 'render',
-			value: function render() {
-				var _props$item3 = this.props.item;
-				var name = _props$item3.name;
-				var avatar = _props$item3.avatar;
-
-				return _react2['default'].createElement(
-					'div',
-					{ className: 'content-footer' },
-					this.props.item.firstName ? _react2['default'].createElement(
-						'div',
-						{ className: 'recognized-by' },
-						_react2['default'].createElement(
-							'div',
-							{ className: 'recognized-sentby' },
-							_react2['default'].createElement(
-								'p',
-								null,
-								' sent by',
-								_react2['default'].createElement(
-									'span',
-									null,
-									' ',
-									this.props.item.firstName + " " + this.props.item.lastName,
-									' '
-								)
-							)
-						),
-						_react2['default'].createElement(
-							'div',
-							{ className: 'recognizedby-image' },
-							_react2['default'].createElement('img', { src: this.props.item.avatarUrl })
-						)
-					) : null
-				);
-			}
-		}]);
-
-		return RecognitionFooter;
-	})(_react2['default'].Component);
-
-	var RecoginitionList = (function (_React$Component5) {
-		_inherits(RecoginitionList, _React$Component5);
-
-		function RecoginitionList() {
-			_classCallCheck(this, RecoginitionList);
-
-			_get(Object.getPrototypeOf(RecoginitionList.prototype), 'constructor', this).apply(this, arguments);
-		}
-
-		/*
-	  *
-	  *   3. Right Slider Recoginition Name
-	  *
-	  *   List view of the Recoginition
-	  *
-	  */
-
-		_createClass(RecoginitionList, [{
-			key: 'render',
-			value: function render() {
-				var _props$item4 = this.props.item;
-				var comments = _props$item4.comments;
-				var eCardUrl = _props$item4.eCardUrl;
-				var giver = _props$item4.giver;
-				var recievers = _props$item4.recievers;
-				var recognitionDate = _props$item4.recognitionDate;
-				var promotionName = _props$item4.promotionName;
-				var promotionType = _props$item4.promotionType;
-
-				return _react2['default'].createElement(
-					'li',
-					{ className: 'recognized-list', onSelect: this.props.updateSlides, onClick: this.props.updateSlides.bind(this, this.props.item) },
-					_react2['default'].createElement(
-						'a',
-						{ href: '#', className: 'recognized-list-info' },
-						recievers && recievers.length && _react2['default'].createElement(RecoginitionName, { names: recievers })
-					)
-				);
-			}
-		}]);
-
-		return RecoginitionList;
-	})(_react2['default'].Component);
-
-	var RecoginitionName = (function (_React$Component6) {
-		_inherits(RecoginitionName, _React$Component6);
-
-		function RecoginitionName() {
-			_classCallCheck(this, RecoginitionName);
-
-			_get(Object.getPrototypeOf(RecoginitionName.prototype), 'constructor', this).apply(this, arguments);
-		}
-
-		/*
-	  *
-	  *   4. Right Slider Recoginition List
-	  *
-	  *   
-	  *
-	  */
-
-		_createClass(RecoginitionName, [{
-			key: 'modifyName',
-			value: function modifyName(names) {
-				var modifiedNames = [];
-				if (names.length) {
-					names.map(function (name, i) {
-						modifiedNames = [].concat(_toConsumableArray(modifiedNames), [name.firstName + " " + name.lastName]);
-					});
-					modifiedNames.join(", ");
-				}
-				return modifiedNames;
-			}
-		}, {
-			key: 'receiverImage',
-			value: function receiverImage() {
-				if (this.props.names.length > 1) {
-					return this.props.names.length;
-				} else {
-					return this.props.names[0].avatarUrl;
-				}
-			}
-		}, {
-			key: 'render',
-			value: function render() {
-				var names = this.props.names;
-
-				return _react2['default'].createElement(
-					'div',
-					null,
-					_react2['default'].createElement(
-						'span',
-						{ className: 'recognized-list-image' },
-						names && names.length > 1 ? _react2['default'].createElement(
-							'span',
-							null,
-							this.receiverImage()
-						) : _react2['default'].createElement('img', { src: this.receiverImage() })
-					),
-					_react2['default'].createElement(
-						'span',
-						{ className: 'recognized-list-message' },
-						this.modifyName(names)
-					)
-				);
-			}
-		}]);
-
-		return RecoginitionName;
-	})(_react2['default'].Component);
-
-	var ReactSlickDemo = (function (_React$Component7) {
-		_inherits(ReactSlickDemo, _React$Component7);
-
-		function ReactSlickDemo() {
-			_classCallCheck(this, ReactSlickDemo);
-
-			_get(Object.getPrototypeOf(ReactSlickDemo.prototype), 'constructor', this).apply(this, arguments);
-		}
-
-		/*
-	 *	5. Left Side Parallex component
-	 *
-	 *
-	 */
-
-		_createClass(ReactSlickDemo, [{
-			key: 'highlightActiveItem',
-			value: function highlightActiveItem(currentSlide) {
-				(0, _jquery2['default'])(".recognized-items .slick-track").find(".recognized-list").removeClass("selected");
-				(0, _jquery2['default'])(".recognized-items .slick-track .recognized-list").eq(currentSlide).addClass("selected");
-			}
-		}, {
-			key: 'render',
-			value: function render() {
-				var _props = this.props;
-				var products = _props.products;
-				var updateLeftSlider = _props.updateLeftSlider;
-
-				var self = this;
-				var interval = "";
-
-				var settings = {
-					dots: false,
-					infinite: true,
-					slidesToShow: 6,
-					slidesToScroll: 1,
-					vertical: true,
-					autoplay: true,
-					speed: 1500,
-					autoplaySpeed: 5000,
-					rtl: false,
-					initialSlide: 0,
-					beforeChange: function beforeChange(currentSlide, nextSlide) {
-						//self.highlightActiveItem(nextSlide);
-					},
-					afterChange: function afterChange(currentSlide) {
-						self.highlightActiveItem(currentSlide);
-						updateLeftSlider(products[currentSlide], products);
-					}
-				};
-
-				return _react2['default'].createElement(
-					'div',
-					{ style: {
-							"margin": "0 auto",
-							"color": "#333",
-							"padding": "0",
-							"height": "700px"
-						} },
-					_react2['default'].createElement(
-						'ul',
-						null,
-						products && products.length > 0 ? _react2['default'].createElement(
-							_reactSlick2['default'],
-							settings,
-							products.map(function (item, index) {
-								return _react2['default'].createElement(
-									'li',
-									{ className: 'recognized-list', 'data-index': index, key: index },
-									_react2['default'].createElement(
-										'a',
-										{ href: '#', className: 'recognized-list-info' },
-										item.recievers && item.recievers.length && _react2['default'].createElement(RecoginitionName, { names: item.recievers })
-									)
-								);
-							})
-						) : null
-					)
-				);
-			}
-		}]);
-
-		return ReactSlickDemo;
-	})(_react2['default'].Component);
-
-	var ReactLeftSlickDemo = (function (_React$Component8) {
-		_inherits(ReactLeftSlickDemo, _React$Component8);
-
-		function ReactLeftSlickDemo() {
-			_classCallCheck(this, ReactLeftSlickDemo);
-
-			_get(Object.getPrototypeOf(ReactLeftSlickDemo.prototype), 'constructor', this).apply(this, arguments);
-		}
-
-		_createClass(ReactLeftSlickDemo, [{
-			key: 'render',
-			value: function render() {
-				var products = this.props.item.products;
-
-				var self = this;
-				var interval = "";
-
-				var settings = {
-					arrows: true,
-					dots: false,
-					infinite: true,
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					vertical: true,
-					autoplay: true,
-					speed: 1500,
-					autoplaySpeed: 5000,
-					centerMode: true,
-					rtl: false,
-					initialSlide: 0,
-					beforeChange: function beforeChange(currentSlide, nextSlide) {
-						//self.highlightActiveItem(nextSlide);
-					},
-					afterChange: function afterChange(currentSlide) {
-						//self.highlightActiveItem(currentSlide);
-						//updateLeftSlider(products[currentSlide], products);
-					}
-				};
-
-				return _react2['default'].createElement(
-					'div',
-					{ style: {
-							"margin": "0 auto",
-							"padding": "0",
-							"height": "900px"
-						} },
-					_react2['default'].createElement(
-						'ul',
-						null,
-						this.props.item && this.props.item.length > 0 ? _react2['default'].createElement(
-							_reactSlick2['default'],
-							settings,
-							this.props.item.map(function (item, index) {
-								return _react2['default'].createElement(
-									'div',
-									{ 'data-index': index, key: index },
-									_react2['default'].createElement(RecognitionHeader, { item: item.recievers[0], dateSentBy: item.recognitionDate, tagline: item.behavior[0], 'default': false }),
-									_react2['default'].createElement(RecognitionHeartContent, { item: item }),
-									_react2['default'].createElement(RecognitionFooter, { item: item.giver })
-								);
-							})
-						) : null
-					)
-				);
-			}
-		}]);
-
-		return ReactLeftSlickDemo;
-	})(_react2['default'].Component);
-
-	exports['default'] = Nav;
-	module.exports = exports['default'];
-
-/***/ },
-/* 242 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	module.exports = __webpack_require__(243);
-
-/***/ },
-/* 243 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _innerSlider = __webpack_require__(244);
-
-	var _objectAssign = __webpack_require__(247);
-
-	var _objectAssign2 = _interopRequireDefault(_objectAssign);
-
-	var _json2mq = __webpack_require__(255);
-
-	var _json2mq2 = _interopRequireDefault(_json2mq);
-
-	var _reactResponsiveMixin = __webpack_require__(257);
-
-	var _reactResponsiveMixin2 = _interopRequireDefault(_reactResponsiveMixin);
-
-	var _defaultProps = __webpack_require__(250);
-
-	var _defaultProps2 = _interopRequireDefault(_defaultProps);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var Slider = _react2.default.createClass({
-	  displayName: 'Slider',
-
-	  mixins: [_reactResponsiveMixin2.default],
-	  innerSlider: null,
-	  innerSliderRefHandler: function innerSliderRefHandler(ref) {
-	    this.innerSlider = ref;
-	  },
-	  getInitialState: function getInitialState() {
-	    return {
-	      breakpoint: null
-	    };
-	  },
-	  componentWillMount: function componentWillMount() {
-	    var _this = this;
-
-	    if (this.props.responsive) {
-	      var breakpoints = this.props.responsive.map(function (breakpt) {
-	        return breakpt.breakpoint;
-	      });
-	      breakpoints.sort(function (x, y) {
-	        return x - y;
-	      });
-
-	      breakpoints.forEach(function (breakpoint, index) {
-	        var bQuery;
-	        if (index === 0) {
-	          bQuery = (0, _json2mq2.default)({ minWidth: 0, maxWidth: breakpoint });
-	        } else {
-	          bQuery = (0, _json2mq2.default)({ minWidth: breakpoints[index - 1], maxWidth: breakpoint });
-	        }
-	        _this.media(bQuery, function () {
-	          _this.setState({ breakpoint: breakpoint });
-	        });
-	      });
-
-	      // Register media query for full screen. Need to support resize from small to large
-	      var query = (0, _json2mq2.default)({ minWidth: breakpoints.slice(-1)[0] });
-
-	      this.media(query, function () {
-	        _this.setState({ breakpoint: null });
-	      });
-	    }
-	  },
-
-	  slickPrev: function slickPrev() {
-	    this.innerSlider.slickPrev();
-	  },
-
-	  slickNext: function slickNext() {
-	    this.innerSlider.slickNext();
-	  },
-
-	  slickGoTo: function slickGoTo(slide) {
-	    this.innerSlider.slickGoTo(slide);
-	  },
-
-	  render: function render() {
-	    var _this2 = this;
-
-	    var settings;
-	    var newProps;
-	    if (this.state.breakpoint) {
-	      newProps = this.props.responsive.filter(function (resp) {
-	        return resp.breakpoint === _this2.state.breakpoint;
-	      });
-	      settings = newProps[0].settings === 'unslick' ? 'unslick' : (0, _objectAssign2.default)({}, this.props, newProps[0].settings);
-	    } else {
-	      settings = (0, _objectAssign2.default)({}, _defaultProps2.default, this.props);
-	    }
-
-	    var children = this.props.children;
-	    if (!Array.isArray(children)) {
-	      children = [children];
-	    }
-
-	    // Children may contain false or null, so we should filter them
-	    children = children.filter(function (child) {
-	      return !!child;
-	    });
-
-	    if (settings === 'unslick') {
-	      // if 'unslick' responsive breakpoint setting used, just return the <Slider> tag nested HTML
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        children
-	      );
-	    } else {
-	      return _react2.default.createElement(
-	        _innerSlider.InnerSlider,
-	        _extends({ ref: this.innerSliderRefHandler }, settings),
-	        children
-	      );
-	    }
-	  }
-	});
-
-	module.exports = Slider;
-
-/***/ },
-/* 244 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
-
-	exports.__esModule = true;
-	exports.InnerSlider = undefined;
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _eventHandlers = __webpack_require__(245);
-
-	var _eventHandlers2 = _interopRequireDefault(_eventHandlers);
-
-	var _helpers = __webpack_require__(248);
-
-	var _helpers2 = _interopRequireDefault(_helpers);
-
-	var _initialState = __webpack_require__(249);
-
-	var _initialState2 = _interopRequireDefault(_initialState);
-
-	var _defaultProps = __webpack_require__(250);
-
-	var _defaultProps2 = _interopRequireDefault(_defaultProps);
-
-	var _classnames = __webpack_require__(251);
-
-	var _classnames2 = _interopRequireDefault(_classnames);
-
-	var _objectAssign = __webpack_require__(247);
-
-	var _objectAssign2 = _interopRequireDefault(_objectAssign);
-
-	var _track = __webpack_require__(252);
-
-	var _dots = __webpack_require__(253);
-
-	var _arrows = __webpack_require__(254);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var InnerSlider = exports.InnerSlider = _react2.default.createClass({
-	  displayName: 'InnerSlider',
-
-	  mixins: [_helpers2.default, _eventHandlers2.default],
-	  list: null,
-	  track: null,
-	  listRefHandler: function listRefHandler(ref) {
-	    this.list = ref;
-	  },
-	  trackRefHandler: function trackRefHandler(ref) {
-	    this.track = ref;
-	  },
-	  getInitialState: function getInitialState() {
-	    return _extends({}, _initialState2.default, {
-	      currentSlide: this.props.initialSlide
-	    });
-	  },
-	  getDefaultProps: function getDefaultProps() {
-	    return _defaultProps2.default;
-	  },
-	  componentWillMount: function componentWillMount() {
-	    if (this.props.init) {
-	      this.props.init();
-	    }
-	    this.setState({
-	      mounted: true
-	    });
-	    var lazyLoadedList = [];
-	    for (var i = 0; i < _react2.default.Children.count(this.props.children); i++) {
-	      if (i >= this.state.currentSlide && i < this.state.currentSlide + this.props.slidesToShow) {
-	        lazyLoadedList.push(i);
-	      }
-	    }
-
-	    if (this.props.lazyLoad && this.state.lazyLoadedList.length === 0) {
-	      this.setState({
-	        lazyLoadedList: lazyLoadedList
-	      });
-	    }
-	  },
-	  componentDidMount: function componentDidMount() {
-	    // Hack for autoplay -- Inspect Later
-	    this.initialize(this.props);
-	    this.adaptHeight();
-
-	    // To support server-side rendering
-	    if (!window) {
-	      return;
-	    }
-	    if (window.addEventListener) {
-	      window.addEventListener('resize', this.onWindowResized);
-	    } else {
-	      window.attachEvent('onresize', this.onWindowResized);
-	    }
-	  },
-	  componentWillUnmount: function componentWillUnmount() {
-	    if (this.animationEndCallback) {
-	      clearTimeout(this.animationEndCallback);
-	    }
-	    if (window.addEventListener) {
-	      window.removeEventListener('resize', this.onWindowResized);
-	    } else {
-	      window.detachEvent('onresize', this.onWindowResized);
-	    }
-	    if (this.state.autoPlayTimer) {
-	      clearInterval(this.state.autoPlayTimer);
-	    }
-	  },
-	  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
-	    if (this.props.slickGoTo != nextProps.slickGoTo) {
-	      if (process.env.NODE_ENV !== 'production') {
-	        console.warn('react-slick deprecation warning: slickGoTo prop is deprecated and it will be removed in next release. Use slickGoTo method instead');
-	      }
-	      this.changeSlide({
-	        message: 'index',
-	        index: nextProps.slickGoTo,
-	        currentSlide: this.state.currentSlide
-	      });
-	    } else if (this.state.currentSlide >= nextProps.children.length) {
-	      this.update(nextProps);
-	      this.changeSlide({
-	        message: 'index',
-	        index: nextProps.children.length - nextProps.slidesToShow,
-	        currentSlide: this.state.currentSlide
-	      });
-	    } else {
-	      this.update(nextProps);
-	    }
-	  },
-	  componentDidUpdate: function componentDidUpdate() {
-	    this.adaptHeight();
-	  },
-	  onWindowResized: function onWindowResized() {
-	    this.update(this.props);
-	    // animating state should be cleared while resizing, otherwise autoplay stops working
-	    this.setState({
-	      animating: false
-	    });
-	  },
-	  slickPrev: function slickPrev() {
-	    this.changeSlide({ message: 'previous' });
-	  },
-	  slickNext: function slickNext() {
-	    this.changeSlide({ message: 'next' });
-	  },
-	  slickGoTo: function slickGoTo(slide) {
-	    typeof slide === 'number' && this.changeSlide({
-	      message: 'index',
-	      index: slide,
-	      currentSlide: this.state.currentSlide
-	    });
-	  },
-	  render: function render() {
-	    var className = (0, _classnames2.default)('slick-initialized', 'slick-slider', this.props.className, {
-	      'slick-vertical': this.props.vertical
-	    });
-
-	    var trackProps = {
-	      fade: this.props.fade,
-	      cssEase: this.props.cssEase,
-	      speed: this.props.speed,
-	      infinite: this.props.infinite,
-	      centerMode: this.props.centerMode,
-	      focusOnSelect: this.props.focusOnSelect ? this.selectHandler : null,
-	      currentSlide: this.state.currentSlide,
-	      lazyLoad: this.props.lazyLoad,
-	      lazyLoadedList: this.state.lazyLoadedList,
-	      rtl: this.props.rtl,
-	      slideWidth: this.state.slideWidth,
-	      slidesToShow: this.props.slidesToShow,
-	      slidesToScroll: this.props.slidesToScroll,
-	      slideCount: this.state.slideCount,
-	      trackStyle: this.state.trackStyle,
-	      variableWidth: this.props.variableWidth
-	    };
-
-	    var dots;
-
-	    if (this.props.dots === true && this.state.slideCount >= this.props.slidesToShow) {
-	      var dotProps = {
-	        dotsClass: this.props.dotsClass,
-	        slideCount: this.state.slideCount,
-	        slidesToShow: this.props.slidesToShow,
-	        currentSlide: this.state.currentSlide,
-	        slidesToScroll: this.props.slidesToScroll,
-	        clickHandler: this.changeSlide
-	      };
-
-	      dots = _react2.default.createElement(_dots.Dots, dotProps);
-	    }
-
-	    var prevArrow, nextArrow;
-
-	    var arrowProps = {
-	      infinite: this.props.infinite,
-	      centerMode: this.props.centerMode,
-	      currentSlide: this.state.currentSlide,
-	      slideCount: this.state.slideCount,
-	      slidesToShow: this.props.slidesToShow,
-	      prevArrow: this.props.prevArrow,
-	      nextArrow: this.props.nextArrow,
-	      clickHandler: this.changeSlide
-	    };
-
-	    if (this.props.arrows) {
-	      prevArrow = _react2.default.createElement(_arrows.PrevArrow, arrowProps);
-	      nextArrow = _react2.default.createElement(_arrows.NextArrow, arrowProps);
-	    }
-
-	    var verticalHeightStyle = null;
-
-	    if (this.props.vertical) {
-	      verticalHeightStyle = {
-	        height: this.state.listHeight
-	      };
-	    }
-
-	    var centerPaddingStyle = null;
-
-	    if (this.props.vertical === false) {
-	      if (this.props.centerMode === true) {
-	        centerPaddingStyle = {
-	          padding: '0px ' + this.props.centerPadding
-	        };
-	      }
-	    } else {
-	      if (this.props.centerMode === true) {
-	        centerPaddingStyle = {
-	          padding: this.props.centerPadding + ' 0px'
-	        };
-	      }
-	    }
-
-	    var listStyle = (0, _objectAssign2.default)({}, verticalHeightStyle, centerPaddingStyle);
-
-	    return _react2.default.createElement(
-	      'div',
-	      { className: className, onMouseEnter: this.onInnerSliderEnter, onMouseLeave: this.onInnerSliderLeave },
-	      prevArrow,
-	      _react2.default.createElement(
-	        'div',
-	        {
-	          ref: this.listRefHandler,
-	          className: 'slick-list',
-	          style: listStyle,
-	          onMouseDown: this.swipeStart,
-	          onMouseMove: this.state.dragging ? this.swipeMove : null,
-	          onMouseUp: this.swipeEnd,
-	          onMouseLeave: this.state.dragging ? this.swipeEnd : null,
-	          onTouchStart: this.swipeStart,
-	          onTouchMove: this.state.dragging ? this.swipeMove : null,
-	          onTouchEnd: this.swipeEnd,
-	          onTouchCancel: this.state.dragging ? this.swipeEnd : null,
-	          onKeyDown: this.props.accessibility ? this.keyHandler : null },
-	        _react2.default.createElement(
-	          _track.Track,
-	          _extends({ ref: this.trackRefHandler }, trackProps),
-	          this.props.children
-	        )
-	      ),
-	      nextArrow,
-	      dots
-	    );
-	  }
-	});
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
-
-/***/ },
-/* 245 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	exports.__esModule = true;
-
-	var _trackHelper = __webpack_require__(246);
-
-	var _helpers = __webpack_require__(248);
-
-	var _helpers2 = _interopRequireDefault(_helpers);
-
-	var _objectAssign = __webpack_require__(247);
-
-	var _objectAssign2 = _interopRequireDefault(_objectAssign);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var EventHandlers = {
-	  // Event handler for previous and next
-	  changeSlide: function changeSlide(options) {
-	    var indexOffset, previousInt, slideOffset, unevenOffset, targetSlide;
-	    var _props = this.props;
-	    var slidesToScroll = _props.slidesToScroll;
-	    var slidesToShow = _props.slidesToShow;
-	    var _state = this.state;
-	    var slideCount = _state.slideCount;
-	    var currentSlide = _state.currentSlide;
-
-	    unevenOffset = slideCount % slidesToScroll !== 0;
-	    indexOffset = unevenOffset ? 0 : (slideCount - currentSlide) % slidesToScroll;
-
-	    if (options.message === 'previous') {
-	      slideOffset = indexOffset === 0 ? slidesToScroll : slidesToShow - indexOffset;
-	      targetSlide = currentSlide - slideOffset;
-	      if (this.props.lazyLoad) {
-	        previousInt = currentSlide - slideOffset;
-	        targetSlide = previousInt === -1 ? slideCount - 1 : previousInt;
-	      }
-	    } else if (options.message === 'next') {
-	      slideOffset = indexOffset === 0 ? slidesToScroll : indexOffset;
-	      targetSlide = currentSlide + slideOffset;
-	      if (this.props.lazyLoad) {
-	        targetSlide = (currentSlide + slidesToScroll) % slideCount + indexOffset;
-	      }
-	    } else if (options.message === 'dots' || options.message === 'children') {
-	      // Click on dots
-	      targetSlide = options.index * options.slidesToScroll;
-	      if (targetSlide === options.currentSlide) {
-	        return;
-	      }
-	    } else if (options.message === 'index') {
-	      targetSlide = parseInt(options.index);
-	      if (targetSlide === options.currentSlide) {
-	        return;
-	      }
-	    }
-
-	    this.slideHandler(targetSlide);
-	  },
-
-	  // Accessiblity handler for previous and next
-	  keyHandler: function keyHandler(e) {
-	    //Dont slide if the cursor is inside the form fields and arrow keys are pressed
-	    if (!e.target.tagName.match('TEXTAREA|INPUT|SELECT')) {
-	      if (e.keyCode === 37 && this.props.accessibility === true) {
-	        this.changeSlide({
-	          message: this.props.rtl === true ? 'next' : 'previous'
-	        });
-	      } else if (e.keyCode === 39 && this.props.accessibility === true) {
-	        this.changeSlide({
-	          message: this.props.rtl === true ? 'previous' : 'next'
-	        });
-	      }
-	    }
-	  },
-	  // Focus on selecting a slide (click handler on track)
-	  selectHandler: function selectHandler(options) {
-	    this.changeSlide(options);
-	  },
-	  swipeStart: function swipeStart(e) {
-	    var touches, posX, posY;
-
-	    if (this.props.swipe === false || 'ontouchend' in document && this.props.swipe === false) {
-	      return;
-	    } else if (this.props.draggable === false && e.type.indexOf('mouse') !== -1) {
-	      return;
-	    }
-	    posX = e.touches !== undefined ? e.touches[0].pageX : e.clientX;
-	    posY = e.touches !== undefined ? e.touches[0].pageY : e.clientY;
-	    this.setState({
-	      dragging: true,
-	      touchObject: {
-	        startX: posX,
-	        startY: posY,
-	        curX: posX,
-	        curY: posY
-	      }
-	    });
-	  },
-	  swipeMove: function swipeMove(e) {
-	    if (!this.state.dragging) {
-	      e.preventDefault();
-	      return;
-	    }
-	    if (this.state.animating) {
-	      return;
-	    }
-	    var swipeLeft;
-	    var curLeft, positionOffset;
-	    var touchObject = this.state.touchObject;
-
-	    curLeft = (0, _trackHelper.getTrackLeft)((0, _objectAssign2.default)({
-	      slideIndex: this.state.currentSlide,
-	      trackRef: this.track
-	    }, this.props, this.state));
-	    touchObject.curX = e.touches ? e.touches[0].pageX : e.clientX;
-	    touchObject.curY = e.touches ? e.touches[0].pageY : e.clientY;
-	    touchObject.swipeLength = Math.round(Math.sqrt(Math.pow(touchObject.curX - touchObject.startX, 2)));
-
-	    if (this.props.verticalSwiping) {
-	      touchObject.swipeLength = Math.round(Math.sqrt(Math.pow(touchObject.curY - touchObject.startY, 2)));
-	    }
-
-	    positionOffset = (this.props.rtl === false ? 1 : -1) * (touchObject.curX > touchObject.startX ? 1 : -1);
-
-	    if (this.props.verticalSwiping) {
-	      positionOffset = touchObject.curY > touchObject.startY ? 1 : -1;
-	    }
-
-	    var currentSlide = this.state.currentSlide;
-	    var dotCount = Math.ceil(this.state.slideCount / this.props.slidesToScroll);
-	    var swipeDirection = this.swipeDirection(this.state.touchObject);
-	    var touchSwipeLength = touchObject.swipeLength;
-
-	    if (this.props.infinite === false) {
-	      if (currentSlide === 0 && swipeDirection === 'right' || currentSlide + 1 >= dotCount && swipeDirection === 'left') {
-	        touchSwipeLength = touchObject.swipeLength * this.props.edgeFriction;
-
-	        if (this.state.edgeDragged === false && this.props.edgeEvent) {
-	          this.props.edgeEvent(swipeDirection);
-	          this.setState({ edgeDragged: true });
-	        }
-	      }
-	    }
-
-	    if (this.state.swiped === false && this.props.swipeEvent) {
-	      this.props.swipeEvent(swipeDirection);
-	      this.setState({ swiped: true });
-	    }
-
-	    if (!this.props.vertical) {
-	      swipeLeft = curLeft + touchSwipeLength * positionOffset;
-	    } else {
-	      swipeLeft = curLeft + touchSwipeLength * (this.state.listHeight / this.state.listWidth) * positionOffset;
-	    }
-
-	    if (this.props.verticalSwiping) {
-	      swipeLeft = curLeft + touchSwipeLength * positionOffset;
-	    }
-
-	    this.setState({
-	      touchObject: touchObject,
-	      swipeLeft: swipeLeft,
-	      trackStyle: (0, _trackHelper.getTrackCSS)((0, _objectAssign2.default)({ left: swipeLeft }, this.props, this.state))
-	    });
-
-	    if (Math.abs(touchObject.curX - touchObject.startX) < Math.abs(touchObject.curY - touchObject.startY) * 0.8) {
-	      return;
-	    }
-	    if (touchObject.swipeLength > 4) {
-	      e.preventDefault();
-	    }
-	  },
-	  swipeEnd: function swipeEnd(e) {
-	    if (!this.state.dragging) {
-	      e.preventDefault();
-	      return;
-	    }
-	    var touchObject = this.state.touchObject;
-	    var minSwipe = this.state.listWidth / this.props.touchThreshold;
-	    var swipeDirection = this.swipeDirection(touchObject);
-
-	    if (this.props.verticalSwiping) {
-	      minSwipe = this.state.listHeight / this.props.touchThreshold;
-	    }
-
-	    // reset the state of touch related state variables.
-	    this.setState({
-	      dragging: false,
-	      edgeDragged: false,
-	      swiped: false,
-	      swipeLeft: null,
-	      touchObject: {}
-	    });
-	    // Fix for #13
-	    if (!touchObject.swipeLength) {
-	      return;
-	    }
-	    if (touchObject.swipeLength > minSwipe) {
-	      e.preventDefault();
-
-	      switch (swipeDirection) {
-	        case 'left':
-	        case 'down':
-	          this.slideHandler(this.state.currentSlide + this.props.slidesToScroll);
-	          break;
-
-	        case 'right':
-	        case 'up':
-	          this.slideHandler(this.state.currentSlide - this.props.slidesToScroll);
-	          break;
-
-	        default:
-	      }
-	    } else {
-	      // Adjust the track back to it's original position.
-	      var currentLeft = (0, _trackHelper.getTrackLeft)((0, _objectAssign2.default)({
-	        slideIndex: this.state.currentSlide,
-	        trackRef: this.track
-	      }, this.props, this.state));
-
-	      this.setState({
-	        trackStyle: (0, _trackHelper.getTrackAnimateCSS)((0, _objectAssign2.default)({ left: currentLeft }, this.props, this.state))
-	      });
-	    }
-	  },
-	  onInnerSliderEnter: function onInnerSliderEnter(e) {
-	    if (this.props.autoplay && this.props.pauseOnHover) {
-	      this.pause();
-	    }
-	  },
-	  onInnerSliderLeave: function onInnerSliderLeave(e) {
-	    if (this.props.autoplay && this.props.pauseOnHover) {
-	      this.autoPlay();
-	    }
-	  }
-	};
-
-	exports.default = EventHandlers;
-
-/***/ },
-/* 246 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	exports.__esModule = true;
-	exports.getTrackLeft = exports.getTrackAnimateCSS = exports.getTrackCSS = undefined;
-
-	var _reactDom = __webpack_require__(158);
-
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-
-	var _objectAssign = __webpack_require__(247);
-
-	var _objectAssign2 = _interopRequireDefault(_objectAssign);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var checkSpecKeys = function checkSpecKeys(spec, keysArray) {
-	  return keysArray.reduce(function (value, key) {
-	    return value && spec.hasOwnProperty(key);
-	  }, true) ? null : console.error('Keys Missing', spec);
-	};
-
-	var getTrackCSS = exports.getTrackCSS = function getTrackCSS(spec) {
-	  checkSpecKeys(spec, ['left', 'variableWidth', 'slideCount', 'slidesToShow', 'slideWidth']);
-
-	  var trackWidth, trackHeight;
-
-	  var trackChildren = spec.slideCount + 2 * spec.slidesToShow;
-
-	  if (!spec.vertical) {
-	    if (spec.variableWidth) {
-	      trackWidth = (spec.slideCount + 2 * spec.slidesToShow) * spec.slideWidth;
-	    } else if (spec.centerMode) {
-	      trackWidth = (spec.slideCount + 2 * (spec.slidesToShow + 1)) * spec.slideWidth;
-	    } else {
-	      trackWidth = (spec.slideCount + 2 * spec.slidesToShow) * spec.slideWidth;
-	    }
-	  } else {
-	    trackHeight = trackChildren * spec.slideHeight;
-	  }
-
-	  var style = {
-	    opacity: 1,
-	    WebkitTransform: !spec.vertical ? 'translate3d(' + spec.left + 'px, 0px, 0px)' : 'translate3d(0px, ' + spec.left + 'px, 0px)',
-	    transform: !spec.vertical ? 'translate3d(' + spec.left + 'px, 0px, 0px)' : 'translate3d(0px, ' + spec.left + 'px, 0px)',
-	    transition: '',
-	    WebkitTransition: '',
-	    msTransform: !spec.vertical ? 'translateX(' + spec.left + 'px)' : 'translateY(' + spec.left + 'px)'
-	  };
-
-	  if (trackWidth) {
-	    (0, _objectAssign2.default)(style, { width: trackWidth });
-	  }
-
-	  if (trackHeight) {
-	    (0, _objectAssign2.default)(style, { height: trackHeight });
-	  }
-
-	  // Fallback for IE8
-	  if (window && !window.addEventListener && window.attachEvent) {
-	    if (!spec.vertical) {
-	      style.marginLeft = spec.left + 'px';
-	    } else {
-	      style.marginTop = spec.left + 'px';
-	    }
-	  }
-
-	  return style;
-	};
-
-	var getTrackAnimateCSS = exports.getTrackAnimateCSS = function getTrackAnimateCSS(spec) {
-	  checkSpecKeys(spec, ['left', 'variableWidth', 'slideCount', 'slidesToShow', 'slideWidth', 'speed', 'cssEase']);
-
-	  var style = getTrackCSS(spec);
-	  // useCSS is true by default so it can be undefined
-	  style.WebkitTransition = '-webkit-transform ' + spec.speed + 'ms ' + spec.cssEase;
-	  style.transition = 'transform ' + spec.speed + 'ms ' + spec.cssEase;
-	  return style;
-	};
-
-	var getTrackLeft = exports.getTrackLeft = function getTrackLeft(spec) {
-
-	  checkSpecKeys(spec, ['slideIndex', 'trackRef', 'infinite', 'centerMode', 'slideCount', 'slidesToShow', 'slidesToScroll', 'slideWidth', 'listWidth', 'variableWidth', 'slideHeight']);
-
-	  var slideOffset = 0;
-	  var targetLeft;
-	  var targetSlide;
-	  var verticalOffset = 0;
-
-	  if (spec.fade) {
-	    return 0;
-	  }
-
-	  if (spec.infinite) {
-	    if (spec.slideCount >= spec.slidesToShow) {
-	      slideOffset = spec.slideWidth * spec.slidesToShow * -1;
-	      verticalOffset = spec.slideHeight * spec.slidesToShow * -1;
-	    }
-	    if (spec.slideCount % spec.slidesToScroll !== 0) {
-	      if (spec.slideIndex + spec.slidesToScroll > spec.slideCount && spec.slideCount > spec.slidesToShow) {
-	        if (spec.slideIndex > spec.slideCount) {
-	          slideOffset = (spec.slidesToShow - (spec.slideIndex - spec.slideCount)) * spec.slideWidth * -1;
-	          verticalOffset = (spec.slidesToShow - (spec.slideIndex - spec.slideCount)) * spec.slideHeight * -1;
-	        } else {
-	          slideOffset = spec.slideCount % spec.slidesToScroll * spec.slideWidth * -1;
-	          verticalOffset = spec.slideCount % spec.slidesToScroll * spec.slideHeight * -1;
-	        }
-	      }
-	    }
-	  } else {
-
-	    if (spec.slideCount % spec.slidesToScroll !== 0) {
-	      if (spec.slideIndex + spec.slidesToScroll > spec.slideCount && spec.slideCount > spec.slidesToShow) {
-	        var slidesToOffset = spec.slidesToShow - spec.slideCount % spec.slidesToScroll;
-	        slideOffset = slidesToOffset * spec.slideWidth;
-	      }
-	    }
-	  }
-
-	  if (spec.centerMode) {
-	    if (spec.infinite) {
-	      slideOffset += spec.slideWidth * Math.floor(spec.slidesToShow / 2);
-	    } else {
-	      slideOffset = spec.slideWidth * Math.floor(spec.slidesToShow / 2);
-	    }
-	  }
-
-	  if (!spec.vertical) {
-	    targetLeft = spec.slideIndex * spec.slideWidth * -1 + slideOffset;
-	  } else {
-	    targetLeft = spec.slideIndex * spec.slideHeight * -1 + verticalOffset;
-	  }
-
-	  if (spec.variableWidth === true) {
-	    var targetSlideIndex;
-	    if (spec.slideCount <= spec.slidesToShow || spec.infinite === false) {
-	      targetSlide = _reactDom2.default.findDOMNode(spec.trackRef).childNodes[spec.slideIndex];
-	    } else {
-	      targetSlideIndex = spec.slideIndex + spec.slidesToShow;
-	      targetSlide = _reactDom2.default.findDOMNode(spec.trackRef).childNodes[targetSlideIndex];
-	    }
-	    targetLeft = targetSlide ? targetSlide.offsetLeft * -1 : 0;
-	    if (spec.centerMode === true) {
-	      if (spec.infinite === false) {
-	        targetSlide = _reactDom2.default.findDOMNode(spec.trackRef).children[spec.slideIndex];
-	      } else {
-	        targetSlide = _reactDom2.default.findDOMNode(spec.trackRef).children[spec.slideIndex + spec.slidesToShow + 1];
-	      }
-
-	      targetLeft = targetSlide ? targetSlide.offsetLeft * -1 : 0;
-	      targetLeft += (spec.listWidth - targetSlide.offsetWidth) / 2;
-	    }
-	  }
-
-	  return targetLeft;
-	};
-
-/***/ },
-/* 247 */
-/***/ function(module, exports) {
-
-	'use strict';
-	/* eslint-disable no-unused-vars */
-	var hasOwnProperty = Object.prototype.hasOwnProperty;
-	var propIsEnumerable = Object.prototype.propertyIsEnumerable;
-
-	function toObject(val) {
-		if (val === null || val === undefined) {
-			throw new TypeError('Object.assign cannot be called with null or undefined');
-		}
-
-		return Object(val);
-	}
-
-	function shouldUseNative() {
-		try {
-			if (!Object.assign) {
-				return false;
-			}
-
-			// Detect buggy property enumeration order in older V8 versions.
-
-			// https://bugs.chromium.org/p/v8/issues/detail?id=4118
-			var test1 = new String('abc');  // eslint-disable-line
-			test1[5] = 'de';
-			if (Object.getOwnPropertyNames(test1)[0] === '5') {
-				return false;
-			}
-
-			// https://bugs.chromium.org/p/v8/issues/detail?id=3056
-			var test2 = {};
-			for (var i = 0; i < 10; i++) {
-				test2['_' + String.fromCharCode(i)] = i;
-			}
-			var order2 = Object.getOwnPropertyNames(test2).map(function (n) {
-				return test2[n];
-			});
-			if (order2.join('') !== '0123456789') {
-				return false;
-			}
-
-			// https://bugs.chromium.org/p/v8/issues/detail?id=3056
-			var test3 = {};
-			'abcdefghijklmnopqrst'.split('').forEach(function (letter) {
-				test3[letter] = letter;
-			});
-			if (Object.keys(Object.assign({}, test3)).join('') !==
-					'abcdefghijklmnopqrst') {
-				return false;
-			}
-
-			return true;
-		} catch (e) {
-			// We don't expect any of the above to throw, but better to be safe.
-			return false;
-		}
-	}
-
-	module.exports = shouldUseNative() ? Object.assign : function (target, source) {
-		var from;
-		var to = toObject(target);
-		var symbols;
-
-		for (var s = 1; s < arguments.length; s++) {
-			from = Object(arguments[s]);
-
-			for (var key in from) {
-				if (hasOwnProperty.call(from, key)) {
-					to[key] = from[key];
-				}
-			}
-
-			if (Object.getOwnPropertySymbols) {
-				symbols = Object.getOwnPropertySymbols(from);
-				for (var i = 0; i < symbols.length; i++) {
-					if (propIsEnumerable.call(from, symbols[i])) {
-						to[symbols[i]] = from[symbols[i]];
-					}
-				}
-			}
-		}
-
-		return to;
-	};
-
-
-/***/ },
-/* 248 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	exports.__esModule = true;
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDom = __webpack_require__(158);
-
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-
-	var _trackHelper = __webpack_require__(246);
-
-	var _objectAssign = __webpack_require__(247);
-
-	var _objectAssign2 = _interopRequireDefault(_objectAssign);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var helpers = {
-	  initialize: function initialize(props) {
-	    var slickList = _reactDom2.default.findDOMNode(this.list);
-
-	    var slideCount = _react2.default.Children.count(props.children);
-	    var listWidth = this.getWidth(slickList);
-	    var trackWidth = this.getWidth(_reactDom2.default.findDOMNode(this.track));
-	    var slideWidth;
-
-	    if (!props.vertical) {
-	      slideWidth = trackWidth / props.slidesToShow;
-	    } else {
-	      slideWidth = trackWidth;
-	    }
-
-	    var slideHeight = this.getHeight(slickList.querySelector('[data-index="0"]'));
-	    var listHeight = slideHeight * props.slidesToShow;
-
-	    var currentSlide = props.rtl ? slideCount - 1 - props.initialSlide : props.initialSlide;
-
-	    this.setState({
-	      slideCount: slideCount,
-	      slideWidth: slideWidth,
-	      listWidth: listWidth,
-	      trackWidth: trackWidth,
-	      currentSlide: currentSlide,
-	      slideHeight: slideHeight,
-	      listHeight: listHeight
-	    }, function () {
-
-	      var targetLeft = (0, _trackHelper.getTrackLeft)((0, _objectAssign2.default)({
-	        slideIndex: this.state.currentSlide,
-	        trackRef: this.track
-	      }, props, this.state));
-	      // getCSS function needs previously set state
-	      var trackStyle = (0, _trackHelper.getTrackCSS)((0, _objectAssign2.default)({ left: targetLeft }, props, this.state));
-
-	      this.setState({ trackStyle: trackStyle });
-
-	      this.autoPlay(); // once we're set up, trigger the initial autoplay.
-	    });
-	  },
-	  update: function update(props) {
-	    var slickList = _reactDom2.default.findDOMNode(this.list);
-	    // This method has mostly same code as initialize method.
-	    // Refactor it
-	    var slideCount = _react2.default.Children.count(props.children);
-	    var listWidth = this.getWidth(slickList);
-	    var trackWidth = this.getWidth(_reactDom2.default.findDOMNode(this.track));
-	    var slideWidth;
-
-	    if (!props.vertical) {
-	      slideWidth = trackWidth / props.slidesToShow;
-	    } else {
-	      slideWidth = trackWidth;
-	    }
-
-	    var slideHeight = this.getHeight(slickList.querySelector('[data-index="0"]'));
-	    var listHeight = slideHeight * props.slidesToShow;
-
-	    // pause slider if autoplay is set to false
-	    if (!props.autoplay) this.pause();
-
-	    this.setState({
-	      slideCount: slideCount,
-	      slideWidth: slideWidth,
-	      listWidth: listWidth,
-	      trackWidth: trackWidth,
-	      slideHeight: slideHeight,
-	      listHeight: listHeight
-	    }, function () {
-
-	      var targetLeft = (0, _trackHelper.getTrackLeft)((0, _objectAssign2.default)({
-	        slideIndex: this.state.currentSlide,
-	        trackRef: this.track
-	      }, props, this.state));
-	      // getCSS function needs previously set state
-	      var trackStyle = (0, _trackHelper.getTrackCSS)((0, _objectAssign2.default)({ left: targetLeft }, props, this.state));
-
-	      this.setState({ trackStyle: trackStyle });
-	    });
-	  },
-	  getWidth: function getWidth(elem) {
-	    return elem.getBoundingClientRect().width || elem.offsetWidth;
-	  },
-	  getHeight: function getHeight(elem) {
-	    return elem.getBoundingClientRect().height || elem.offsetHeight;
-	  },
-
-	  adaptHeight: function adaptHeight() {
-	    if (this.props.adaptiveHeight) {
-	      var selector = '[data-index="' + this.state.currentSlide + '"]';
-	      if (this.list) {
-	        var slickList = _reactDom2.default.findDOMNode(this.list);
-	        slickList.style.height = slickList.querySelector(selector).offsetHeight + 'px';
-	      }
-	    }
-	  },
-	  slideHandler: function slideHandler(index) {
-	    var _this = this;
-
-	    // Functionality of animateSlide and postSlide is merged into this function
-	    // console.log('slideHandler', index);
-	    var targetSlide, currentSlide;
-	    var targetLeft, currentLeft;
-	    var callback;
-
-	    if (this.props.waitForAnimate && this.state.animating) {
-	      return;
-	    }
-
-	    if (this.props.fade) {
-	      currentSlide = this.state.currentSlide;
-
-	      // Don't change slide if it's not infite and current slide is the first or last slide.
-	      if (this.props.infinite === false && (index < 0 || index >= this.state.slideCount)) {
-	        return;
-	      }
-
-	      //  Shifting targetSlide back into the range
-	      if (index < 0) {
-	        targetSlide = index + this.state.slideCount;
-	      } else if (index >= this.state.slideCount) {
-	        targetSlide = index - this.state.slideCount;
-	      } else {
-	        targetSlide = index;
-	      }
-
-	      if (this.props.lazyLoad && this.state.lazyLoadedList.indexOf(targetSlide) < 0) {
-	        this.setState({
-	          lazyLoadedList: this.state.lazyLoadedList.concat(targetSlide)
-	        });
-	      }
-
-	      callback = function callback() {
-	        _this.setState({
-	          animating: false
-	        });
-	        if (_this.props.afterChange) {
-	          _this.props.afterChange(targetSlide);
-	        }
-	        delete _this.animationEndCallback;
-	      };
-
-	      this.setState({
-	        animating: true,
-	        currentSlide: targetSlide
-	      }, function () {
-	        this.animationEndCallback = setTimeout(callback, this.props.speed);
-	      });
-
-	      if (this.props.beforeChange) {
-	        this.props.beforeChange(this.state.currentSlide, targetSlide);
-	      }
-
-	      this.autoPlay();
-	      return;
-	    }
-
-	    targetSlide = index;
-	    if (targetSlide < 0) {
-	      if (this.props.infinite === false) {
-	        currentSlide = 0;
-	      } else if (this.state.slideCount % this.props.slidesToScroll !== 0) {
-	        currentSlide = this.state.slideCount - this.state.slideCount % this.props.slidesToScroll;
-	      } else {
-	        currentSlide = this.state.slideCount + targetSlide;
-	      }
-	    } else if (targetSlide >= this.state.slideCount) {
-	      if (this.props.infinite === false) {
-	        currentSlide = this.state.slideCount - this.props.slidesToShow;
-	      } else if (this.state.slideCount % this.props.slidesToScroll !== 0) {
-	        currentSlide = 0;
-	      } else {
-	        currentSlide = targetSlide - this.state.slideCount;
-	      }
-	    } else {
-	      currentSlide = targetSlide;
-	    }
-
-	    targetLeft = (0, _trackHelper.getTrackLeft)((0, _objectAssign2.default)({
-	      slideIndex: targetSlide,
-	      trackRef: this.track
-	    }, this.props, this.state));
-
-	    currentLeft = (0, _trackHelper.getTrackLeft)((0, _objectAssign2.default)({
-	      slideIndex: currentSlide,
-	      trackRef: this.track
-	    }, this.props, this.state));
-
-	    if (this.props.infinite === false) {
-	      targetLeft = currentLeft;
-	    }
-
-	    if (this.props.beforeChange) {
-	      this.props.beforeChange(this.state.currentSlide, currentSlide);
-	    }
-
-	    if (this.props.lazyLoad) {
-	      var loaded = true;
-	      var slidesToLoad = [];
-	      for (var i = targetSlide; i < targetSlide + this.props.slidesToShow; i++) {
-	        loaded = loaded && this.state.lazyLoadedList.indexOf(i) >= 0;
-	        if (!loaded) {
-	          slidesToLoad.push(i);
-	        }
-	      }
-	      if (!loaded) {
-	        this.setState({
-	          lazyLoadedList: this.state.lazyLoadedList.concat(slidesToLoad)
-	        });
-	      }
-	    }
-
-	    // Slide Transition happens here.
-	    // animated transition happens to target Slide and
-	    // non - animated transition happens to current Slide
-	    // If CSS transitions are false, directly go the current slide.
-
-	    if (this.props.useCSS === false) {
-
-	      this.setState({
-	        currentSlide: currentSlide,
-	        trackStyle: (0, _trackHelper.getTrackCSS)((0, _objectAssign2.default)({ left: currentLeft }, this.props, this.state))
-	      }, function () {
-	        if (this.props.afterChange) {
-	          this.props.afterChange(currentSlide);
-	        }
-	      });
-	    } else {
-
-	      var nextStateChanges = {
-	        animating: false,
-	        currentSlide: currentSlide,
-	        trackStyle: (0, _trackHelper.getTrackCSS)((0, _objectAssign2.default)({ left: currentLeft }, this.props, this.state)),
-	        swipeLeft: null
-	      };
-
-	      callback = function callback() {
-	        _this.setState(nextStateChanges);
-	        if (_this.props.afterChange) {
-	          _this.props.afterChange(currentSlide);
-	        }
-	        delete _this.animationEndCallback;
-	      };
-
-	      this.setState({
-	        animating: true,
-	        currentSlide: currentSlide,
-	        trackStyle: (0, _trackHelper.getTrackAnimateCSS)((0, _objectAssign2.default)({ left: targetLeft }, this.props, this.state))
-	      }, function () {
-	        this.animationEndCallback = setTimeout(callback, this.props.speed);
-	      });
-	    }
-
-	    this.autoPlay();
-	  },
-	  swipeDirection: function swipeDirection(touchObject) {
-	    var xDist, yDist, r, swipeAngle;
-
-	    xDist = touchObject.startX - touchObject.curX;
-	    yDist = touchObject.startY - touchObject.curY;
-	    r = Math.atan2(yDist, xDist);
-
-	    swipeAngle = Math.round(r * 180 / Math.PI);
-	    if (swipeAngle < 0) {
-	      swipeAngle = 360 - Math.abs(swipeAngle);
-	    }
-	    if (swipeAngle <= 45 && swipeAngle >= 0 || swipeAngle <= 360 && swipeAngle >= 315) {
-	      return this.props.rtl === false ? 'left' : 'right';
-	    }
-	    if (swipeAngle >= 135 && swipeAngle <= 225) {
-	      return this.props.rtl === false ? 'right' : 'left';
-	    }
-	    if (this.props.verticalSwiping === true) {
-	      if (swipeAngle >= 35 && swipeAngle <= 135) {
-	        return 'down';
-	      } else {
-	        return 'up';
-	      }
-	    }
-
-	    return 'vertical';
-	  },
-	  autoPlay: function autoPlay() {
-	    var _this2 = this;
-
-	    if (this.state.autoPlayTimer) {
-	      return;
-	    }
-	    var play = function play() {
-	      if (_this2.state.mounted) {
-	        var nextIndex = _this2.props.rtl ? _this2.state.currentSlide - _this2.props.slidesToScroll : _this2.state.currentSlide + _this2.props.slidesToScroll;
-	        _this2.slideHandler(nextIndex);
-	      }
-	    };
-	    if (this.props.autoplay) {
-	      this.setState({
-	        autoPlayTimer: setInterval(play, this.props.autoplaySpeed)
-	      });
-	    }
-	  },
-	  pause: function pause() {
-	    if (this.state.autoPlayTimer) {
-	      clearInterval(this.state.autoPlayTimer);
-	      this.setState({
-	        autoPlayTimer: null
-	      });
-	    }
-	  }
-	};
-
-	exports.default = helpers;
-
-/***/ },
-/* 249 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	var initialState = {
-	    animating: false,
-	    dragging: false,
-	    autoPlayTimer: null,
-	    currentDirection: 0,
-	    currentLeft: null,
-	    currentSlide: 0,
-	    direction: 1,
-	    listWidth: null,
-	    listHeight: null,
-	    // loadIndex: 0,
-	    slideCount: null,
-	    slideWidth: null,
-	    slideHeight: null,
-	    // sliding: false,
-	    // slideOffset: 0,
-	    swipeLeft: null,
-	    touchObject: {
-	        startX: 0,
-	        startY: 0,
-	        curX: 0,
-	        curY: 0
-	    },
-
-	    lazyLoadedList: [],
-
-	    // added for react
-	    initialized: false,
-	    edgeDragged: false,
-	    swiped: false, // used by swipeEvent. differentites between touch and swipe.
-	    trackStyle: {},
-	    trackWidth: 0
-
-	    // Removed
-	    // transformsEnabled: false,
-	    // $nextArrow: null,
-	    // $prevArrow: null,
-	    // $dots: null,
-	    // $list: null,
-	    // $slideTrack: null,
-	    // $slides: null,
-	};
-
-	module.exports = initialState;
-
-/***/ },
-/* 250 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	var defaultProps = {
-	    className: '',
-	    accessibility: true,
-	    adaptiveHeight: false,
-	    arrows: true,
-	    autoplay: false,
-	    autoplaySpeed: 3000,
-	    centerMode: false,
-	    centerPadding: '50px',
-	    cssEase: 'ease',
-	    dots: false,
-	    dotsClass: 'slick-dots',
-	    draggable: true,
-	    easing: 'linear',
-	    edgeFriction: 0.35,
-	    fade: false,
-	    focusOnSelect: false,
-	    infinite: true,
-	    initialSlide: 0,
-	    lazyLoad: false,
-	    pauseOnHover: true,
-	    responsive: null,
-	    rtl: false,
-	    slide: 'div',
-	    slidesToShow: 1,
-	    slidesToScroll: 1,
-	    speed: 500,
-	    swipe: true,
-	    swipeToSlide: false,
-	    touchMove: true,
-	    touchThreshold: 5,
-	    useCSS: true,
-	    variableWidth: false,
-	    vertical: false,
-	    waitForAnimate: true,
-	    afterChange: null,
-	    beforeChange: null,
-	    edgeEvent: null,
-	    init: null,
-	    swipeEvent: null,
-	    // nextArrow, prevArrow are react componets
-	    nextArrow: null,
-	    prevArrow: null
-	};
-
-	module.exports = defaultProps;
-
-/***/ },
-/* 251 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
-	  Copyright (c) 2016 Jed Watson.
-	  Licensed under the MIT License (MIT), see
-	  http://jedwatson.github.io/classnames
-	*/
-	/* global define */
-
-	(function () {
-		'use strict';
-
-		var hasOwn = {}.hasOwnProperty;
-
-		function classNames () {
-			var classes = [];
-
-			for (var i = 0; i < arguments.length; i++) {
-				var arg = arguments[i];
-				if (!arg) continue;
-
-				var argType = typeof arg;
-
-				if (argType === 'string' || argType === 'number') {
-					classes.push(arg);
-				} else if (Array.isArray(arg)) {
-					classes.push(classNames.apply(null, arg));
-				} else if (argType === 'object') {
-					for (var key in arg) {
-						if (hasOwn.call(arg, key) && arg[key]) {
-							classes.push(key);
-						}
-					}
-				}
-			}
-
-			return classes.join(' ');
-		}
-
-		if (typeof module !== 'undefined' && module.exports) {
-			module.exports = classNames;
-		} else if (true) {
-			// register as 'classnames', consistent with npm package name
-			!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
-				return classNames;
-			}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-		} else {
-			window.classNames = classNames;
-		}
-	}());
-
-
-/***/ },
-/* 252 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	exports.__esModule = true;
-	exports.Track = undefined;
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _objectAssign = __webpack_require__(247);
-
-	var _objectAssign2 = _interopRequireDefault(_objectAssign);
-
-	var _classnames = __webpack_require__(251);
-
-	var _classnames2 = _interopRequireDefault(_classnames);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var getSlideClasses = function getSlideClasses(spec) {
-	  var slickActive, slickCenter, slickCloned;
-	  var centerOffset, index;
-
-	  if (spec.rtl) {
-	    index = spec.slideCount - 1 - spec.index;
-	  } else {
-	    index = spec.index;
-	  }
-
-	  slickCloned = index < 0 || index >= spec.slideCount;
-	  if (spec.centerMode) {
-	    centerOffset = Math.floor(spec.slidesToShow / 2);
-	    slickCenter = (index - spec.currentSlide) % spec.slideCount === 0;
-	    if (index > spec.currentSlide - centerOffset - 1 && index <= spec.currentSlide + centerOffset) {
-	      slickActive = true;
-	    }
-	  } else {
-	    slickActive = spec.currentSlide <= index && index < spec.currentSlide + spec.slidesToShow;
-	  }
-	  return (0, _classnames2.default)({
-	    'slick-slide': true,
-	    'slick-active': slickActive,
-	    'slick-center': slickCenter,
-	    'slick-cloned': slickCloned
-	  });
-	};
-
-	var getSlideStyle = function getSlideStyle(spec) {
-	  var style = {};
-
-	  if (spec.variableWidth === undefined || spec.variableWidth === false) {
-	    style.width = spec.slideWidth;
-	  }
-
-	  if (spec.fade) {
-	    style.position = 'relative';
-	    style.left = -spec.index * spec.slideWidth;
-	    style.opacity = spec.currentSlide === spec.index ? 1 : 0;
-	    style.transition = 'opacity ' + spec.speed + 'ms ' + spec.cssEase;
-	    style.WebkitTransition = 'opacity ' + spec.speed + 'ms ' + spec.cssEase;
-	  }
-
-	  return style;
-	};
-
-	var getKey = function getKey(child, fallbackKey) {
-	  // key could be a zero
-	  return child.key === null || child.key === undefined ? fallbackKey : child.key;
-	};
-
-	var renderSlides = function renderSlides(spec) {
-	  var key;
-	  var slides = [];
-	  var preCloneSlides = [];
-	  var postCloneSlides = [];
-	  var count = _react2.default.Children.count(spec.children);
-
-	  _react2.default.Children.forEach(spec.children, function (elem, index) {
-	    var child = void 0;
-	    var childOnClickOptions = {
-	      message: 'children',
-	      index: index,
-	      slidesToScroll: spec.slidesToScroll,
-	      currentSlide: spec.currentSlide
-	    };
-
-	    if (!spec.lazyLoad | (spec.lazyLoad && spec.lazyLoadedList.indexOf(index) >= 0)) {
-	      child = elem;
-	    } else {
-	      child = _react2.default.createElement('div', null);
-	    }
-	    var childStyle = getSlideStyle((0, _objectAssign2.default)({}, spec, { index: index }));
-	    var slickClasses = getSlideClasses((0, _objectAssign2.default)({ index: index }, spec));
-	    var cssClasses;
-
-	    if (child.props.className) {
-	      cssClasses = (0, _classnames2.default)(slickClasses, child.props.className);
-	    } else {
-	      cssClasses = slickClasses;
-	    }
-
-	    var onClick = function onClick(e) {
-	      child.props && child.props.onClick && child.props.onClick(e);
-	      if (spec.focusOnSelect) {
-	        spec.focusOnSelect(childOnClickOptions);
-	      }
-	    };
-
-	    slides.push(_react2.default.cloneElement(child, {
-	      key: 'original' + getKey(child, index),
-	      'data-index': index,
-	      className: cssClasses,
-	      tabIndex: '-1',
-	      style: (0, _objectAssign2.default)({ outline: 'none' }, child.props.style || {}, childStyle),
-	      onClick: onClick
-	    }));
-
-	    // variableWidth doesn't wrap properly.
-	    if (spec.infinite && spec.fade === false) {
-	      var infiniteCount = spec.variableWidth ? spec.slidesToShow + 1 : spec.slidesToShow;
-
-	      if (index >= count - infiniteCount) {
-	        key = -(count - index);
-	        preCloneSlides.push(_react2.default.cloneElement(child, {
-	          key: 'precloned' + getKey(child, key),
-	          'data-index': key,
-	          className: cssClasses,
-	          style: (0, _objectAssign2.default)({}, child.props.style || {}, childStyle),
-	          onClick: onClick
-	        }));
-	      }
-
-	      if (index < infiniteCount) {
-	        key = count + index;
-	        postCloneSlides.push(_react2.default.cloneElement(child, {
-	          key: 'postcloned' + getKey(child, key),
-	          'data-index': key,
-	          className: cssClasses,
-	          style: (0, _objectAssign2.default)({}, child.props.style || {}, childStyle),
-	          onClick: onClick
-	        }));
-	      }
-	    }
-	  });
-
-	  if (spec.rtl) {
-	    return preCloneSlides.concat(slides, postCloneSlides).reverse();
-	  } else {
-	    return preCloneSlides.concat(slides, postCloneSlides);
-	  }
-	};
-
-	var Track = exports.Track = _react2.default.createClass({
-	  displayName: 'Track',
-
-	  render: function render() {
-	    var slides = renderSlides.call(this, this.props);
-	    return _react2.default.createElement(
-	      'div',
-	      { className: 'slick-track', style: this.props.trackStyle },
-	      slides
-	    );
-	  }
-	});
-
-/***/ },
-/* 253 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	exports.__esModule = true;
-	exports.Dots = undefined;
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _classnames = __webpack_require__(251);
-
-	var _classnames2 = _interopRequireDefault(_classnames);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var getDotCount = function getDotCount(spec) {
-	  var dots;
-	  dots = Math.ceil(spec.slideCount / spec.slidesToScroll);
-	  return dots;
-	};
-
-	var Dots = exports.Dots = _react2.default.createClass({
-	  displayName: 'Dots',
-
-
-	  clickHandler: function clickHandler(options, e) {
-	    // In Autoplay the focus stays on clicked button even after transition
-	    // to next slide. That only goes away by click somewhere outside
-	    e.preventDefault();
-	    this.props.clickHandler(options);
-	  },
-	  render: function render() {
-	    var _this = this;
-
-	    var dotCount = getDotCount({
-	      slideCount: this.props.slideCount,
-	      slidesToScroll: this.props.slidesToScroll
-	    });
-
-	    // Apply join & split to Array to pre-fill it for IE8
-	    //
-	    // Credit: http://stackoverflow.com/a/13735425/1849458
-	    var dots = Array.apply(null, Array(dotCount + 1).join('0').split('')).map(function (x, i) {
-
-	      var leftBound = i * _this.props.slidesToScroll;
-	      var rightBound = i * _this.props.slidesToScroll + (_this.props.slidesToScroll - 1);
-	      var className = (0, _classnames2.default)({
-	        'slick-active': _this.props.currentSlide >= leftBound && _this.props.currentSlide <= rightBound
-	      });
-
-	      var dotOptions = {
-	        message: 'dots',
-	        index: i,
-	        slidesToScroll: _this.props.slidesToScroll,
-	        currentSlide: _this.props.currentSlide
-	      };
-
-	      return _react2.default.createElement(
-	        'li',
-	        { key: i, className: className },
-	        _react2.default.createElement(
-	          'button',
-	          { onClick: _this.clickHandler.bind(_this, dotOptions) },
-	          i + 1
-	        )
-	      );
-	    });
-
-	    return _react2.default.createElement(
-	      'ul',
-	      { className: this.props.dotsClass, style: { display: 'block' } },
-	      dots
-	    );
-	  }
-	});
-
-/***/ },
-/* 254 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	exports.__esModule = true;
-	exports.NextArrow = exports.PrevArrow = undefined;
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _classnames = __webpack_require__(251);
-
-	var _classnames2 = _interopRequireDefault(_classnames);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var PrevArrow = exports.PrevArrow = _react2.default.createClass({
-	  displayName: 'PrevArrow',
-
-
-	  clickHandler: function clickHandler(options, e) {
-	    if (e) {
-	      e.preventDefault();
-	    }
-	    this.props.clickHandler(options, e);
-	  },
-	  render: function render() {
-	    var prevClasses = { 'slick-arrow': true, 'slick-prev': true };
-	    var prevHandler = this.clickHandler.bind(this, { message: 'previous' });
-
-	    if (!this.props.infinite && (this.props.currentSlide === 0 || this.props.slideCount <= this.props.slidesToShow)) {
-	      prevClasses['slick-disabled'] = true;
-	      prevHandler = null;
-	    }
-
-	    var prevArrowProps = {
-	      key: '0',
-	      'data-role': 'none',
-	      className: (0, _classnames2.default)(prevClasses),
-	      style: { display: 'block' },
-	      onClick: prevHandler
-	    };
-	    var prevArrow;
-
-	    if (this.props.prevArrow) {
-	      prevArrow = _react2.default.cloneElement(this.props.prevArrow, prevArrowProps);
-	    } else {
-	      prevArrow = _react2.default.createElement(
-	        'button',
-	        _extends({ key: '0', type: 'button' }, prevArrowProps),
-	        ' Previous'
-	      );
-	    }
-
-	    return prevArrow;
-	  }
-	});
-
-	var NextArrow = exports.NextArrow = _react2.default.createClass({
-	  displayName: 'NextArrow',
-
-	  clickHandler: function clickHandler(options, e) {
-	    if (e) {
-	      e.preventDefault();
-	    }
-	    this.props.clickHandler(options, e);
-	  },
-	  render: function render() {
-	    var nextClasses = { 'slick-arrow': true, 'slick-next': true };
-	    var nextHandler = this.clickHandler.bind(this, { message: 'next' });
-
-	    if (!this.props.infinite) {
-	      if (this.props.centerMode && this.props.currentSlide >= this.props.slideCount - 1) {
-	        nextClasses['slick-disabled'] = true;
-	        nextHandler = null;
-	      } else {
-	        if (this.props.currentSlide >= this.props.slideCount - this.props.slidesToShow) {
-	          nextClasses['slick-disabled'] = true;
-	          nextHandler = null;
-	        }
-	      }
-
-	      if (this.props.slideCount <= this.props.slidesToShow) {
-	        nextClasses['slick-disabled'] = true;
-	        nextHandler = null;
-	      }
-	    }
-
-	    var nextArrowProps = {
-	      key: '1',
-	      'data-role': 'none',
-	      className: (0, _classnames2.default)(nextClasses),
-	      style: { display: 'block' },
-	      onClick: nextHandler
-	    };
-
-	    var nextArrow;
-
-	    if (this.props.nextArrow) {
-	      nextArrow = _react2.default.cloneElement(this.props.nextArrow, nextArrowProps);
-	    } else {
-	      nextArrow = _react2.default.createElement(
-	        'button',
-	        _extends({ key: '1', type: 'button' }, nextArrowProps),
-	        ' Next'
-	      );
-	    }
-
-	    return nextArrow;
-	  }
-	});
-
-/***/ },
-/* 255 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var camel2hyphen = __webpack_require__(256);
-
-	var isDimension = function (feature) {
-	  var re = /[height|width]$/;
-	  return re.test(feature);
-	};
-
-	var obj2mq = function (obj) {
-	  var mq = '';
-	  var features = Object.keys(obj);
-	  features.forEach(function (feature, index) {
-	    var value = obj[feature];
-	    feature = camel2hyphen(feature);
-	    // Add px to dimension features
-	    if (isDimension(feature) && typeof value === 'number') {
-	      value = value + 'px';
-	    }
-	    if (value === true) {
-	      mq += feature;
-	    } else if (value === false) {
-	      mq += 'not ' + feature;
-	    } else {
-	      mq += '(' + feature + ': ' + value + ')';
-	    }
-	    if (index < features.length-1) {
-	      mq += ' and '
-	    }
-	  });
-	  return mq;
-	};
-
-	var json2mq = function (query) {
-	  var mq = '';
-	  if (typeof query === 'string') {
-	    return query;
-	  }
-	  // Handling array of media queries
-	  if (query instanceof Array) {
-	    query.forEach(function (q, index) {
-	      mq += obj2mq(q);
-	      if (index < query.length-1) {
-	        mq += ', '
-	      }
-	    });
-	    return mq;
-	  }
-	  // Handling single media query
-	  return obj2mq(query);
-	};
-
-	module.exports = json2mq;
-
-/***/ },
-/* 256 */
-/***/ function(module, exports) {
-
-	var camel2hyphen = function (str) {
-	  return str
-	          .replace(/[A-Z]/g, function (match) {
-	            return '-' + match.toLowerCase();
-	          })
-	          .toLowerCase();
-	};
-
-	module.exports = camel2hyphen;
-
-/***/ },
-/* 257 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var canUseDOM = __webpack_require__(258);
-	var enquire = canUseDOM && __webpack_require__(259);
-	var json2mq = __webpack_require__(255);
-
-	var ResponsiveMixin = {
-	  media: function (query, handler) {
-	    query = json2mq(query);
-	    if (typeof handler === 'function') {
-	      handler = {
-	        match: handler
-	      };
-	    }
-	    canUseDOM && enquire.register(query, handler);
-
-	    // Queue the handlers to unregister them at unmount  
-	    if (! this._responsiveMediaHandlers) {
-	      this._responsiveMediaHandlers = [];
-	    }
-	    this._responsiveMediaHandlers.push({query: query, handler: handler});
-	  },
-	  componentWillUnmount: function () {
-	    if (this._responsiveMediaHandlers) {
-	      this._responsiveMediaHandlers.forEach(function(obj) {
-	        canUseDOM && enquire.unregister(obj.query, obj.handler);
-	      });
-	    }
-	  }
-	};
-
-	module.exports = ResponsiveMixin;
-
-
-/***/ },
-/* 258 */
-/***/ function(module, exports) {
-
-	var canUseDOM = !!(
-	  typeof window !== 'undefined' &&
-	  window.document &&
-	  window.document.createElement
-	);
-
-	module.exports = canUseDOM;
-
-/***/ },
-/* 259 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __WEBPACK_AMD_DEFINE_RESULT__;/*!
-	 * enquire.js v2.1.1 - Awesome Media Queries in JavaScript
-	 * Copyright (c) 2014 Nick Williams - http://wicky.nillia.ms/enquire.js
-	 * License: MIT (http://www.opensource.org/licenses/mit-license.php)
-	 */
-
-	;(function (name, context, factory) {
-		var matchMedia = window.matchMedia;
-
-		if (typeof module !== 'undefined' && module.exports) {
-			module.exports = factory(matchMedia);
-		}
-		else if (true) {
-			!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
-				return (context[name] = factory(matchMedia));
-			}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-		}
-		else {
-			context[name] = factory(matchMedia);
-		}
-	}('enquire', this, function (matchMedia) {
-
-		'use strict';
-
-	    /*jshint unused:false */
-	    /**
-	     * Helper function for iterating over a collection
-	     *
-	     * @param collection
-	     * @param fn
-	     */
-	    function each(collection, fn) {
-	        var i      = 0,
-	            length = collection.length,
-	            cont;
-
-	        for(i; i < length; i++) {
-	            cont = fn(collection[i], i);
-	            if(cont === false) {
-	                break; //allow early exit
-	            }
-	        }
-	    }
-
-	    /**
-	     * Helper function for determining whether target object is an array
-	     *
-	     * @param target the object under test
-	     * @return {Boolean} true if array, false otherwise
-	     */
-	    function isArray(target) {
-	        return Object.prototype.toString.apply(target) === '[object Array]';
-	    }
-
-	    /**
-	     * Helper function for determining whether target object is a function
-	     *
-	     * @param target the object under test
-	     * @return {Boolean} true if function, false otherwise
-	     */
-	    function isFunction(target) {
-	        return typeof target === 'function';
-	    }
-
-	    /**
-	     * Delegate to handle a media query being matched and unmatched.
-	     *
-	     * @param {object} options
-	     * @param {function} options.match callback for when the media query is matched
-	     * @param {function} [options.unmatch] callback for when the media query is unmatched
-	     * @param {function} [options.setup] one-time callback triggered the first time a query is matched
-	     * @param {boolean} [options.deferSetup=false] should the setup callback be run immediately, rather than first time query is matched?
-	     * @constructor
-	     */
-	    function QueryHandler(options) {
-	        this.options = options;
-	        !options.deferSetup && this.setup();
-	    }
-	    QueryHandler.prototype = {
-
-	        /**
-	         * coordinates setup of the handler
-	         *
-	         * @function
-	         */
-	        setup : function() {
-	            if(this.options.setup) {
-	                this.options.setup();
-	            }
-	            this.initialised = true;
-	        },
-
-	        /**
-	         * coordinates setup and triggering of the handler
-	         *
-	         * @function
-	         */
-	        on : function() {
-	            !this.initialised && this.setup();
-	            this.options.match && this.options.match();
-	        },
-
-	        /**
-	         * coordinates the unmatch event for the handler
-	         *
-	         * @function
-	         */
-	        off : function() {
-	            this.options.unmatch && this.options.unmatch();
-	        },
-
-	        /**
-	         * called when a handler is to be destroyed.
-	         * delegates to the destroy or unmatch callbacks, depending on availability.
-	         *
-	         * @function
-	         */
-	        destroy : function() {
-	            this.options.destroy ? this.options.destroy() : this.off();
-	        },
-
-	        /**
-	         * determines equality by reference.
-	         * if object is supplied compare options, if function, compare match callback
-	         *
-	         * @function
-	         * @param {object || function} [target] the target for comparison
-	         */
-	        equals : function(target) {
-	            return this.options === target || this.options.match === target;
-	        }
-
-	    };
-	    /**
-	     * Represents a single media query, manages it's state and registered handlers for this query
-	     *
-	     * @constructor
-	     * @param {string} query the media query string
-	     * @param {boolean} [isUnconditional=false] whether the media query should run regardless of whether the conditions are met. Primarily for helping older browsers deal with mobile-first design
-	     */
-	    function MediaQuery(query, isUnconditional) {
-	        this.query = query;
-	        this.isUnconditional = isUnconditional;
-	        this.handlers = [];
-	        this.mql = matchMedia(query);
-
-	        var self = this;
-	        this.listener = function(mql) {
-	            self.mql = mql;
-	            self.assess();
-	        };
-	        this.mql.addListener(this.listener);
-	    }
-	    MediaQuery.prototype = {
-
-	        /**
-	         * add a handler for this query, triggering if already active
-	         *
-	         * @param {object} handler
-	         * @param {function} handler.match callback for when query is activated
-	         * @param {function} [handler.unmatch] callback for when query is deactivated
-	         * @param {function} [handler.setup] callback for immediate execution when a query handler is registered
-	         * @param {boolean} [handler.deferSetup=false] should the setup callback be deferred until the first time the handler is matched?
-	         */
-	        addHandler : function(handler) {
-	            var qh = new QueryHandler(handler);
-	            this.handlers.push(qh);
-
-	            this.matches() && qh.on();
-	        },
-
-	        /**
-	         * removes the given handler from the collection, and calls it's destroy methods
-	         * 
-	         * @param {object || function} handler the handler to remove
-	         */
-	        removeHandler : function(handler) {
-	            var handlers = this.handlers;
-	            each(handlers, function(h, i) {
-	                if(h.equals(handler)) {
-	                    h.destroy();
-	                    return !handlers.splice(i,1); //remove from array and exit each early
-	                }
-	            });
-	        },
-
-	        /**
-	         * Determine whether the media query should be considered a match
-	         * 
-	         * @return {Boolean} true if media query can be considered a match, false otherwise
-	         */
-	        matches : function() {
-	            return this.mql.matches || this.isUnconditional;
-	        },
-
-	        /**
-	         * Clears all handlers and unbinds events
-	         */
-	        clear : function() {
-	            each(this.handlers, function(handler) {
-	                handler.destroy();
-	            });
-	            this.mql.removeListener(this.listener);
-	            this.handlers.length = 0; //clear array
-	        },
-
-	        /*
-	         * Assesses the query, turning on all handlers if it matches, turning them off if it doesn't match
-	         */
-	        assess : function() {
-	            var action = this.matches() ? 'on' : 'off';
-
-	            each(this.handlers, function(handler) {
-	                handler[action]();
-	            });
-	        }
-	    };
-	    /**
-	     * Allows for registration of query handlers.
-	     * Manages the query handler's state and is responsible for wiring up browser events
-	     *
-	     * @constructor
-	     */
-	    function MediaQueryDispatch () {
-	        if(!matchMedia) {
-	            throw new Error('matchMedia not present, legacy browsers require a polyfill');
-	        }
-
-	        this.queries = {};
-	        this.browserIsIncapable = !matchMedia('only all').matches;
-	    }
-
-	    MediaQueryDispatch.prototype = {
-
-	        /**
-	         * Registers a handler for the given media query
-	         *
-	         * @param {string} q the media query
-	         * @param {object || Array || Function} options either a single query handler object, a function, or an array of query handlers
-	         * @param {function} options.match fired when query matched
-	         * @param {function} [options.unmatch] fired when a query is no longer matched
-	         * @param {function} [options.setup] fired when handler first triggered
-	         * @param {boolean} [options.deferSetup=false] whether setup should be run immediately or deferred until query is first matched
-	         * @param {boolean} [shouldDegrade=false] whether this particular media query should always run on incapable browsers
-	         */
-	        register : function(q, options, shouldDegrade) {
-	            var queries         = this.queries,
-	                isUnconditional = shouldDegrade && this.browserIsIncapable;
-
-	            if(!queries[q]) {
-	                queries[q] = new MediaQuery(q, isUnconditional);
-	            }
-
-	            //normalise to object in an array
-	            if(isFunction(options)) {
-	                options = { match : options };
-	            }
-	            if(!isArray(options)) {
-	                options = [options];
-	            }
-	            each(options, function(handler) {
-	                queries[q].addHandler(handler);
-	            });
-
-	            return this;
-	        },
-
-	        /**
-	         * unregisters a query and all it's handlers, or a specific handler for a query
-	         *
-	         * @param {string} q the media query to target
-	         * @param {object || function} [handler] specific handler to unregister
-	         */
-	        unregister : function(q, handler) {
-	            var query = this.queries[q];
-
-	            if(query) {
-	                if(handler) {
-	                    query.removeHandler(handler);
-	                }
-	                else {
-	                    query.clear();
-	                    delete this.queries[q];
-	                }
-	            }
-
-	            return this;
-	        }
-	    };
-
-		return new MediaQueryDispatch();
-
-	}));
-
-/***/ },
-/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {//! moment.js
@@ -38684,7 +35828,7 @@
 	                module && module.exports) {
 	            try {
 	                oldLocale = globalLocale._abbr;
-	                __webpack_require__(262)("./" + name);
+	                __webpack_require__(241)("./" + name);
 	                // because defineLocale currently also sets the global locale, we
 	                // want to undo that for lazy loaded locales
 	                locale_locales__getSetGlobalLocale(oldLocale);
@@ -41116,10 +38260,10 @@
 	    return _moment;
 
 	}));
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(261)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(240)(module)))
 
 /***/ },
-/* 261 */
+/* 240 */
 /***/ function(module, exports) {
 
 	module.exports = function(module) {
@@ -41135,212 +38279,212 @@
 
 
 /***/ },
-/* 262 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./af": 263,
-		"./af.js": 263,
-		"./ar": 264,
-		"./ar-ma": 265,
-		"./ar-ma.js": 265,
-		"./ar-sa": 266,
-		"./ar-sa.js": 266,
-		"./ar-tn": 267,
-		"./ar-tn.js": 267,
-		"./ar.js": 264,
-		"./az": 268,
-		"./az.js": 268,
-		"./be": 269,
-		"./be.js": 269,
-		"./bg": 270,
-		"./bg.js": 270,
-		"./bn": 271,
-		"./bn.js": 271,
-		"./bo": 272,
-		"./bo.js": 272,
-		"./br": 273,
-		"./br.js": 273,
-		"./bs": 274,
-		"./bs.js": 274,
-		"./ca": 275,
-		"./ca.js": 275,
-		"./cs": 276,
-		"./cs.js": 276,
-		"./cv": 277,
-		"./cv.js": 277,
-		"./cy": 278,
-		"./cy.js": 278,
-		"./da": 279,
-		"./da.js": 279,
-		"./de": 280,
-		"./de-at": 281,
-		"./de-at.js": 281,
-		"./de.js": 280,
-		"./dv": 282,
-		"./dv.js": 282,
-		"./el": 283,
-		"./el.js": 283,
-		"./en-au": 284,
-		"./en-au.js": 284,
-		"./en-ca": 285,
-		"./en-ca.js": 285,
-		"./en-gb": 286,
-		"./en-gb.js": 286,
-		"./en-ie": 287,
-		"./en-ie.js": 287,
-		"./en-nz": 288,
-		"./en-nz.js": 288,
-		"./eo": 289,
-		"./eo.js": 289,
-		"./es": 290,
-		"./es-do": 291,
-		"./es-do.js": 291,
-		"./es.js": 290,
-		"./et": 292,
-		"./et.js": 292,
-		"./eu": 293,
-		"./eu.js": 293,
-		"./fa": 294,
-		"./fa.js": 294,
-		"./fi": 295,
-		"./fi.js": 295,
-		"./fo": 296,
-		"./fo.js": 296,
-		"./fr": 297,
-		"./fr-ca": 298,
-		"./fr-ca.js": 298,
-		"./fr-ch": 299,
-		"./fr-ch.js": 299,
-		"./fr.js": 297,
-		"./fy": 300,
-		"./fy.js": 300,
-		"./gd": 301,
-		"./gd.js": 301,
-		"./gl": 302,
-		"./gl.js": 302,
-		"./he": 303,
-		"./he.js": 303,
-		"./hi": 304,
-		"./hi.js": 304,
-		"./hr": 305,
-		"./hr.js": 305,
-		"./hu": 306,
-		"./hu.js": 306,
-		"./hy-am": 307,
-		"./hy-am.js": 307,
-		"./id": 308,
-		"./id.js": 308,
-		"./is": 309,
-		"./is.js": 309,
-		"./it": 310,
-		"./it.js": 310,
-		"./ja": 311,
-		"./ja.js": 311,
-		"./jv": 312,
-		"./jv.js": 312,
-		"./ka": 313,
-		"./ka.js": 313,
-		"./kk": 314,
-		"./kk.js": 314,
-		"./km": 315,
-		"./km.js": 315,
-		"./ko": 316,
-		"./ko.js": 316,
-		"./ky": 317,
-		"./ky.js": 317,
-		"./lb": 318,
-		"./lb.js": 318,
-		"./lo": 319,
-		"./lo.js": 319,
-		"./lt": 320,
-		"./lt.js": 320,
-		"./lv": 321,
-		"./lv.js": 321,
-		"./me": 322,
-		"./me.js": 322,
-		"./mk": 323,
-		"./mk.js": 323,
-		"./ml": 324,
-		"./ml.js": 324,
-		"./mr": 325,
-		"./mr.js": 325,
-		"./ms": 326,
-		"./ms-my": 327,
-		"./ms-my.js": 327,
-		"./ms.js": 326,
-		"./my": 328,
-		"./my.js": 328,
-		"./nb": 329,
-		"./nb.js": 329,
-		"./ne": 330,
-		"./ne.js": 330,
-		"./nl": 331,
-		"./nl.js": 331,
-		"./nn": 332,
-		"./nn.js": 332,
-		"./pa-in": 333,
-		"./pa-in.js": 333,
-		"./pl": 334,
-		"./pl.js": 334,
-		"./pt": 335,
-		"./pt-br": 336,
-		"./pt-br.js": 336,
-		"./pt.js": 335,
-		"./ro": 337,
-		"./ro.js": 337,
-		"./ru": 338,
-		"./ru.js": 338,
-		"./se": 339,
-		"./se.js": 339,
-		"./si": 340,
-		"./si.js": 340,
-		"./sk": 341,
-		"./sk.js": 341,
-		"./sl": 342,
-		"./sl.js": 342,
-		"./sq": 343,
-		"./sq.js": 343,
-		"./sr": 344,
-		"./sr-cyrl": 345,
-		"./sr-cyrl.js": 345,
-		"./sr.js": 344,
-		"./ss": 346,
-		"./ss.js": 346,
-		"./sv": 347,
-		"./sv.js": 347,
-		"./sw": 348,
-		"./sw.js": 348,
-		"./ta": 349,
-		"./ta.js": 349,
-		"./te": 350,
-		"./te.js": 350,
-		"./th": 351,
-		"./th.js": 351,
-		"./tl-ph": 352,
-		"./tl-ph.js": 352,
-		"./tlh": 353,
-		"./tlh.js": 353,
-		"./tr": 354,
-		"./tr.js": 354,
-		"./tzl": 355,
-		"./tzl.js": 355,
-		"./tzm": 356,
-		"./tzm-latn": 357,
-		"./tzm-latn.js": 357,
-		"./tzm.js": 356,
-		"./uk": 358,
-		"./uk.js": 358,
-		"./uz": 359,
-		"./uz.js": 359,
-		"./vi": 360,
-		"./vi.js": 360,
-		"./x-pseudo": 361,
-		"./x-pseudo.js": 361,
-		"./zh-cn": 362,
-		"./zh-cn.js": 362,
-		"./zh-tw": 363,
-		"./zh-tw.js": 363
+		"./af": 242,
+		"./af.js": 242,
+		"./ar": 243,
+		"./ar-ma": 244,
+		"./ar-ma.js": 244,
+		"./ar-sa": 245,
+		"./ar-sa.js": 245,
+		"./ar-tn": 246,
+		"./ar-tn.js": 246,
+		"./ar.js": 243,
+		"./az": 247,
+		"./az.js": 247,
+		"./be": 248,
+		"./be.js": 248,
+		"./bg": 249,
+		"./bg.js": 249,
+		"./bn": 250,
+		"./bn.js": 250,
+		"./bo": 251,
+		"./bo.js": 251,
+		"./br": 252,
+		"./br.js": 252,
+		"./bs": 253,
+		"./bs.js": 253,
+		"./ca": 254,
+		"./ca.js": 254,
+		"./cs": 255,
+		"./cs.js": 255,
+		"./cv": 256,
+		"./cv.js": 256,
+		"./cy": 257,
+		"./cy.js": 257,
+		"./da": 258,
+		"./da.js": 258,
+		"./de": 259,
+		"./de-at": 260,
+		"./de-at.js": 260,
+		"./de.js": 259,
+		"./dv": 261,
+		"./dv.js": 261,
+		"./el": 262,
+		"./el.js": 262,
+		"./en-au": 263,
+		"./en-au.js": 263,
+		"./en-ca": 264,
+		"./en-ca.js": 264,
+		"./en-gb": 265,
+		"./en-gb.js": 265,
+		"./en-ie": 266,
+		"./en-ie.js": 266,
+		"./en-nz": 267,
+		"./en-nz.js": 267,
+		"./eo": 268,
+		"./eo.js": 268,
+		"./es": 269,
+		"./es-do": 270,
+		"./es-do.js": 270,
+		"./es.js": 269,
+		"./et": 271,
+		"./et.js": 271,
+		"./eu": 272,
+		"./eu.js": 272,
+		"./fa": 273,
+		"./fa.js": 273,
+		"./fi": 274,
+		"./fi.js": 274,
+		"./fo": 275,
+		"./fo.js": 275,
+		"./fr": 276,
+		"./fr-ca": 277,
+		"./fr-ca.js": 277,
+		"./fr-ch": 278,
+		"./fr-ch.js": 278,
+		"./fr.js": 276,
+		"./fy": 279,
+		"./fy.js": 279,
+		"./gd": 280,
+		"./gd.js": 280,
+		"./gl": 281,
+		"./gl.js": 281,
+		"./he": 282,
+		"./he.js": 282,
+		"./hi": 283,
+		"./hi.js": 283,
+		"./hr": 284,
+		"./hr.js": 284,
+		"./hu": 285,
+		"./hu.js": 285,
+		"./hy-am": 286,
+		"./hy-am.js": 286,
+		"./id": 287,
+		"./id.js": 287,
+		"./is": 288,
+		"./is.js": 288,
+		"./it": 289,
+		"./it.js": 289,
+		"./ja": 290,
+		"./ja.js": 290,
+		"./jv": 291,
+		"./jv.js": 291,
+		"./ka": 292,
+		"./ka.js": 292,
+		"./kk": 293,
+		"./kk.js": 293,
+		"./km": 294,
+		"./km.js": 294,
+		"./ko": 295,
+		"./ko.js": 295,
+		"./ky": 296,
+		"./ky.js": 296,
+		"./lb": 297,
+		"./lb.js": 297,
+		"./lo": 298,
+		"./lo.js": 298,
+		"./lt": 299,
+		"./lt.js": 299,
+		"./lv": 300,
+		"./lv.js": 300,
+		"./me": 301,
+		"./me.js": 301,
+		"./mk": 302,
+		"./mk.js": 302,
+		"./ml": 303,
+		"./ml.js": 303,
+		"./mr": 304,
+		"./mr.js": 304,
+		"./ms": 305,
+		"./ms-my": 306,
+		"./ms-my.js": 306,
+		"./ms.js": 305,
+		"./my": 307,
+		"./my.js": 307,
+		"./nb": 308,
+		"./nb.js": 308,
+		"./ne": 309,
+		"./ne.js": 309,
+		"./nl": 310,
+		"./nl.js": 310,
+		"./nn": 311,
+		"./nn.js": 311,
+		"./pa-in": 312,
+		"./pa-in.js": 312,
+		"./pl": 313,
+		"./pl.js": 313,
+		"./pt": 314,
+		"./pt-br": 315,
+		"./pt-br.js": 315,
+		"./pt.js": 314,
+		"./ro": 316,
+		"./ro.js": 316,
+		"./ru": 317,
+		"./ru.js": 317,
+		"./se": 318,
+		"./se.js": 318,
+		"./si": 319,
+		"./si.js": 319,
+		"./sk": 320,
+		"./sk.js": 320,
+		"./sl": 321,
+		"./sl.js": 321,
+		"./sq": 322,
+		"./sq.js": 322,
+		"./sr": 323,
+		"./sr-cyrl": 324,
+		"./sr-cyrl.js": 324,
+		"./sr.js": 323,
+		"./ss": 325,
+		"./ss.js": 325,
+		"./sv": 326,
+		"./sv.js": 326,
+		"./sw": 327,
+		"./sw.js": 327,
+		"./ta": 328,
+		"./ta.js": 328,
+		"./te": 329,
+		"./te.js": 329,
+		"./th": 330,
+		"./th.js": 330,
+		"./tl-ph": 331,
+		"./tl-ph.js": 331,
+		"./tlh": 332,
+		"./tlh.js": 332,
+		"./tr": 333,
+		"./tr.js": 333,
+		"./tzl": 334,
+		"./tzl.js": 334,
+		"./tzm": 335,
+		"./tzm-latn": 336,
+		"./tzm-latn.js": 336,
+		"./tzm.js": 335,
+		"./uk": 337,
+		"./uk.js": 337,
+		"./uz": 338,
+		"./uz.js": 338,
+		"./vi": 339,
+		"./vi.js": 339,
+		"./x-pseudo": 340,
+		"./x-pseudo.js": 340,
+		"./zh-cn": 341,
+		"./zh-cn.js": 341,
+		"./zh-tw": 342,
+		"./zh-tw.js": 342
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -41353,11 +38497,11 @@
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 262;
+	webpackContext.id = 241;
 
 
 /***/ },
-/* 263 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -41365,7 +38509,7 @@
 	//! author : Werner Mollentze : https://github.com/wernerm
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -41434,7 +38578,7 @@
 	}));
 
 /***/ },
-/* 264 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -41444,7 +38588,7 @@
 	//! Native plural forms: forabi https://github.com/forabi
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -41575,7 +38719,7 @@
 	}));
 
 /***/ },
-/* 265 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -41584,7 +38728,7 @@
 	//! author : Abdel Said : https://github.com/abdelsaid
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -41639,7 +38783,7 @@
 	}));
 
 /***/ },
-/* 266 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -41647,7 +38791,7 @@
 	//! author : Suhail Alkowaileet : https://github.com/xsoh
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -41747,14 +38891,14 @@
 	}));
 
 /***/ },
-/* 267 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
 	//! locale  :  Arabic (Tunisia) [ar-tn]
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -41809,7 +38953,7 @@
 	}));
 
 /***/ },
-/* 268 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -41817,7 +38961,7 @@
 	//! author : topchiyev : https://github.com/topchiyev
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -41918,7 +39062,7 @@
 	}));
 
 /***/ },
-/* 269 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -41928,7 +39072,7 @@
 	//! Author : Menelion Elensúle : https://github.com/Oire
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -42056,7 +39200,7 @@
 	}));
 
 /***/ },
-/* 270 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -42064,7 +39208,7 @@
 	//! author : Krasen Borisov : https://github.com/kraz
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -42150,7 +39294,7 @@
 	}));
 
 /***/ },
-/* 271 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -42158,7 +39302,7 @@
 	//! author : Kaushik Gandhi : https://github.com/kaushikgandhi
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -42273,7 +39417,7 @@
 	}));
 
 /***/ },
-/* 272 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -42281,7 +39425,7 @@
 	//! author : Thupten N. Chakrishar : https://github.com/vajradog
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -42396,7 +39540,7 @@
 	}));
 
 /***/ },
-/* 273 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -42404,7 +39548,7 @@
 	//! author : Jean-Baptiste Le Duigou : https://github.com/jbleduigou
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -42508,7 +39652,7 @@
 	}));
 
 /***/ },
-/* 274 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -42517,7 +39661,7 @@
 	//! based on (hr) translation by Bojan Marković
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -42655,7 +39799,7 @@
 	}));
 
 /***/ },
-/* 275 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -42663,7 +39807,7 @@
 	//! author : Juan G. Hurtado : https://github.com/juanghurtado
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -42740,7 +39884,7 @@
 	}));
 
 /***/ },
-/* 276 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -42748,7 +39892,7 @@
 	//! author : petrbela : https://github.com/petrbela
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -42916,7 +40060,7 @@
 	}));
 
 /***/ },
-/* 277 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -42924,7 +40068,7 @@
 	//! author : Anatoly Mironov : https://github.com/mirontoli
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -42983,7 +40127,7 @@
 	}));
 
 /***/ },
-/* 278 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -42991,7 +40135,7 @@
 	//! author : Robert Allen
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43067,7 +40211,7 @@
 	}));
 
 /***/ },
-/* 279 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -43075,7 +40219,7 @@
 	//! author : Ulrik Nielsen : https://github.com/mrbase
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43131,7 +40275,7 @@
 	}));
 
 /***/ },
-/* 280 */
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -43141,7 +40285,7 @@
 	//! author : Mikolaj Dadela : https://github.com/mik01aj
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43213,7 +40357,7 @@
 	}));
 
 /***/ },
-/* 281 */
+/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -43224,7 +40368,7 @@
 	//! author : Mikolaj Dadela : https://github.com/mik01aj
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43296,7 +40440,7 @@
 	}));
 
 /***/ },
-/* 282 */
+/* 261 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -43304,7 +40448,7 @@
 	//! author : Jawish Hameed : https://github.com/jawish
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43399,7 +40543,7 @@
 	}));
 
 /***/ },
-/* 283 */
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -43407,7 +40551,7 @@
 	//! author : Aggelos Karalias : https://github.com/mehiel
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43501,14 +40645,14 @@
 	}));
 
 /***/ },
-/* 284 */
+/* 263 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
 	//! locale : English (Australia) [en-au]
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43571,7 +40715,7 @@
 	}));
 
 /***/ },
-/* 285 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -43579,7 +40723,7 @@
 	//! author : Jonathan Abourbih : https://github.com/jonbca
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43638,7 +40782,7 @@
 	}));
 
 /***/ },
-/* 286 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -43646,7 +40790,7 @@
 	//! author : Chris Gedrim : https://github.com/chrisgedrim
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43709,7 +40853,7 @@
 	}));
 
 /***/ },
-/* 287 */
+/* 266 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -43717,7 +40861,7 @@
 	//! author : Chris Cartlidge : https://github.com/chriscartlidge
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43780,14 +40924,14 @@
 	}));
 
 /***/ },
-/* 288 */
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
 	//! locale : English (New Zealand) [en-nz]
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43850,7 +40994,7 @@
 	}));
 
 /***/ },
-/* 289 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -43860,7 +41004,7 @@
 	//!          Se ne, bonvolu korekti kaj avizi min por ke mi povas lerni!
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -43927,7 +41071,7 @@
 	}));
 
 /***/ },
-/* 290 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -43935,7 +41079,7 @@
 	//! author : Julio Napurí : https://github.com/julionc
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44012,14 +41156,14 @@
 	}));
 
 /***/ },
-/* 291 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
 	//! locale : Spanish (Dominican Republic) [es-do]
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44096,7 +41240,7 @@
 	}));
 
 /***/ },
-/* 292 */
+/* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44105,7 +41249,7 @@
 	//! improvements : Illimar Tambek : https://github.com/ragulka
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44180,7 +41324,7 @@
 	}));
 
 /***/ },
-/* 293 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44188,7 +41332,7 @@
 	//! author : Eneko Illarramendi : https://github.com/eillarra
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44250,7 +41394,7 @@
 	}));
 
 /***/ },
-/* 294 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44258,7 +41402,7 @@
 	//! author : Ebrahim Byagowi : https://github.com/ebraminio
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44360,7 +41504,7 @@
 	}));
 
 /***/ },
-/* 295 */
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44368,7 +41512,7 @@
 	//! author : Tarmo Aidantausta : https://github.com/bleadof
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44471,7 +41615,7 @@
 	}));
 
 /***/ },
-/* 296 */
+/* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44479,7 +41623,7 @@
 	//! author : Ragnar Johannesen : https://github.com/ragnar123
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44535,7 +41679,7 @@
 	}));
 
 /***/ },
-/* 297 */
+/* 276 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44543,7 +41687,7 @@
 	//! author : John Fischer : https://github.com/jfroffice
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44603,7 +41747,7 @@
 	}));
 
 /***/ },
-/* 298 */
+/* 277 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44611,7 +41755,7 @@
 	//! author : Jonathan Abourbih : https://github.com/jonbca
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44667,7 +41811,7 @@
 	}));
 
 /***/ },
-/* 299 */
+/* 278 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44675,7 +41819,7 @@
 	//! author : Gaspard Bucher : https://github.com/gaspard
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44735,7 +41879,7 @@
 	}));
 
 /***/ },
-/* 300 */
+/* 279 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44743,7 +41887,7 @@
 	//! author : Robin van der Vliet : https://github.com/robin0van0der0v
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44812,7 +41956,7 @@
 	}));
 
 /***/ },
-/* 301 */
+/* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44820,7 +41964,7 @@
 	//! author : Jon Ashdown : https://github.com/jonashdown
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44892,7 +42036,7 @@
 	}));
 
 /***/ },
-/* 302 */
+/* 281 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44900,7 +42044,7 @@
 	//! author : Juan G. Hurtado : https://github.com/juanghurtado
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -44973,7 +42117,7 @@
 	}));
 
 /***/ },
-/* 303 */
+/* 282 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -44983,7 +42127,7 @@
 	//! author : Tal Ater : https://github.com/TalAter
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45076,7 +42220,7 @@
 	}));
 
 /***/ },
-/* 304 */
+/* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45084,7 +42228,7 @@
 	//! author : Mayank Singhal : https://github.com/mayanksinghal
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45204,7 +42348,7 @@
 	}));
 
 /***/ },
-/* 305 */
+/* 284 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45212,7 +42356,7 @@
 	//! author : Bojan Marković : https://github.com/bmarkovic
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45353,7 +42497,7 @@
 	}));
 
 /***/ },
-/* 306 */
+/* 285 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45361,7 +42505,7 @@
 	//! author : Adam Brunner : https://github.com/adambrunner
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45466,7 +42610,7 @@
 	}));
 
 /***/ },
-/* 307 */
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45474,7 +42618,7 @@
 	//! author : Armendarabyan : https://github.com/armendarabyan
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45565,7 +42709,7 @@
 	}));
 
 /***/ },
-/* 308 */
+/* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45574,7 +42718,7 @@
 	//! reference: http://id.wikisource.org/wiki/Pedoman_Umum_Ejaan_Bahasa_Indonesia_yang_Disempurnakan
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45652,7 +42796,7 @@
 	}));
 
 /***/ },
-/* 309 */
+/* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45660,7 +42804,7 @@
 	//! author : Hinrik Örn Sigurðsson : https://github.com/hinrik
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45783,7 +42927,7 @@
 	}));
 
 /***/ },
-/* 310 */
+/* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45792,7 +42936,7 @@
 	//! author: Mattia Larentis: https://github.com/nostalgiaz
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45857,7 +43001,7 @@
 	}));
 
 /***/ },
-/* 311 */
+/* 290 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45865,7 +43009,7 @@
 	//! author : LI Long : https://github.com/baryon
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -45937,7 +43081,7 @@
 	}));
 
 /***/ },
-/* 312 */
+/* 291 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -45946,7 +43090,7 @@
 	//! reference: http://jv.wikipedia.org/wiki/Basa_Jawa
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46024,7 +43168,7 @@
 	}));
 
 /***/ },
-/* 313 */
+/* 292 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46032,7 +43176,7 @@
 	//! author : Irakli Janiashvili : https://github.com/irakli-janiashvili
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46117,7 +43261,7 @@
 	}));
 
 /***/ },
-/* 314 */
+/* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46125,7 +43269,7 @@
 	//! authors : Nurlan Rakhimzhanov : https://github.com/nurlan
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46208,7 +43352,7 @@
 	}));
 
 /***/ },
-/* 315 */
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46216,7 +43360,7 @@
 	//! author : Kruy Vanna : https://github.com/kruyvanna
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46270,7 +43414,7 @@
 	}));
 
 /***/ },
-/* 316 */
+/* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46282,7 +43426,7 @@
 	//! - Jeeeyul Lee <jeeeyul@gmail.com>
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46342,7 +43486,7 @@
 	}));
 
 /***/ },
-/* 317 */
+/* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46350,7 +43494,7 @@
 	//! author : Chyngyz Arystan uulu : https://github.com/chyngyz
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46434,7 +43578,7 @@
 	}));
 
 /***/ },
-/* 318 */
+/* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46442,7 +43586,7 @@
 	//! author : mweimerskirch : https://github.com/mweimerskirch, David Raison : https://github.com/kwisatz
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46574,7 +43718,7 @@
 	}));
 
 /***/ },
-/* 319 */
+/* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46582,7 +43726,7 @@
 	//! author : Ryan Hart : https://github.com/ryanhart2
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46648,7 +43792,7 @@
 	}));
 
 /***/ },
-/* 320 */
+/* 299 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46656,7 +43800,7 @@
 	//! author : Mindaugas Mozūras : https://github.com/mmozuras
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46769,7 +43913,7 @@
 	}));
 
 /***/ },
-/* 321 */
+/* 300 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46778,7 +43922,7 @@
 	//! author : Jānis Elmeris : https://github.com/JanisE
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46870,7 +44014,7 @@
 	}));
 
 /***/ },
-/* 322 */
+/* 301 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46878,7 +44022,7 @@
 	//! author : Miodrag Nikač <miodrag@restartit.me> : https://github.com/miodragnikac
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -46985,7 +44129,7 @@
 	}));
 
 /***/ },
-/* 323 */
+/* 302 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -46993,7 +44137,7 @@
 	//! author : Borislav Mickov : https://github.com/B0k0
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47079,7 +44223,7 @@
 	}));
 
 /***/ },
-/* 324 */
+/* 303 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47087,7 +44231,7 @@
 	//! author : Floyd Pink : https://github.com/floydpink
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47164,7 +44308,7 @@
 	}));
 
 /***/ },
-/* 325 */
+/* 304 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47173,7 +44317,7 @@
 	//! author : Vivek Athalye : https://github.com/vnathalye
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47327,7 +44471,7 @@
 	}));
 
 /***/ },
-/* 326 */
+/* 305 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47335,7 +44479,7 @@
 	//! author : Weldan Jamili : https://github.com/weldan
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47413,7 +44557,7 @@
 	}));
 
 /***/ },
-/* 327 */
+/* 306 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47422,7 +44566,7 @@
 	//! author : Weldan Jamili : https://github.com/weldan
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47500,7 +44644,7 @@
 	}));
 
 /***/ },
-/* 328 */
+/* 307 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47508,7 +44652,7 @@
 	//! author : Squar team, mysquar.com
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47597,7 +44741,7 @@
 	}));
 
 /***/ },
-/* 329 */
+/* 308 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47606,7 +44750,7 @@
 	//!           Sigurd Gartmann : https://github.com/sigurdga
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47664,7 +44808,7 @@
 	}));
 
 /***/ },
-/* 330 */
+/* 309 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47672,7 +44816,7 @@
 	//! author : suvash : https://github.com/suvash
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47791,7 +44935,7 @@
 	}));
 
 /***/ },
-/* 331 */
+/* 310 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47799,7 +44943,7 @@
 	//! author : Joris Röling : https://github.com/jjupiter
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47868,7 +45012,7 @@
 	}));
 
 /***/ },
-/* 332 */
+/* 311 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47876,7 +45020,7 @@
 	//! author : https://github.com/mechuwind
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -47932,7 +45076,7 @@
 	}));
 
 /***/ },
-/* 333 */
+/* 312 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -47940,7 +45084,7 @@
 	//! author : Harpreet Singh : https://github.com/harpreetkhalsagtbit
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48060,7 +45204,7 @@
 	}));
 
 /***/ },
-/* 334 */
+/* 313 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48068,7 +45212,7 @@
 	//! author : Rafal Hirsz : https://github.com/evoL
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48169,7 +45313,7 @@
 	}));
 
 /***/ },
-/* 335 */
+/* 314 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48177,7 +45321,7 @@
 	//! author : Jefferson : https://github.com/jalex79
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48238,7 +45382,7 @@
 	}));
 
 /***/ },
-/* 336 */
+/* 315 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48246,7 +45390,7 @@
 	//! author : Caio Ribeiro Pereira : https://github.com/caio-ribeiro-pereira
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48303,7 +45447,7 @@
 	}));
 
 /***/ },
-/* 337 */
+/* 316 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48312,7 +45456,7 @@
 	//! author : Valentin Agachi : https://github.com/avaly
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48382,7 +45526,7 @@
 	}));
 
 /***/ },
-/* 338 */
+/* 317 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48392,7 +45536,7 @@
 	//! author : Коренберг Марк : https://github.com/socketpair
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48569,7 +45713,7 @@
 	}));
 
 /***/ },
-/* 339 */
+/* 318 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48577,7 +45721,7 @@
 	//! authors : Bård Rolstad Henriksen : https://github.com/karamell
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48634,7 +45778,7 @@
 	}));
 
 /***/ },
-/* 340 */
+/* 319 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48642,7 +45786,7 @@
 	//! author : Sampath Sitinamaluwa : https://github.com/sampathsris
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48709,7 +45853,7 @@
 	}));
 
 /***/ },
-/* 341 */
+/* 320 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48718,7 +45862,7 @@
 	//! based on work of petrbela : https://github.com/petrbela
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -48863,7 +46007,7 @@
 	}));
 
 /***/ },
-/* 342 */
+/* 321 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -48871,7 +46015,7 @@
 	//! author : Robert Sedovšek : https://github.com/sedovsek
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49029,7 +46173,7 @@
 	}));
 
 /***/ },
-/* 343 */
+/* 322 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49039,7 +46183,7 @@
 	//! author : Oerd Cukalla : https://github.com/oerd (fixes)
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49103,7 +46247,7 @@
 	}));
 
 /***/ },
-/* 344 */
+/* 323 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49111,7 +46255,7 @@
 	//! author : Milan Janačković<milanjanackovic@gmail.com> : https://github.com/milan-j
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49217,7 +46361,7 @@
 	}));
 
 /***/ },
-/* 345 */
+/* 324 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49225,7 +46369,7 @@
 	//! author : Milan Janačković<milanjanackovic@gmail.com> : https://github.com/milan-j
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49331,7 +46475,7 @@
 	}));
 
 /***/ },
-/* 346 */
+/* 325 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49339,7 +46483,7 @@
 	//! author : Nicolai Davies<mail@nicolai.io> : https://github.com/nicolaidavies
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49424,7 +46568,7 @@
 	}));
 
 /***/ },
-/* 347 */
+/* 326 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49432,7 +46576,7 @@
 	//! author : Jens Alm : https://github.com/ulmus
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49497,7 +46641,7 @@
 	}));
 
 /***/ },
-/* 348 */
+/* 327 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49505,7 +46649,7 @@
 	//! author : Fahad Kassim : https://github.com/fadsel
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49560,7 +46704,7 @@
 	}));
 
 /***/ },
-/* 349 */
+/* 328 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49568,7 +46712,7 @@
 	//! author : Arjunkumar Krishnamoorthy : https://github.com/tk120404
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49693,7 +46837,7 @@
 	}));
 
 /***/ },
-/* 350 */
+/* 329 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49701,7 +46845,7 @@
 	//! author : Krishna Chaitanya Thota : https://github.com/kcthota
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49786,7 +46930,7 @@
 	}));
 
 /***/ },
-/* 351 */
+/* 330 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49794,7 +46938,7 @@
 	//! author : Kridsada Thanabulpong : https://github.com/sirn
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49857,7 +47001,7 @@
 	}));
 
 /***/ },
-/* 352 */
+/* 331 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49865,7 +47009,7 @@
 	//! author : Dan Hagman
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -49923,7 +47067,7 @@
 	}));
 
 /***/ },
-/* 353 */
+/* 332 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -49931,7 +47075,7 @@
 	//! author : Dominika Kruk : https://github.com/amaranthrose
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50047,7 +47191,7 @@
 	}));
 
 /***/ },
-/* 354 */
+/* 333 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50056,7 +47200,7 @@
 	//!           Burak Yiğit Kaya: https://github.com/BYK
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50141,7 +47285,7 @@
 	}));
 
 /***/ },
-/* 355 */
+/* 334 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50149,7 +47293,7 @@
 	//! author : Robin van der Vliet : https://github.com/robin0van0der0v with the help of Iustì Canun
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50236,7 +47380,7 @@
 	}));
 
 /***/ },
-/* 356 */
+/* 335 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50244,7 +47388,7 @@
 	//! author : Abdel Said : https://github.com/abdelsaid
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50298,7 +47442,7 @@
 	}));
 
 /***/ },
-/* 357 */
+/* 336 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50306,7 +47450,7 @@
 	//! author : Abdel Said : https://github.com/abdelsaid
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50360,7 +47504,7 @@
 	}));
 
 /***/ },
-/* 358 */
+/* 337 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50369,7 +47513,7 @@
 	//! Author : Menelion Elensúle : https://github.com/Oire
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50510,7 +47654,7 @@
 	}));
 
 /***/ },
-/* 359 */
+/* 338 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50518,7 +47662,7 @@
 	//! author : Sardor Muminov : https://github.com/muminoff
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50572,7 +47716,7 @@
 	}));
 
 /***/ },
-/* 360 */
+/* 339 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50580,7 +47724,7 @@
 	//! author : Bang Nguyen : https://github.com/bangnk
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50655,7 +47799,7 @@
 	}));
 
 /***/ },
-/* 361 */
+/* 340 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50663,7 +47807,7 @@
 	//! author : Andrew Hood : https://github.com/andrewhood125
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50727,7 +47871,7 @@
 	}));
 
 /***/ },
-/* 362 */
+/* 341 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50736,7 +47880,7 @@
 	//! author : Zeno Zeng : https://github.com/zenozeng
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50858,7 +48002,7 @@
 	}));
 
 /***/ },
-/* 363 */
+/* 342 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -50867,7 +48011,7 @@
 	//! author : Chris Lam : https://github.com/hehachris
 
 	;(function (global, factory) {
-	    true ? factory(__webpack_require__(260)) :
+	    true ? factory(__webpack_require__(239)) :
 	   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -50966,6 +48110,2866 @@
 	}));
 
 /***/ },
+/* 343 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(344);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(237)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/autoprefixer-loader/index.js?{browsers:[\"last 2 version\", \"Explorer > 8\"]}!./../../../node_modules/sass-loader/index.js!./header.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/autoprefixer-loader/index.js?{browsers:[\"last 2 version\", \"Explorer > 8\"]}!./../../../node_modules/sass-loader/index.js!./header.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 344 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(236)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".header {\n  height: 140px;\n  border: 1px solid #333;\n  padding: 0 4%;\n  background: #30353a; }\n  .header .logo-and-icon, .header .date-and-time {\n    float: left;\n    width: 50%;\n    height: 140px; }\n  .header .logo-span {\n    display: block;\n    margin-top: 22%;\n    border-right: 1px solid #CCC; }\n  .header .date-and-time {\n    text-align: right; }\n  .header .logo {\n    width: 160px;\n    display: inline-block; }\n    .header .logo span {\n      display: block;\n      padding-left: 14%; }\n  .header .icon {\n    width: 200px;\n    display: inline-block; }\n    .header .icon span {\n      margin-left: 10%; }\n  .header .date {\n    display: inline-block;\n    font-size: 30px;\n    width: 35%; }\n    .header .date span {\n      display: block;\n      margin-top: 40px;\n      padding-right: 10%;\n      border-right: 1px solid #CCC; }\n  .header .time {\n    display: inline-block;\n    font-size: 30px;\n    width: 25%; }\n    .header .time span {\n      display: block;\n      padding-left: 14%;\n      text-align: left; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 345 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+		value: true
+	});
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) arr2[i] = arr[i]; return arr2; } else { return Array.from(arr); } }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(158);
+
+	var _reactSlick = __webpack_require__(346);
+
+	var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+	var _jquery = __webpack_require__(202);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	var _moment = __webpack_require__(239);
+
+	var _moment2 = _interopRequireDefault(_moment);
+
+	//scss
+
+	__webpack_require__(364);
+
+	var Nav = (function (_React$Component) {
+		_inherits(Nav, _React$Component);
+
+		function Nav(props) {
+			_classCallCheck(this, Nav);
+
+			_get(Object.getPrototypeOf(Nav.prototype), 'constructor', this).call(this, props);
+
+			this.state = {
+				giver: {
+					avatar: null,
+					name: null
+				},
+				receiver: {
+					eCardUrl: null,
+					avatar: null,
+					name: null,
+					tagline: null,
+					time: null,
+					message: null
+				},
+				products: null
+			};
+		}
+
+		/*
+	  *
+	  *   2. Right Slider
+	  *
+	  *   List view of the Recoginition
+	  *
+	  */
+
+		_createClass(Nav, [{
+			key: 'componentWillReceiveProps',
+			value: function componentWillReceiveProps(nextProps) {
+				var items = nextProps.products || [];
+				if (items.length) {
+					this.updateStateAsWhenNeeded(items[0], items);
+				}
+			}
+		}, {
+			key: 'updateStateAsWhenNeeded',
+			value: function updateStateAsWhenNeeded(item, products) {
+				this.setState({
+					"giver": {
+						"name": item.giver.firstName + " " + item.giver.lastName,
+						"avatar": item.giver.avatarUrl
+					},
+					"receiver": {
+						"eCardUrl": item.eCardUrl,
+						"name": item.recievers[0].firstName + " " + item.recievers[0].lastName,
+						"avatar": item.recievers[0].avatarUrl,
+						"tagline": null,
+						"time": item.recognitionDate,
+						"message": item.comments
+					},
+					"products": products
+				});
+			}
+		}, {
+			key: 'updateLeftSlider',
+			value: function updateLeftSlider(props, products) {
+				this.updateStateAsWhenNeeded(props, products);
+			}
+		}, {
+			key: 'render',
+			value: function render() {
+				var _state = this.state;
+				var giver = _state.giver;
+				var receiver = _state.receiver;
+				var products = _state.products;
+
+				return _react2['default'].createElement(
+					'div',
+					{ className: 'content' },
+					_react2['default'].createElement(
+						'div',
+						{ className: 'content-left' },
+						this.state.products && this.state.products.length && _react2['default'].createElement(
+							'div',
+							null,
+							_react2['default'].createElement(ReactLeftSlickDemo, { item: this.state.products })
+						)
+					),
+					_react2['default'].createElement(
+						'div',
+						{ className: 'content-right' },
+						_react2['default'].createElement(
+							'div',
+							{ className: 'recognized-items' },
+							this.state.products && this.state.products.length && _react2['default'].createElement(ReactSlickDemo, { products: this.state.products, updateLeftSlider: this.updateLeftSlider.bind(this) })
+						)
+					)
+				);
+			}
+		}]);
+
+		return Nav;
+	})(_react2['default'].Component);
+
+	var RecognitionHeader = (function (_React$Component2) {
+		_inherits(RecognitionHeader, _React$Component2);
+
+		function RecognitionHeader(props) {
+			_classCallCheck(this, RecognitionHeader);
+
+			_get(Object.getPrototypeOf(RecognitionHeader.prototype), 'constructor', this).call(this, props);
+			this.state = {
+				"header": {
+					"image": {
+						"transform": "translate3d(0, " + 0 + "px,  0 )"
+					}
+				}
+
+			};
+		}
+
+		/*
+	  *
+	  *   2. Right Slider
+	  *
+	  *   List view of the Recoginition
+	  *
+	  */
+
+		_createClass(RecognitionHeader, [{
+			key: 'componentWillReceiveProps',
+			value: function componentWillReceiveProps(nextState, nextProps) {}
+		}, {
+			key: 'render',
+			value: function render() {
+				var _props$item = this.props.item;
+				var avatar = _props$item.avatar;
+				var name = _props$item.name;
+				var tagline = _props$item.tagline;
+				var time = _props$item.time;
+				var eCardUrl = _props$item.eCardUrl;
+
+				var recImage = "recognitionby-image ";
+				var recTagline = "recognitionby-tagline";
+				var recName = "recognitionby-username";
+				var recTime = "time-standard";
+
+				return _react2['default'].createElement(
+					'div',
+					{ className: 'content-header' },
+					this.props.item.firstName ? _react2['default'].createElement(
+						'div',
+						null,
+						_react2['default'].createElement(
+							'div',
+							{ className: recImage },
+							_react2['default'].createElement('img', { src: this.props.item.avatarUrl })
+						),
+						_react2['default'].createElement(
+							'div',
+							{ className: 'recognitionby-username-tagline' },
+							_react2['default'].createElement(
+								'p',
+								{ className: recName },
+								this.props.item.firstName + " " + this.props.item.lastName
+							),
+							_react2['default'].createElement(
+								'p',
+								{ className: recTagline },
+								this.props.tagline.text
+							)
+						),
+						_react2['default'].createElement(
+							'div',
+							{ className: 'recognitionby-time', ref: 'time' },
+							_react2['default'].createElement(
+								'p',
+								{ className: recTime },
+								' ',
+								(0, _moment2['default'])(this.props.dateSentBy).startOf('hour').fromNow(),
+								' '
+							)
+						)
+					) : _react2['default'].createElement(
+						'span',
+						null,
+						'No Results'
+					)
+				);
+			}
+		}]);
+
+		return RecognitionHeader;
+	})(_react2['default'].Component);
+
+	var RecognitionHeartContent = (function (_React$Component3) {
+		_inherits(RecognitionHeartContent, _React$Component3);
+
+		function RecognitionHeartContent(props) {
+			_classCallCheck(this, RecognitionHeartContent);
+
+			_get(Object.getPrototypeOf(RecognitionHeartContent.prototype), 'constructor', this).call(this, props);
+
+			this.state = {
+				avatar: props.avatar || null,
+				recogninized: {
+					'transform': "translate3d(0, " + 0 + "px,  0 )"
+				}
+			};
+		}
+
+		/*
+	  *
+	  *   2. Right Slider
+	  *
+	  *   List view of the Recoginition
+	  *
+	  */
+
+		_createClass(RecognitionHeartContent, [{
+			key: 'componentWillReceiveProps',
+			value: function componentWillReceiveProps(nextState, nextProps) {}
+		}, {
+			key: 'render',
+			value: function render() {
+				var _props$item2 = this.props.item;
+				var comments = _props$item2.comments;
+				var eCardUrl = _props$item2.eCardUrl;
+
+				return _react2['default'].createElement(
+					'div',
+					{ className: 'content-main' },
+					this.props.item.comments ? _react2['default'].createElement(
+						'div',
+						{ className: 'recognized-message-content' },
+						_react2['default'].createElement('img', { src: this.props.item.eCardUrl }),
+						_react2['default'].createElement(
+							'p',
+							{ className: 'recogninized-text' },
+							_react2['default'].createElement('span', { dangerouslySetInnerHTML: { __html: this.props.item.comments } })
+						)
+					) : _react2['default'].createElement(
+						'span',
+						null,
+						'No Results'
+					)
+				);
+			}
+		}]);
+
+		return RecognitionHeartContent;
+	})(_react2['default'].Component);
+
+	var RecognitionFooter = (function (_React$Component4) {
+		_inherits(RecognitionFooter, _React$Component4);
+
+		function RecognitionFooter(props) {
+			_classCallCheck(this, RecognitionFooter);
+
+			_get(Object.getPrototypeOf(RecognitionFooter.prototype), 'constructor', this).call(this, props);
+
+			this.state = {
+				avatar: props.avatar || null,
+				giver: {
+					'transform': "translate3d(0, " + 0 + "px,  0 )"
+				}
+			};
+		}
+
+		/*
+	  *
+	  *   2. Right Slider
+	  *
+	  *   List view of the Recoginition
+	  *
+	  */
+
+		_createClass(RecognitionFooter, [{
+			key: 'componentWillReceiveProps',
+			value: function componentWillReceiveProps(nextState, nextProps) {}
+		}, {
+			key: 'render',
+			value: function render() {
+				var _props$item3 = this.props.item;
+				var name = _props$item3.name;
+				var avatar = _props$item3.avatar;
+
+				return _react2['default'].createElement(
+					'div',
+					{ className: 'content-footer' },
+					this.props.item.firstName ? _react2['default'].createElement(
+						'div',
+						{ className: 'recognized-by' },
+						_react2['default'].createElement(
+							'div',
+							{ className: 'recognized-sentby' },
+							_react2['default'].createElement(
+								'p',
+								null,
+								' sent by',
+								_react2['default'].createElement(
+									'span',
+									null,
+									' ',
+									this.props.item.firstName + " " + this.props.item.lastName,
+									' '
+								)
+							)
+						),
+						_react2['default'].createElement(
+							'div',
+							{ className: 'recognizedby-image' },
+							_react2['default'].createElement('img', { src: this.props.item.avatarUrl })
+						)
+					) : null
+				);
+			}
+		}]);
+
+		return RecognitionFooter;
+	})(_react2['default'].Component);
+
+	var RecoginitionList = (function (_React$Component5) {
+		_inherits(RecoginitionList, _React$Component5);
+
+		function RecoginitionList() {
+			_classCallCheck(this, RecoginitionList);
+
+			_get(Object.getPrototypeOf(RecoginitionList.prototype), 'constructor', this).apply(this, arguments);
+		}
+
+		/*
+	  *
+	  *   3. Right Slider Recoginition Name
+	  *
+	  *   List view of the Recoginition
+	  *
+	  */
+
+		_createClass(RecoginitionList, [{
+			key: 'render',
+			value: function render() {
+				var _props$item4 = this.props.item;
+				var comments = _props$item4.comments;
+				var eCardUrl = _props$item4.eCardUrl;
+				var giver = _props$item4.giver;
+				var recievers = _props$item4.recievers;
+				var recognitionDate = _props$item4.recognitionDate;
+				var promotionName = _props$item4.promotionName;
+				var promotionType = _props$item4.promotionType;
+
+				return _react2['default'].createElement(
+					'li',
+					{ className: 'recognized-list', onSelect: this.props.updateSlides, onClick: this.props.updateSlides.bind(this, this.props.item) },
+					_react2['default'].createElement(
+						'a',
+						{ href: '#', className: 'recognized-list-info' },
+						recievers && recievers.length && _react2['default'].createElement(RecoginitionName, { names: recievers })
+					)
+				);
+			}
+		}]);
+
+		return RecoginitionList;
+	})(_react2['default'].Component);
+
+	var RecoginitionName = (function (_React$Component6) {
+		_inherits(RecoginitionName, _React$Component6);
+
+		function RecoginitionName() {
+			_classCallCheck(this, RecoginitionName);
+
+			_get(Object.getPrototypeOf(RecoginitionName.prototype), 'constructor', this).apply(this, arguments);
+		}
+
+		/*
+	  *
+	  *   4. Right Slider Recoginition List
+	  *
+	  *   
+	  *
+	  */
+
+		_createClass(RecoginitionName, [{
+			key: 'modifyName',
+			value: function modifyName(names) {
+				var modifiedNames = [];
+				if (names.length) {
+					names.map(function (name, i) {
+						modifiedNames = [].concat(_toConsumableArray(modifiedNames), [name.firstName + " " + name.lastName]);
+					});
+					modifiedNames.join(", ");
+				}
+				return modifiedNames;
+			}
+		}, {
+			key: 'receiverImage',
+			value: function receiverImage() {
+				if (this.props.names.length > 1) {
+					return this.props.names.length;
+				} else {
+					return this.props.names[0].avatarUrl;
+				}
+			}
+		}, {
+			key: 'render',
+			value: function render() {
+				var names = this.props.names;
+
+				return _react2['default'].createElement(
+					'div',
+					null,
+					_react2['default'].createElement(
+						'span',
+						{ className: 'recognized-list-image' },
+						names && names.length > 1 ? _react2['default'].createElement(
+							'span',
+							null,
+							this.receiverImage()
+						) : _react2['default'].createElement('img', { src: this.receiverImage() })
+					),
+					_react2['default'].createElement(
+						'span',
+						{ className: 'recognized-list-message' },
+						this.modifyName(names)
+					)
+				);
+			}
+		}]);
+
+		return RecoginitionName;
+	})(_react2['default'].Component);
+
+	var ReactSlickDemo = (function (_React$Component7) {
+		_inherits(ReactSlickDemo, _React$Component7);
+
+		function ReactSlickDemo() {
+			_classCallCheck(this, ReactSlickDemo);
+
+			_get(Object.getPrototypeOf(ReactSlickDemo.prototype), 'constructor', this).apply(this, arguments);
+		}
+
+		/*
+	 *	5. Left Side Parallex component
+	 *
+	 *
+	 */
+
+		_createClass(ReactSlickDemo, [{
+			key: 'highlightActiveItem',
+			value: function highlightActiveItem(currentSlide) {
+				(0, _jquery2['default'])(".recognized-items .slick-track").find(".recognized-list").removeClass("selected");
+				(0, _jquery2['default'])(".recognized-items .slick-track .recognized-list").eq(currentSlide).addClass("selected");
+			}
+		}, {
+			key: 'render',
+			value: function render() {
+				var _props = this.props;
+				var products = _props.products;
+				var updateLeftSlider = _props.updateLeftSlider;
+
+				var self = this;
+				var interval = "";
+
+				var settings = {
+					dots: false,
+					infinite: true,
+					slidesToShow: 6,
+					slidesToScroll: 1,
+					vertical: true,
+					autoplay: true,
+					speed: 1000,
+					autoplaySpeed: 4400,
+					rtl: false,
+					initialSlide: 0,
+					easing: 'easeOutBounce',
+					beforeChange: function beforeChange(currentSlide, nextSlide) {
+						//self.highlightActiveItem(nextSlide);
+					},
+					afterChange: function afterChange(currentSlide) {
+						//self.highlightActiveItem(currentSlide);
+						updateLeftSlider(products[currentSlide], products);
+					}
+				};
+
+				return _react2['default'].createElement(
+					'div',
+					{ style: {
+							"margin": "0 auto",
+							"padding": "0",
+							"height": "850px",
+							"overflow": "hidden"
+						} },
+					_react2['default'].createElement(
+						'ul',
+						null,
+						products && products.length > 0 ? _react2['default'].createElement(
+							_reactSlick2['default'],
+							settings,
+							products.map(function (item, index) {
+								return _react2['default'].createElement(
+									'li',
+									{ className: 'recognized-list', 'data-index': index, key: index },
+									_react2['default'].createElement(
+										'a',
+										{ href: '#', className: 'recognized-list-info' },
+										item.recievers && item.recievers.length && _react2['default'].createElement(RecoginitionName, { names: item.recievers })
+									)
+								);
+							})
+						) : null
+					)
+				);
+			}
+		}]);
+
+		return ReactSlickDemo;
+	})(_react2['default'].Component);
+
+	var ReactLeftSlickDemo = (function (_React$Component8) {
+		_inherits(ReactLeftSlickDemo, _React$Component8);
+
+		function ReactLeftSlickDemo() {
+			_classCallCheck(this, ReactLeftSlickDemo);
+
+			_get(Object.getPrototypeOf(ReactLeftSlickDemo.prototype), 'constructor', this).apply(this, arguments);
+		}
+
+		_createClass(ReactLeftSlickDemo, [{
+			key: 'render',
+			value: function render() {
+				var products = this.props.item.products;
+
+				var self = this;
+				var interval = "";
+
+				var settings = {
+					arrows: true,
+					dots: false,
+					infinite: true,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					vertical: true,
+					autoplay: true,
+					speed: 1000,
+					autoplaySpeed: 4800,
+					rtl: false,
+					initialSlide: 0,
+					easing: 'easeOutBounce',
+					className: 'recognition-inner-slides',
+					adaptiveHeight: true,
+					beforeChange: function beforeChange(currentSlide, nextSlide) {
+						//self.highlightActiveItem(nextSlide);
+					},
+					afterChange: function afterChange(currentSlide) {
+						//self.highlightActiveItem(currentSlide);
+						//updateLeftSlider(products[currentSlide], products);
+					}
+				};
+
+				return _react2['default'].createElement(
+					'div',
+					{ style: {
+							"margin": "0 auto",
+							"padding": "0",
+							"height": "850px",
+							"overflow": "hidden"
+						} },
+					_react2['default'].createElement(
+						'ul',
+						null,
+						this.props.item && this.props.item.length > 0 ? _react2['default'].createElement(
+							_reactSlick2['default'],
+							settings,
+							this.props.item.map(function (item, index) {
+								return _react2['default'].createElement(
+									'div',
+									{ 'data-index': index, key: index },
+									_react2['default'].createElement(RecognitionHeader, { item: item.recievers[0], dateSentBy: item.recognitionDate, tagline: item.behavior[0], 'default': false }),
+									_react2['default'].createElement(RecognitionHeartContent, { item: item }),
+									_react2['default'].createElement(RecognitionFooter, { item: item.giver })
+								);
+							})
+						) : null
+					)
+				);
+			}
+		}]);
+
+		return ReactLeftSlickDemo;
+	})(_react2['default'].Component);
+
+	exports['default'] = Nav;
+	module.exports = exports['default'];
+
+/***/ },
+/* 346 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	module.exports = __webpack_require__(347);
+
+/***/ },
+/* 347 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _innerSlider = __webpack_require__(348);
+
+	var _objectAssign = __webpack_require__(351);
+
+	var _objectAssign2 = _interopRequireDefault(_objectAssign);
+
+	var _json2mq = __webpack_require__(359);
+
+	var _json2mq2 = _interopRequireDefault(_json2mq);
+
+	var _reactResponsiveMixin = __webpack_require__(361);
+
+	var _reactResponsiveMixin2 = _interopRequireDefault(_reactResponsiveMixin);
+
+	var _defaultProps = __webpack_require__(354);
+
+	var _defaultProps2 = _interopRequireDefault(_defaultProps);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Slider = _react2.default.createClass({
+	  displayName: 'Slider',
+
+	  mixins: [_reactResponsiveMixin2.default],
+	  innerSlider: null,
+	  innerSliderRefHandler: function innerSliderRefHandler(ref) {
+	    this.innerSlider = ref;
+	  },
+	  getInitialState: function getInitialState() {
+	    return {
+	      breakpoint: null
+	    };
+	  },
+	  componentWillMount: function componentWillMount() {
+	    var _this = this;
+
+	    if (this.props.responsive) {
+	      var breakpoints = this.props.responsive.map(function (breakpt) {
+	        return breakpt.breakpoint;
+	      });
+	      breakpoints.sort(function (x, y) {
+	        return x - y;
+	      });
+
+	      breakpoints.forEach(function (breakpoint, index) {
+	        var bQuery;
+	        if (index === 0) {
+	          bQuery = (0, _json2mq2.default)({ minWidth: 0, maxWidth: breakpoint });
+	        } else {
+	          bQuery = (0, _json2mq2.default)({ minWidth: breakpoints[index - 1], maxWidth: breakpoint });
+	        }
+	        _this.media(bQuery, function () {
+	          _this.setState({ breakpoint: breakpoint });
+	        });
+	      });
+
+	      // Register media query for full screen. Need to support resize from small to large
+	      var query = (0, _json2mq2.default)({ minWidth: breakpoints.slice(-1)[0] });
+
+	      this.media(query, function () {
+	        _this.setState({ breakpoint: null });
+	      });
+	    }
+	  },
+
+	  slickPrev: function slickPrev() {
+	    this.innerSlider.slickPrev();
+	  },
+
+	  slickNext: function slickNext() {
+	    this.innerSlider.slickNext();
+	  },
+
+	  slickGoTo: function slickGoTo(slide) {
+	    this.innerSlider.slickGoTo(slide);
+	  },
+
+	  render: function render() {
+	    var _this2 = this;
+
+	    var settings;
+	    var newProps;
+	    if (this.state.breakpoint) {
+	      newProps = this.props.responsive.filter(function (resp) {
+	        return resp.breakpoint === _this2.state.breakpoint;
+	      });
+	      settings = newProps[0].settings === 'unslick' ? 'unslick' : (0, _objectAssign2.default)({}, this.props, newProps[0].settings);
+	    } else {
+	      settings = (0, _objectAssign2.default)({}, _defaultProps2.default, this.props);
+	    }
+
+	    var children = this.props.children;
+	    if (!Array.isArray(children)) {
+	      children = [children];
+	    }
+
+	    // Children may contain false or null, so we should filter them
+	    children = children.filter(function (child) {
+	      return !!child;
+	    });
+
+	    if (settings === 'unslick') {
+	      // if 'unslick' responsive breakpoint setting used, just return the <Slider> tag nested HTML
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        children
+	      );
+	    } else {
+	      return _react2.default.createElement(
+	        _innerSlider.InnerSlider,
+	        _extends({ ref: this.innerSliderRefHandler }, settings),
+	        children
+	      );
+	    }
+	  }
+	});
+
+	module.exports = Slider;
+
+/***/ },
+/* 348 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+
+	exports.__esModule = true;
+	exports.InnerSlider = undefined;
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _eventHandlers = __webpack_require__(349);
+
+	var _eventHandlers2 = _interopRequireDefault(_eventHandlers);
+
+	var _helpers = __webpack_require__(352);
+
+	var _helpers2 = _interopRequireDefault(_helpers);
+
+	var _initialState = __webpack_require__(353);
+
+	var _initialState2 = _interopRequireDefault(_initialState);
+
+	var _defaultProps = __webpack_require__(354);
+
+	var _defaultProps2 = _interopRequireDefault(_defaultProps);
+
+	var _classnames = __webpack_require__(355);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var _objectAssign = __webpack_require__(351);
+
+	var _objectAssign2 = _interopRequireDefault(_objectAssign);
+
+	var _track = __webpack_require__(356);
+
+	var _dots = __webpack_require__(357);
+
+	var _arrows = __webpack_require__(358);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var InnerSlider = exports.InnerSlider = _react2.default.createClass({
+	  displayName: 'InnerSlider',
+
+	  mixins: [_helpers2.default, _eventHandlers2.default],
+	  list: null,
+	  track: null,
+	  listRefHandler: function listRefHandler(ref) {
+	    this.list = ref;
+	  },
+	  trackRefHandler: function trackRefHandler(ref) {
+	    this.track = ref;
+	  },
+	  getInitialState: function getInitialState() {
+	    return _extends({}, _initialState2.default, {
+	      currentSlide: this.props.initialSlide
+	    });
+	  },
+	  getDefaultProps: function getDefaultProps() {
+	    return _defaultProps2.default;
+	  },
+	  componentWillMount: function componentWillMount() {
+	    if (this.props.init) {
+	      this.props.init();
+	    }
+	    this.setState({
+	      mounted: true
+	    });
+	    var lazyLoadedList = [];
+	    for (var i = 0; i < _react2.default.Children.count(this.props.children); i++) {
+	      if (i >= this.state.currentSlide && i < this.state.currentSlide + this.props.slidesToShow) {
+	        lazyLoadedList.push(i);
+	      }
+	    }
+
+	    if (this.props.lazyLoad && this.state.lazyLoadedList.length === 0) {
+	      this.setState({
+	        lazyLoadedList: lazyLoadedList
+	      });
+	    }
+	  },
+	  componentDidMount: function componentDidMount() {
+	    // Hack for autoplay -- Inspect Later
+	    this.initialize(this.props);
+	    this.adaptHeight();
+
+	    // To support server-side rendering
+	    if (!window) {
+	      return;
+	    }
+	    if (window.addEventListener) {
+	      window.addEventListener('resize', this.onWindowResized);
+	    } else {
+	      window.attachEvent('onresize', this.onWindowResized);
+	    }
+	  },
+	  componentWillUnmount: function componentWillUnmount() {
+	    if (this.animationEndCallback) {
+	      clearTimeout(this.animationEndCallback);
+	    }
+	    if (window.addEventListener) {
+	      window.removeEventListener('resize', this.onWindowResized);
+	    } else {
+	      window.detachEvent('onresize', this.onWindowResized);
+	    }
+	    if (this.state.autoPlayTimer) {
+	      clearInterval(this.state.autoPlayTimer);
+	    }
+	  },
+	  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
+	    if (this.props.slickGoTo != nextProps.slickGoTo) {
+	      if (process.env.NODE_ENV !== 'production') {
+	        console.warn('react-slick deprecation warning: slickGoTo prop is deprecated and it will be removed in next release. Use slickGoTo method instead');
+	      }
+	      this.changeSlide({
+	        message: 'index',
+	        index: nextProps.slickGoTo,
+	        currentSlide: this.state.currentSlide
+	      });
+	    } else if (this.state.currentSlide >= nextProps.children.length) {
+	      this.update(nextProps);
+	      this.changeSlide({
+	        message: 'index',
+	        index: nextProps.children.length - nextProps.slidesToShow,
+	        currentSlide: this.state.currentSlide
+	      });
+	    } else {
+	      this.update(nextProps);
+	    }
+	  },
+	  componentDidUpdate: function componentDidUpdate() {
+	    this.adaptHeight();
+	  },
+	  onWindowResized: function onWindowResized() {
+	    this.update(this.props);
+	    // animating state should be cleared while resizing, otherwise autoplay stops working
+	    this.setState({
+	      animating: false
+	    });
+	  },
+	  slickPrev: function slickPrev() {
+	    this.changeSlide({ message: 'previous' });
+	  },
+	  slickNext: function slickNext() {
+	    this.changeSlide({ message: 'next' });
+	  },
+	  slickGoTo: function slickGoTo(slide) {
+	    typeof slide === 'number' && this.changeSlide({
+	      message: 'index',
+	      index: slide,
+	      currentSlide: this.state.currentSlide
+	    });
+	  },
+	  render: function render() {
+	    var className = (0, _classnames2.default)('slick-initialized', 'slick-slider', this.props.className, {
+	      'slick-vertical': this.props.vertical
+	    });
+
+	    var trackProps = {
+	      fade: this.props.fade,
+	      cssEase: this.props.cssEase,
+	      speed: this.props.speed,
+	      infinite: this.props.infinite,
+	      centerMode: this.props.centerMode,
+	      focusOnSelect: this.props.focusOnSelect ? this.selectHandler : null,
+	      currentSlide: this.state.currentSlide,
+	      lazyLoad: this.props.lazyLoad,
+	      lazyLoadedList: this.state.lazyLoadedList,
+	      rtl: this.props.rtl,
+	      slideWidth: this.state.slideWidth,
+	      slidesToShow: this.props.slidesToShow,
+	      slidesToScroll: this.props.slidesToScroll,
+	      slideCount: this.state.slideCount,
+	      trackStyle: this.state.trackStyle,
+	      variableWidth: this.props.variableWidth
+	    };
+
+	    var dots;
+
+	    if (this.props.dots === true && this.state.slideCount >= this.props.slidesToShow) {
+	      var dotProps = {
+	        dotsClass: this.props.dotsClass,
+	        slideCount: this.state.slideCount,
+	        slidesToShow: this.props.slidesToShow,
+	        currentSlide: this.state.currentSlide,
+	        slidesToScroll: this.props.slidesToScroll,
+	        clickHandler: this.changeSlide
+	      };
+
+	      dots = _react2.default.createElement(_dots.Dots, dotProps);
+	    }
+
+	    var prevArrow, nextArrow;
+
+	    var arrowProps = {
+	      infinite: this.props.infinite,
+	      centerMode: this.props.centerMode,
+	      currentSlide: this.state.currentSlide,
+	      slideCount: this.state.slideCount,
+	      slidesToShow: this.props.slidesToShow,
+	      prevArrow: this.props.prevArrow,
+	      nextArrow: this.props.nextArrow,
+	      clickHandler: this.changeSlide
+	    };
+
+	    if (this.props.arrows) {
+	      prevArrow = _react2.default.createElement(_arrows.PrevArrow, arrowProps);
+	      nextArrow = _react2.default.createElement(_arrows.NextArrow, arrowProps);
+	    }
+
+	    var verticalHeightStyle = null;
+
+	    if (this.props.vertical) {
+	      verticalHeightStyle = {
+	        height: this.state.listHeight
+	      };
+	    }
+
+	    var centerPaddingStyle = null;
+
+	    if (this.props.vertical === false) {
+	      if (this.props.centerMode === true) {
+	        centerPaddingStyle = {
+	          padding: '0px ' + this.props.centerPadding
+	        };
+	      }
+	    } else {
+	      if (this.props.centerMode === true) {
+	        centerPaddingStyle = {
+	          padding: this.props.centerPadding + ' 0px'
+	        };
+	      }
+	    }
+
+	    var listStyle = (0, _objectAssign2.default)({}, verticalHeightStyle, centerPaddingStyle);
+
+	    return _react2.default.createElement(
+	      'div',
+	      { className: className, onMouseEnter: this.onInnerSliderEnter, onMouseLeave: this.onInnerSliderLeave },
+	      prevArrow,
+	      _react2.default.createElement(
+	        'div',
+	        {
+	          ref: this.listRefHandler,
+	          className: 'slick-list',
+	          style: listStyle,
+	          onMouseDown: this.swipeStart,
+	          onMouseMove: this.state.dragging ? this.swipeMove : null,
+	          onMouseUp: this.swipeEnd,
+	          onMouseLeave: this.state.dragging ? this.swipeEnd : null,
+	          onTouchStart: this.swipeStart,
+	          onTouchMove: this.state.dragging ? this.swipeMove : null,
+	          onTouchEnd: this.swipeEnd,
+	          onTouchCancel: this.state.dragging ? this.swipeEnd : null,
+	          onKeyDown: this.props.accessibility ? this.keyHandler : null },
+	        _react2.default.createElement(
+	          _track.Track,
+	          _extends({ ref: this.trackRefHandler }, trackProps),
+	          this.props.children
+	        )
+	      ),
+	      nextArrow,
+	      dots
+	    );
+	  }
+	});
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
+
+/***/ },
+/* 349 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _trackHelper = __webpack_require__(350);
+
+	var _helpers = __webpack_require__(352);
+
+	var _helpers2 = _interopRequireDefault(_helpers);
+
+	var _objectAssign = __webpack_require__(351);
+
+	var _objectAssign2 = _interopRequireDefault(_objectAssign);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var EventHandlers = {
+	  // Event handler for previous and next
+	  changeSlide: function changeSlide(options) {
+	    var indexOffset, previousInt, slideOffset, unevenOffset, targetSlide;
+	    var _props = this.props;
+	    var slidesToScroll = _props.slidesToScroll;
+	    var slidesToShow = _props.slidesToShow;
+	    var _state = this.state;
+	    var slideCount = _state.slideCount;
+	    var currentSlide = _state.currentSlide;
+
+	    unevenOffset = slideCount % slidesToScroll !== 0;
+	    indexOffset = unevenOffset ? 0 : (slideCount - currentSlide) % slidesToScroll;
+
+	    if (options.message === 'previous') {
+	      slideOffset = indexOffset === 0 ? slidesToScroll : slidesToShow - indexOffset;
+	      targetSlide = currentSlide - slideOffset;
+	      if (this.props.lazyLoad) {
+	        previousInt = currentSlide - slideOffset;
+	        targetSlide = previousInt === -1 ? slideCount - 1 : previousInt;
+	      }
+	    } else if (options.message === 'next') {
+	      slideOffset = indexOffset === 0 ? slidesToScroll : indexOffset;
+	      targetSlide = currentSlide + slideOffset;
+	      if (this.props.lazyLoad) {
+	        targetSlide = (currentSlide + slidesToScroll) % slideCount + indexOffset;
+	      }
+	    } else if (options.message === 'dots' || options.message === 'children') {
+	      // Click on dots
+	      targetSlide = options.index * options.slidesToScroll;
+	      if (targetSlide === options.currentSlide) {
+	        return;
+	      }
+	    } else if (options.message === 'index') {
+	      targetSlide = parseInt(options.index);
+	      if (targetSlide === options.currentSlide) {
+	        return;
+	      }
+	    }
+
+	    this.slideHandler(targetSlide);
+	  },
+
+	  // Accessiblity handler for previous and next
+	  keyHandler: function keyHandler(e) {
+	    //Dont slide if the cursor is inside the form fields and arrow keys are pressed
+	    if (!e.target.tagName.match('TEXTAREA|INPUT|SELECT')) {
+	      if (e.keyCode === 37 && this.props.accessibility === true) {
+	        this.changeSlide({
+	          message: this.props.rtl === true ? 'next' : 'previous'
+	        });
+	      } else if (e.keyCode === 39 && this.props.accessibility === true) {
+	        this.changeSlide({
+	          message: this.props.rtl === true ? 'previous' : 'next'
+	        });
+	      }
+	    }
+	  },
+	  // Focus on selecting a slide (click handler on track)
+	  selectHandler: function selectHandler(options) {
+	    this.changeSlide(options);
+	  },
+	  swipeStart: function swipeStart(e) {
+	    var touches, posX, posY;
+
+	    if (this.props.swipe === false || 'ontouchend' in document && this.props.swipe === false) {
+	      return;
+	    } else if (this.props.draggable === false && e.type.indexOf('mouse') !== -1) {
+	      return;
+	    }
+	    posX = e.touches !== undefined ? e.touches[0].pageX : e.clientX;
+	    posY = e.touches !== undefined ? e.touches[0].pageY : e.clientY;
+	    this.setState({
+	      dragging: true,
+	      touchObject: {
+	        startX: posX,
+	        startY: posY,
+	        curX: posX,
+	        curY: posY
+	      }
+	    });
+	  },
+	  swipeMove: function swipeMove(e) {
+	    if (!this.state.dragging) {
+	      e.preventDefault();
+	      return;
+	    }
+	    if (this.state.animating) {
+	      return;
+	    }
+	    var swipeLeft;
+	    var curLeft, positionOffset;
+	    var touchObject = this.state.touchObject;
+
+	    curLeft = (0, _trackHelper.getTrackLeft)((0, _objectAssign2.default)({
+	      slideIndex: this.state.currentSlide,
+	      trackRef: this.track
+	    }, this.props, this.state));
+	    touchObject.curX = e.touches ? e.touches[0].pageX : e.clientX;
+	    touchObject.curY = e.touches ? e.touches[0].pageY : e.clientY;
+	    touchObject.swipeLength = Math.round(Math.sqrt(Math.pow(touchObject.curX - touchObject.startX, 2)));
+
+	    if (this.props.verticalSwiping) {
+	      touchObject.swipeLength = Math.round(Math.sqrt(Math.pow(touchObject.curY - touchObject.startY, 2)));
+	    }
+
+	    positionOffset = (this.props.rtl === false ? 1 : -1) * (touchObject.curX > touchObject.startX ? 1 : -1);
+
+	    if (this.props.verticalSwiping) {
+	      positionOffset = touchObject.curY > touchObject.startY ? 1 : -1;
+	    }
+
+	    var currentSlide = this.state.currentSlide;
+	    var dotCount = Math.ceil(this.state.slideCount / this.props.slidesToScroll);
+	    var swipeDirection = this.swipeDirection(this.state.touchObject);
+	    var touchSwipeLength = touchObject.swipeLength;
+
+	    if (this.props.infinite === false) {
+	      if (currentSlide === 0 && swipeDirection === 'right' || currentSlide + 1 >= dotCount && swipeDirection === 'left') {
+	        touchSwipeLength = touchObject.swipeLength * this.props.edgeFriction;
+
+	        if (this.state.edgeDragged === false && this.props.edgeEvent) {
+	          this.props.edgeEvent(swipeDirection);
+	          this.setState({ edgeDragged: true });
+	        }
+	      }
+	    }
+
+	    if (this.state.swiped === false && this.props.swipeEvent) {
+	      this.props.swipeEvent(swipeDirection);
+	      this.setState({ swiped: true });
+	    }
+
+	    if (!this.props.vertical) {
+	      swipeLeft = curLeft + touchSwipeLength * positionOffset;
+	    } else {
+	      swipeLeft = curLeft + touchSwipeLength * (this.state.listHeight / this.state.listWidth) * positionOffset;
+	    }
+
+	    if (this.props.verticalSwiping) {
+	      swipeLeft = curLeft + touchSwipeLength * positionOffset;
+	    }
+
+	    this.setState({
+	      touchObject: touchObject,
+	      swipeLeft: swipeLeft,
+	      trackStyle: (0, _trackHelper.getTrackCSS)((0, _objectAssign2.default)({ left: swipeLeft }, this.props, this.state))
+	    });
+
+	    if (Math.abs(touchObject.curX - touchObject.startX) < Math.abs(touchObject.curY - touchObject.startY) * 0.8) {
+	      return;
+	    }
+	    if (touchObject.swipeLength > 4) {
+	      e.preventDefault();
+	    }
+	  },
+	  swipeEnd: function swipeEnd(e) {
+	    if (!this.state.dragging) {
+	      e.preventDefault();
+	      return;
+	    }
+	    var touchObject = this.state.touchObject;
+	    var minSwipe = this.state.listWidth / this.props.touchThreshold;
+	    var swipeDirection = this.swipeDirection(touchObject);
+
+	    if (this.props.verticalSwiping) {
+	      minSwipe = this.state.listHeight / this.props.touchThreshold;
+	    }
+
+	    // reset the state of touch related state variables.
+	    this.setState({
+	      dragging: false,
+	      edgeDragged: false,
+	      swiped: false,
+	      swipeLeft: null,
+	      touchObject: {}
+	    });
+	    // Fix for #13
+	    if (!touchObject.swipeLength) {
+	      return;
+	    }
+	    if (touchObject.swipeLength > minSwipe) {
+	      e.preventDefault();
+
+	      switch (swipeDirection) {
+	        case 'left':
+	        case 'down':
+	          this.slideHandler(this.state.currentSlide + this.props.slidesToScroll);
+	          break;
+
+	        case 'right':
+	        case 'up':
+	          this.slideHandler(this.state.currentSlide - this.props.slidesToScroll);
+	          break;
+
+	        default:
+	      }
+	    } else {
+	      // Adjust the track back to it's original position.
+	      var currentLeft = (0, _trackHelper.getTrackLeft)((0, _objectAssign2.default)({
+	        slideIndex: this.state.currentSlide,
+	        trackRef: this.track
+	      }, this.props, this.state));
+
+	      this.setState({
+	        trackStyle: (0, _trackHelper.getTrackAnimateCSS)((0, _objectAssign2.default)({ left: currentLeft }, this.props, this.state))
+	      });
+	    }
+	  },
+	  onInnerSliderEnter: function onInnerSliderEnter(e) {
+	    if (this.props.autoplay && this.props.pauseOnHover) {
+	      this.pause();
+	    }
+	  },
+	  onInnerSliderLeave: function onInnerSliderLeave(e) {
+	    if (this.props.autoplay && this.props.pauseOnHover) {
+	      this.autoPlay();
+	    }
+	  }
+	};
+
+	exports.default = EventHandlers;
+
+/***/ },
+/* 350 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+	exports.getTrackLeft = exports.getTrackAnimateCSS = exports.getTrackCSS = undefined;
+
+	var _reactDom = __webpack_require__(158);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _objectAssign = __webpack_require__(351);
+
+	var _objectAssign2 = _interopRequireDefault(_objectAssign);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var checkSpecKeys = function checkSpecKeys(spec, keysArray) {
+	  return keysArray.reduce(function (value, key) {
+	    return value && spec.hasOwnProperty(key);
+	  }, true) ? null : console.error('Keys Missing', spec);
+	};
+
+	var getTrackCSS = exports.getTrackCSS = function getTrackCSS(spec) {
+	  checkSpecKeys(spec, ['left', 'variableWidth', 'slideCount', 'slidesToShow', 'slideWidth']);
+
+	  var trackWidth, trackHeight;
+
+	  var trackChildren = spec.slideCount + 2 * spec.slidesToShow;
+
+	  if (!spec.vertical) {
+	    if (spec.variableWidth) {
+	      trackWidth = (spec.slideCount + 2 * spec.slidesToShow) * spec.slideWidth;
+	    } else if (spec.centerMode) {
+	      trackWidth = (spec.slideCount + 2 * (spec.slidesToShow + 1)) * spec.slideWidth;
+	    } else {
+	      trackWidth = (spec.slideCount + 2 * spec.slidesToShow) * spec.slideWidth;
+	    }
+	  } else {
+	    trackHeight = trackChildren * spec.slideHeight;
+	  }
+
+	  var style = {
+	    opacity: 1,
+	    WebkitTransform: !spec.vertical ? 'translate3d(' + spec.left + 'px, 0px, 0px)' : 'translate3d(0px, ' + spec.left + 'px, 0px)',
+	    transform: !spec.vertical ? 'translate3d(' + spec.left + 'px, 0px, 0px)' : 'translate3d(0px, ' + spec.left + 'px, 0px)',
+	    transition: '',
+	    WebkitTransition: '',
+	    msTransform: !spec.vertical ? 'translateX(' + spec.left + 'px)' : 'translateY(' + spec.left + 'px)'
+	  };
+
+	  if (trackWidth) {
+	    (0, _objectAssign2.default)(style, { width: trackWidth });
+	  }
+
+	  if (trackHeight) {
+	    (0, _objectAssign2.default)(style, { height: trackHeight });
+	  }
+
+	  // Fallback for IE8
+	  if (window && !window.addEventListener && window.attachEvent) {
+	    if (!spec.vertical) {
+	      style.marginLeft = spec.left + 'px';
+	    } else {
+	      style.marginTop = spec.left + 'px';
+	    }
+	  }
+
+	  return style;
+	};
+
+	var getTrackAnimateCSS = exports.getTrackAnimateCSS = function getTrackAnimateCSS(spec) {
+	  checkSpecKeys(spec, ['left', 'variableWidth', 'slideCount', 'slidesToShow', 'slideWidth', 'speed', 'cssEase']);
+
+	  var style = getTrackCSS(spec);
+	  // useCSS is true by default so it can be undefined
+	  style.WebkitTransition = '-webkit-transform ' + spec.speed + 'ms ' + spec.cssEase;
+	  style.transition = 'transform ' + spec.speed + 'ms ' + spec.cssEase;
+	  return style;
+	};
+
+	var getTrackLeft = exports.getTrackLeft = function getTrackLeft(spec) {
+
+	  checkSpecKeys(spec, ['slideIndex', 'trackRef', 'infinite', 'centerMode', 'slideCount', 'slidesToShow', 'slidesToScroll', 'slideWidth', 'listWidth', 'variableWidth', 'slideHeight']);
+
+	  var slideOffset = 0;
+	  var targetLeft;
+	  var targetSlide;
+	  var verticalOffset = 0;
+
+	  if (spec.fade) {
+	    return 0;
+	  }
+
+	  if (spec.infinite) {
+	    if (spec.slideCount >= spec.slidesToShow) {
+	      slideOffset = spec.slideWidth * spec.slidesToShow * -1;
+	      verticalOffset = spec.slideHeight * spec.slidesToShow * -1;
+	    }
+	    if (spec.slideCount % spec.slidesToScroll !== 0) {
+	      if (spec.slideIndex + spec.slidesToScroll > spec.slideCount && spec.slideCount > spec.slidesToShow) {
+	        if (spec.slideIndex > spec.slideCount) {
+	          slideOffset = (spec.slidesToShow - (spec.slideIndex - spec.slideCount)) * spec.slideWidth * -1;
+	          verticalOffset = (spec.slidesToShow - (spec.slideIndex - spec.slideCount)) * spec.slideHeight * -1;
+	        } else {
+	          slideOffset = spec.slideCount % spec.slidesToScroll * spec.slideWidth * -1;
+	          verticalOffset = spec.slideCount % spec.slidesToScroll * spec.slideHeight * -1;
+	        }
+	      }
+	    }
+	  } else {
+
+	    if (spec.slideCount % spec.slidesToScroll !== 0) {
+	      if (spec.slideIndex + spec.slidesToScroll > spec.slideCount && spec.slideCount > spec.slidesToShow) {
+	        var slidesToOffset = spec.slidesToShow - spec.slideCount % spec.slidesToScroll;
+	        slideOffset = slidesToOffset * spec.slideWidth;
+	      }
+	    }
+	  }
+
+	  if (spec.centerMode) {
+	    if (spec.infinite) {
+	      slideOffset += spec.slideWidth * Math.floor(spec.slidesToShow / 2);
+	    } else {
+	      slideOffset = spec.slideWidth * Math.floor(spec.slidesToShow / 2);
+	    }
+	  }
+
+	  if (!spec.vertical) {
+	    targetLeft = spec.slideIndex * spec.slideWidth * -1 + slideOffset;
+	  } else {
+	    targetLeft = spec.slideIndex * spec.slideHeight * -1 + verticalOffset;
+	  }
+
+	  if (spec.variableWidth === true) {
+	    var targetSlideIndex;
+	    if (spec.slideCount <= spec.slidesToShow || spec.infinite === false) {
+	      targetSlide = _reactDom2.default.findDOMNode(spec.trackRef).childNodes[spec.slideIndex];
+	    } else {
+	      targetSlideIndex = spec.slideIndex + spec.slidesToShow;
+	      targetSlide = _reactDom2.default.findDOMNode(spec.trackRef).childNodes[targetSlideIndex];
+	    }
+	    targetLeft = targetSlide ? targetSlide.offsetLeft * -1 : 0;
+	    if (spec.centerMode === true) {
+	      if (spec.infinite === false) {
+	        targetSlide = _reactDom2.default.findDOMNode(spec.trackRef).children[spec.slideIndex];
+	      } else {
+	        targetSlide = _reactDom2.default.findDOMNode(spec.trackRef).children[spec.slideIndex + spec.slidesToShow + 1];
+	      }
+
+	      targetLeft = targetSlide ? targetSlide.offsetLeft * -1 : 0;
+	      targetLeft += (spec.listWidth - targetSlide.offsetWidth) / 2;
+	    }
+	  }
+
+	  return targetLeft;
+	};
+
+/***/ },
+/* 351 */
+/***/ function(module, exports) {
+
+	'use strict';
+	/* eslint-disable no-unused-vars */
+	var hasOwnProperty = Object.prototype.hasOwnProperty;
+	var propIsEnumerable = Object.prototype.propertyIsEnumerable;
+
+	function toObject(val) {
+		if (val === null || val === undefined) {
+			throw new TypeError('Object.assign cannot be called with null or undefined');
+		}
+
+		return Object(val);
+	}
+
+	function shouldUseNative() {
+		try {
+			if (!Object.assign) {
+				return false;
+			}
+
+			// Detect buggy property enumeration order in older V8 versions.
+
+			// https://bugs.chromium.org/p/v8/issues/detail?id=4118
+			var test1 = new String('abc');  // eslint-disable-line
+			test1[5] = 'de';
+			if (Object.getOwnPropertyNames(test1)[0] === '5') {
+				return false;
+			}
+
+			// https://bugs.chromium.org/p/v8/issues/detail?id=3056
+			var test2 = {};
+			for (var i = 0; i < 10; i++) {
+				test2['_' + String.fromCharCode(i)] = i;
+			}
+			var order2 = Object.getOwnPropertyNames(test2).map(function (n) {
+				return test2[n];
+			});
+			if (order2.join('') !== '0123456789') {
+				return false;
+			}
+
+			// https://bugs.chromium.org/p/v8/issues/detail?id=3056
+			var test3 = {};
+			'abcdefghijklmnopqrst'.split('').forEach(function (letter) {
+				test3[letter] = letter;
+			});
+			if (Object.keys(Object.assign({}, test3)).join('') !==
+					'abcdefghijklmnopqrst') {
+				return false;
+			}
+
+			return true;
+		} catch (e) {
+			// We don't expect any of the above to throw, but better to be safe.
+			return false;
+		}
+	}
+
+	module.exports = shouldUseNative() ? Object.assign : function (target, source) {
+		var from;
+		var to = toObject(target);
+		var symbols;
+
+		for (var s = 1; s < arguments.length; s++) {
+			from = Object(arguments[s]);
+
+			for (var key in from) {
+				if (hasOwnProperty.call(from, key)) {
+					to[key] = from[key];
+				}
+			}
+
+			if (Object.getOwnPropertySymbols) {
+				symbols = Object.getOwnPropertySymbols(from);
+				for (var i = 0; i < symbols.length; i++) {
+					if (propIsEnumerable.call(from, symbols[i])) {
+						to[symbols[i]] = from[symbols[i]];
+					}
+				}
+			}
+		}
+
+		return to;
+	};
+
+
+/***/ },
+/* 352 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(158);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _trackHelper = __webpack_require__(350);
+
+	var _objectAssign = __webpack_require__(351);
+
+	var _objectAssign2 = _interopRequireDefault(_objectAssign);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var helpers = {
+	  initialize: function initialize(props) {
+	    var slickList = _reactDom2.default.findDOMNode(this.list);
+
+	    var slideCount = _react2.default.Children.count(props.children);
+	    var listWidth = this.getWidth(slickList);
+	    var trackWidth = this.getWidth(_reactDom2.default.findDOMNode(this.track));
+	    var slideWidth;
+
+	    if (!props.vertical) {
+	      slideWidth = trackWidth / props.slidesToShow;
+	    } else {
+	      slideWidth = trackWidth;
+	    }
+
+	    var slideHeight = this.getHeight(slickList.querySelector('[data-index="0"]'));
+	    var listHeight = slideHeight * props.slidesToShow;
+
+	    var currentSlide = props.rtl ? slideCount - 1 - props.initialSlide : props.initialSlide;
+
+	    this.setState({
+	      slideCount: slideCount,
+	      slideWidth: slideWidth,
+	      listWidth: listWidth,
+	      trackWidth: trackWidth,
+	      currentSlide: currentSlide,
+	      slideHeight: slideHeight,
+	      listHeight: listHeight
+	    }, function () {
+
+	      var targetLeft = (0, _trackHelper.getTrackLeft)((0, _objectAssign2.default)({
+	        slideIndex: this.state.currentSlide,
+	        trackRef: this.track
+	      }, props, this.state));
+	      // getCSS function needs previously set state
+	      var trackStyle = (0, _trackHelper.getTrackCSS)((0, _objectAssign2.default)({ left: targetLeft }, props, this.state));
+
+	      this.setState({ trackStyle: trackStyle });
+
+	      this.autoPlay(); // once we're set up, trigger the initial autoplay.
+	    });
+	  },
+	  update: function update(props) {
+	    var slickList = _reactDom2.default.findDOMNode(this.list);
+	    // This method has mostly same code as initialize method.
+	    // Refactor it
+	    var slideCount = _react2.default.Children.count(props.children);
+	    var listWidth = this.getWidth(slickList);
+	    var trackWidth = this.getWidth(_reactDom2.default.findDOMNode(this.track));
+	    var slideWidth;
+
+	    if (!props.vertical) {
+	      slideWidth = trackWidth / props.slidesToShow;
+	    } else {
+	      slideWidth = trackWidth;
+	    }
+
+	    var slideHeight = this.getHeight(slickList.querySelector('[data-index="0"]'));
+	    var listHeight = slideHeight * props.slidesToShow;
+
+	    // pause slider if autoplay is set to false
+	    if (!props.autoplay) this.pause();
+
+	    this.setState({
+	      slideCount: slideCount,
+	      slideWidth: slideWidth,
+	      listWidth: listWidth,
+	      trackWidth: trackWidth,
+	      slideHeight: slideHeight,
+	      listHeight: listHeight
+	    }, function () {
+
+	      var targetLeft = (0, _trackHelper.getTrackLeft)((0, _objectAssign2.default)({
+	        slideIndex: this.state.currentSlide,
+	        trackRef: this.track
+	      }, props, this.state));
+	      // getCSS function needs previously set state
+	      var trackStyle = (0, _trackHelper.getTrackCSS)((0, _objectAssign2.default)({ left: targetLeft }, props, this.state));
+
+	      this.setState({ trackStyle: trackStyle });
+	    });
+	  },
+	  getWidth: function getWidth(elem) {
+	    return elem.getBoundingClientRect().width || elem.offsetWidth;
+	  },
+	  getHeight: function getHeight(elem) {
+	    return elem.getBoundingClientRect().height || elem.offsetHeight;
+	  },
+
+	  adaptHeight: function adaptHeight() {
+	    if (this.props.adaptiveHeight) {
+	      var selector = '[data-index="' + this.state.currentSlide + '"]';
+	      if (this.list) {
+	        var slickList = _reactDom2.default.findDOMNode(this.list);
+	        slickList.style.height = slickList.querySelector(selector).offsetHeight + 'px';
+	      }
+	    }
+	  },
+	  slideHandler: function slideHandler(index) {
+	    var _this = this;
+
+	    // Functionality of animateSlide and postSlide is merged into this function
+	    // console.log('slideHandler', index);
+	    var targetSlide, currentSlide;
+	    var targetLeft, currentLeft;
+	    var callback;
+
+	    if (this.props.waitForAnimate && this.state.animating) {
+	      return;
+	    }
+
+	    if (this.props.fade) {
+	      currentSlide = this.state.currentSlide;
+
+	      // Don't change slide if it's not infite and current slide is the first or last slide.
+	      if (this.props.infinite === false && (index < 0 || index >= this.state.slideCount)) {
+	        return;
+	      }
+
+	      //  Shifting targetSlide back into the range
+	      if (index < 0) {
+	        targetSlide = index + this.state.slideCount;
+	      } else if (index >= this.state.slideCount) {
+	        targetSlide = index - this.state.slideCount;
+	      } else {
+	        targetSlide = index;
+	      }
+
+	      if (this.props.lazyLoad && this.state.lazyLoadedList.indexOf(targetSlide) < 0) {
+	        this.setState({
+	          lazyLoadedList: this.state.lazyLoadedList.concat(targetSlide)
+	        });
+	      }
+
+	      callback = function callback() {
+	        _this.setState({
+	          animating: false
+	        });
+	        if (_this.props.afterChange) {
+	          _this.props.afterChange(targetSlide);
+	        }
+	        delete _this.animationEndCallback;
+	      };
+
+	      this.setState({
+	        animating: true,
+	        currentSlide: targetSlide
+	      }, function () {
+	        this.animationEndCallback = setTimeout(callback, this.props.speed);
+	      });
+
+	      if (this.props.beforeChange) {
+	        this.props.beforeChange(this.state.currentSlide, targetSlide);
+	      }
+
+	      this.autoPlay();
+	      return;
+	    }
+
+	    targetSlide = index;
+	    if (targetSlide < 0) {
+	      if (this.props.infinite === false) {
+	        currentSlide = 0;
+	      } else if (this.state.slideCount % this.props.slidesToScroll !== 0) {
+	        currentSlide = this.state.slideCount - this.state.slideCount % this.props.slidesToScroll;
+	      } else {
+	        currentSlide = this.state.slideCount + targetSlide;
+	      }
+	    } else if (targetSlide >= this.state.slideCount) {
+	      if (this.props.infinite === false) {
+	        currentSlide = this.state.slideCount - this.props.slidesToShow;
+	      } else if (this.state.slideCount % this.props.slidesToScroll !== 0) {
+	        currentSlide = 0;
+	      } else {
+	        currentSlide = targetSlide - this.state.slideCount;
+	      }
+	    } else {
+	      currentSlide = targetSlide;
+	    }
+
+	    targetLeft = (0, _trackHelper.getTrackLeft)((0, _objectAssign2.default)({
+	      slideIndex: targetSlide,
+	      trackRef: this.track
+	    }, this.props, this.state));
+
+	    currentLeft = (0, _trackHelper.getTrackLeft)((0, _objectAssign2.default)({
+	      slideIndex: currentSlide,
+	      trackRef: this.track
+	    }, this.props, this.state));
+
+	    if (this.props.infinite === false) {
+	      targetLeft = currentLeft;
+	    }
+
+	    if (this.props.beforeChange) {
+	      this.props.beforeChange(this.state.currentSlide, currentSlide);
+	    }
+
+	    if (this.props.lazyLoad) {
+	      var loaded = true;
+	      var slidesToLoad = [];
+	      for (var i = targetSlide; i < targetSlide + this.props.slidesToShow; i++) {
+	        loaded = loaded && this.state.lazyLoadedList.indexOf(i) >= 0;
+	        if (!loaded) {
+	          slidesToLoad.push(i);
+	        }
+	      }
+	      if (!loaded) {
+	        this.setState({
+	          lazyLoadedList: this.state.lazyLoadedList.concat(slidesToLoad)
+	        });
+	      }
+	    }
+
+	    // Slide Transition happens here.
+	    // animated transition happens to target Slide and
+	    // non - animated transition happens to current Slide
+	    // If CSS transitions are false, directly go the current slide.
+
+	    if (this.props.useCSS === false) {
+
+	      this.setState({
+	        currentSlide: currentSlide,
+	        trackStyle: (0, _trackHelper.getTrackCSS)((0, _objectAssign2.default)({ left: currentLeft }, this.props, this.state))
+	      }, function () {
+	        if (this.props.afterChange) {
+	          this.props.afterChange(currentSlide);
+	        }
+	      });
+	    } else {
+
+	      var nextStateChanges = {
+	        animating: false,
+	        currentSlide: currentSlide,
+	        trackStyle: (0, _trackHelper.getTrackCSS)((0, _objectAssign2.default)({ left: currentLeft }, this.props, this.state)),
+	        swipeLeft: null
+	      };
+
+	      callback = function callback() {
+	        _this.setState(nextStateChanges);
+	        if (_this.props.afterChange) {
+	          _this.props.afterChange(currentSlide);
+	        }
+	        delete _this.animationEndCallback;
+	      };
+
+	      this.setState({
+	        animating: true,
+	        currentSlide: currentSlide,
+	        trackStyle: (0, _trackHelper.getTrackAnimateCSS)((0, _objectAssign2.default)({ left: targetLeft }, this.props, this.state))
+	      }, function () {
+	        this.animationEndCallback = setTimeout(callback, this.props.speed);
+	      });
+	    }
+
+	    this.autoPlay();
+	  },
+	  swipeDirection: function swipeDirection(touchObject) {
+	    var xDist, yDist, r, swipeAngle;
+
+	    xDist = touchObject.startX - touchObject.curX;
+	    yDist = touchObject.startY - touchObject.curY;
+	    r = Math.atan2(yDist, xDist);
+
+	    swipeAngle = Math.round(r * 180 / Math.PI);
+	    if (swipeAngle < 0) {
+	      swipeAngle = 360 - Math.abs(swipeAngle);
+	    }
+	    if (swipeAngle <= 45 && swipeAngle >= 0 || swipeAngle <= 360 && swipeAngle >= 315) {
+	      return this.props.rtl === false ? 'left' : 'right';
+	    }
+	    if (swipeAngle >= 135 && swipeAngle <= 225) {
+	      return this.props.rtl === false ? 'right' : 'left';
+	    }
+	    if (this.props.verticalSwiping === true) {
+	      if (swipeAngle >= 35 && swipeAngle <= 135) {
+	        return 'down';
+	      } else {
+	        return 'up';
+	      }
+	    }
+
+	    return 'vertical';
+	  },
+	  autoPlay: function autoPlay() {
+	    var _this2 = this;
+
+	    if (this.state.autoPlayTimer) {
+	      return;
+	    }
+	    var play = function play() {
+	      if (_this2.state.mounted) {
+	        var nextIndex = _this2.props.rtl ? _this2.state.currentSlide - _this2.props.slidesToScroll : _this2.state.currentSlide + _this2.props.slidesToScroll;
+	        _this2.slideHandler(nextIndex);
+	      }
+	    };
+	    if (this.props.autoplay) {
+	      this.setState({
+	        autoPlayTimer: setInterval(play, this.props.autoplaySpeed)
+	      });
+	    }
+	  },
+	  pause: function pause() {
+	    if (this.state.autoPlayTimer) {
+	      clearInterval(this.state.autoPlayTimer);
+	      this.setState({
+	        autoPlayTimer: null
+	      });
+	    }
+	  }
+	};
+
+	exports.default = helpers;
+
+/***/ },
+/* 353 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	var initialState = {
+	    animating: false,
+	    dragging: false,
+	    autoPlayTimer: null,
+	    currentDirection: 0,
+	    currentLeft: null,
+	    currentSlide: 0,
+	    direction: 1,
+	    listWidth: null,
+	    listHeight: null,
+	    // loadIndex: 0,
+	    slideCount: null,
+	    slideWidth: null,
+	    slideHeight: null,
+	    // sliding: false,
+	    // slideOffset: 0,
+	    swipeLeft: null,
+	    touchObject: {
+	        startX: 0,
+	        startY: 0,
+	        curX: 0,
+	        curY: 0
+	    },
+
+	    lazyLoadedList: [],
+
+	    // added for react
+	    initialized: false,
+	    edgeDragged: false,
+	    swiped: false, // used by swipeEvent. differentites between touch and swipe.
+	    trackStyle: {},
+	    trackWidth: 0
+
+	    // Removed
+	    // transformsEnabled: false,
+	    // $nextArrow: null,
+	    // $prevArrow: null,
+	    // $dots: null,
+	    // $list: null,
+	    // $slideTrack: null,
+	    // $slides: null,
+	};
+
+	module.exports = initialState;
+
+/***/ },
+/* 354 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	var defaultProps = {
+	    className: '',
+	    accessibility: true,
+	    adaptiveHeight: false,
+	    arrows: true,
+	    autoplay: false,
+	    autoplaySpeed: 3000,
+	    centerMode: false,
+	    centerPadding: '50px',
+	    cssEase: 'ease',
+	    dots: false,
+	    dotsClass: 'slick-dots',
+	    draggable: true,
+	    easing: 'linear',
+	    edgeFriction: 0.35,
+	    fade: false,
+	    focusOnSelect: false,
+	    infinite: true,
+	    initialSlide: 0,
+	    lazyLoad: false,
+	    pauseOnHover: true,
+	    responsive: null,
+	    rtl: false,
+	    slide: 'div',
+	    slidesToShow: 1,
+	    slidesToScroll: 1,
+	    speed: 500,
+	    swipe: true,
+	    swipeToSlide: false,
+	    touchMove: true,
+	    touchThreshold: 5,
+	    useCSS: true,
+	    variableWidth: false,
+	    vertical: false,
+	    waitForAnimate: true,
+	    afterChange: null,
+	    beforeChange: null,
+	    edgeEvent: null,
+	    init: null,
+	    swipeEvent: null,
+	    // nextArrow, prevArrow are react componets
+	    nextArrow: null,
+	    prevArrow: null
+	};
+
+	module.exports = defaultProps;
+
+/***/ },
+/* 355 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+	  Copyright (c) 2016 Jed Watson.
+	  Licensed under the MIT License (MIT), see
+	  http://jedwatson.github.io/classnames
+	*/
+	/* global define */
+
+	(function () {
+		'use strict';
+
+		var hasOwn = {}.hasOwnProperty;
+
+		function classNames () {
+			var classes = [];
+
+			for (var i = 0; i < arguments.length; i++) {
+				var arg = arguments[i];
+				if (!arg) continue;
+
+				var argType = typeof arg;
+
+				if (argType === 'string' || argType === 'number') {
+					classes.push(arg);
+				} else if (Array.isArray(arg)) {
+					classes.push(classNames.apply(null, arg));
+				} else if (argType === 'object') {
+					for (var key in arg) {
+						if (hasOwn.call(arg, key) && arg[key]) {
+							classes.push(key);
+						}
+					}
+				}
+			}
+
+			return classes.join(' ');
+		}
+
+		if (typeof module !== 'undefined' && module.exports) {
+			module.exports = classNames;
+		} else if (true) {
+			// register as 'classnames', consistent with npm package name
+			!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
+				return classNames;
+			}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+		} else {
+			window.classNames = classNames;
+		}
+	}());
+
+
+/***/ },
+/* 356 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+	exports.Track = undefined;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _objectAssign = __webpack_require__(351);
+
+	var _objectAssign2 = _interopRequireDefault(_objectAssign);
+
+	var _classnames = __webpack_require__(355);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getSlideClasses = function getSlideClasses(spec) {
+	  var slickActive, slickCenter, slickCloned;
+	  var centerOffset, index;
+
+	  if (spec.rtl) {
+	    index = spec.slideCount - 1 - spec.index;
+	  } else {
+	    index = spec.index;
+	  }
+
+	  slickCloned = index < 0 || index >= spec.slideCount;
+	  if (spec.centerMode) {
+	    centerOffset = Math.floor(spec.slidesToShow / 2);
+	    slickCenter = (index - spec.currentSlide) % spec.slideCount === 0;
+	    if (index > spec.currentSlide - centerOffset - 1 && index <= spec.currentSlide + centerOffset) {
+	      slickActive = true;
+	    }
+	  } else {
+	    slickActive = spec.currentSlide <= index && index < spec.currentSlide + spec.slidesToShow;
+	  }
+	  return (0, _classnames2.default)({
+	    'slick-slide': true,
+	    'slick-active': slickActive,
+	    'slick-center': slickCenter,
+	    'slick-cloned': slickCloned
+	  });
+	};
+
+	var getSlideStyle = function getSlideStyle(spec) {
+	  var style = {};
+
+	  if (spec.variableWidth === undefined || spec.variableWidth === false) {
+	    style.width = spec.slideWidth;
+	  }
+
+	  if (spec.fade) {
+	    style.position = 'relative';
+	    style.left = -spec.index * spec.slideWidth;
+	    style.opacity = spec.currentSlide === spec.index ? 1 : 0;
+	    style.transition = 'opacity ' + spec.speed + 'ms ' + spec.cssEase;
+	    style.WebkitTransition = 'opacity ' + spec.speed + 'ms ' + spec.cssEase;
+	  }
+
+	  return style;
+	};
+
+	var getKey = function getKey(child, fallbackKey) {
+	  // key could be a zero
+	  return child.key === null || child.key === undefined ? fallbackKey : child.key;
+	};
+
+	var renderSlides = function renderSlides(spec) {
+	  var key;
+	  var slides = [];
+	  var preCloneSlides = [];
+	  var postCloneSlides = [];
+	  var count = _react2.default.Children.count(spec.children);
+
+	  _react2.default.Children.forEach(spec.children, function (elem, index) {
+	    var child = void 0;
+	    var childOnClickOptions = {
+	      message: 'children',
+	      index: index,
+	      slidesToScroll: spec.slidesToScroll,
+	      currentSlide: spec.currentSlide
+	    };
+
+	    if (!spec.lazyLoad | (spec.lazyLoad && spec.lazyLoadedList.indexOf(index) >= 0)) {
+	      child = elem;
+	    } else {
+	      child = _react2.default.createElement('div', null);
+	    }
+	    var childStyle = getSlideStyle((0, _objectAssign2.default)({}, spec, { index: index }));
+	    var slickClasses = getSlideClasses((0, _objectAssign2.default)({ index: index }, spec));
+	    var cssClasses;
+
+	    if (child.props.className) {
+	      cssClasses = (0, _classnames2.default)(slickClasses, child.props.className);
+	    } else {
+	      cssClasses = slickClasses;
+	    }
+
+	    var onClick = function onClick(e) {
+	      child.props && child.props.onClick && child.props.onClick(e);
+	      if (spec.focusOnSelect) {
+	        spec.focusOnSelect(childOnClickOptions);
+	      }
+	    };
+
+	    slides.push(_react2.default.cloneElement(child, {
+	      key: 'original' + getKey(child, index),
+	      'data-index': index,
+	      className: cssClasses,
+	      tabIndex: '-1',
+	      style: (0, _objectAssign2.default)({ outline: 'none' }, child.props.style || {}, childStyle),
+	      onClick: onClick
+	    }));
+
+	    // variableWidth doesn't wrap properly.
+	    if (spec.infinite && spec.fade === false) {
+	      var infiniteCount = spec.variableWidth ? spec.slidesToShow + 1 : spec.slidesToShow;
+
+	      if (index >= count - infiniteCount) {
+	        key = -(count - index);
+	        preCloneSlides.push(_react2.default.cloneElement(child, {
+	          key: 'precloned' + getKey(child, key),
+	          'data-index': key,
+	          className: cssClasses,
+	          style: (0, _objectAssign2.default)({}, child.props.style || {}, childStyle),
+	          onClick: onClick
+	        }));
+	      }
+
+	      if (index < infiniteCount) {
+	        key = count + index;
+	        postCloneSlides.push(_react2.default.cloneElement(child, {
+	          key: 'postcloned' + getKey(child, key),
+	          'data-index': key,
+	          className: cssClasses,
+	          style: (0, _objectAssign2.default)({}, child.props.style || {}, childStyle),
+	          onClick: onClick
+	        }));
+	      }
+	    }
+	  });
+
+	  if (spec.rtl) {
+	    return preCloneSlides.concat(slides, postCloneSlides).reverse();
+	  } else {
+	    return preCloneSlides.concat(slides, postCloneSlides);
+	  }
+	};
+
+	var Track = exports.Track = _react2.default.createClass({
+	  displayName: 'Track',
+
+	  render: function render() {
+	    var slides = renderSlides.call(this, this.props);
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'slick-track', style: this.props.trackStyle },
+	      slides
+	    );
+	  }
+	});
+
+/***/ },
+/* 357 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+	exports.Dots = undefined;
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _classnames = __webpack_require__(355);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getDotCount = function getDotCount(spec) {
+	  var dots;
+	  dots = Math.ceil(spec.slideCount / spec.slidesToScroll);
+	  return dots;
+	};
+
+	var Dots = exports.Dots = _react2.default.createClass({
+	  displayName: 'Dots',
+
+
+	  clickHandler: function clickHandler(options, e) {
+	    // In Autoplay the focus stays on clicked button even after transition
+	    // to next slide. That only goes away by click somewhere outside
+	    e.preventDefault();
+	    this.props.clickHandler(options);
+	  },
+	  render: function render() {
+	    var _this = this;
+
+	    var dotCount = getDotCount({
+	      slideCount: this.props.slideCount,
+	      slidesToScroll: this.props.slidesToScroll
+	    });
+
+	    // Apply join & split to Array to pre-fill it for IE8
+	    //
+	    // Credit: http://stackoverflow.com/a/13735425/1849458
+	    var dots = Array.apply(null, Array(dotCount + 1).join('0').split('')).map(function (x, i) {
+
+	      var leftBound = i * _this.props.slidesToScroll;
+	      var rightBound = i * _this.props.slidesToScroll + (_this.props.slidesToScroll - 1);
+	      var className = (0, _classnames2.default)({
+	        'slick-active': _this.props.currentSlide >= leftBound && _this.props.currentSlide <= rightBound
+	      });
+
+	      var dotOptions = {
+	        message: 'dots',
+	        index: i,
+	        slidesToScroll: _this.props.slidesToScroll,
+	        currentSlide: _this.props.currentSlide
+	      };
+
+	      return _react2.default.createElement(
+	        'li',
+	        { key: i, className: className },
+	        _react2.default.createElement(
+	          'button',
+	          { onClick: _this.clickHandler.bind(_this, dotOptions) },
+	          i + 1
+	        )
+	      );
+	    });
+
+	    return _react2.default.createElement(
+	      'ul',
+	      { className: this.props.dotsClass, style: { display: 'block' } },
+	      dots
+	    );
+	  }
+	});
+
+/***/ },
+/* 358 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.__esModule = true;
+	exports.NextArrow = exports.PrevArrow = undefined;
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _classnames = __webpack_require__(355);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var PrevArrow = exports.PrevArrow = _react2.default.createClass({
+	  displayName: 'PrevArrow',
+
+
+	  clickHandler: function clickHandler(options, e) {
+	    if (e) {
+	      e.preventDefault();
+	    }
+	    this.props.clickHandler(options, e);
+	  },
+	  render: function render() {
+	    var prevClasses = { 'slick-arrow': true, 'slick-prev': true };
+	    var prevHandler = this.clickHandler.bind(this, { message: 'previous' });
+
+	    if (!this.props.infinite && (this.props.currentSlide === 0 || this.props.slideCount <= this.props.slidesToShow)) {
+	      prevClasses['slick-disabled'] = true;
+	      prevHandler = null;
+	    }
+
+	    var prevArrowProps = {
+	      key: '0',
+	      'data-role': 'none',
+	      className: (0, _classnames2.default)(prevClasses),
+	      style: { display: 'block' },
+	      onClick: prevHandler
+	    };
+	    var prevArrow;
+
+	    if (this.props.prevArrow) {
+	      prevArrow = _react2.default.cloneElement(this.props.prevArrow, prevArrowProps);
+	    } else {
+	      prevArrow = _react2.default.createElement(
+	        'button',
+	        _extends({ key: '0', type: 'button' }, prevArrowProps),
+	        ' Previous'
+	      );
+	    }
+
+	    return prevArrow;
+	  }
+	});
+
+	var NextArrow = exports.NextArrow = _react2.default.createClass({
+	  displayName: 'NextArrow',
+
+	  clickHandler: function clickHandler(options, e) {
+	    if (e) {
+	      e.preventDefault();
+	    }
+	    this.props.clickHandler(options, e);
+	  },
+	  render: function render() {
+	    var nextClasses = { 'slick-arrow': true, 'slick-next': true };
+	    var nextHandler = this.clickHandler.bind(this, { message: 'next' });
+
+	    if (!this.props.infinite) {
+	      if (this.props.centerMode && this.props.currentSlide >= this.props.slideCount - 1) {
+	        nextClasses['slick-disabled'] = true;
+	        nextHandler = null;
+	      } else {
+	        if (this.props.currentSlide >= this.props.slideCount - this.props.slidesToShow) {
+	          nextClasses['slick-disabled'] = true;
+	          nextHandler = null;
+	        }
+	      }
+
+	      if (this.props.slideCount <= this.props.slidesToShow) {
+	        nextClasses['slick-disabled'] = true;
+	        nextHandler = null;
+	      }
+	    }
+
+	    var nextArrowProps = {
+	      key: '1',
+	      'data-role': 'none',
+	      className: (0, _classnames2.default)(nextClasses),
+	      style: { display: 'block' },
+	      onClick: nextHandler
+	    };
+
+	    var nextArrow;
+
+	    if (this.props.nextArrow) {
+	      nextArrow = _react2.default.cloneElement(this.props.nextArrow, nextArrowProps);
+	    } else {
+	      nextArrow = _react2.default.createElement(
+	        'button',
+	        _extends({ key: '1', type: 'button' }, nextArrowProps),
+	        ' Next'
+	      );
+	    }
+
+	    return nextArrow;
+	  }
+	});
+
+/***/ },
+/* 359 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var camel2hyphen = __webpack_require__(360);
+
+	var isDimension = function (feature) {
+	  var re = /[height|width]$/;
+	  return re.test(feature);
+	};
+
+	var obj2mq = function (obj) {
+	  var mq = '';
+	  var features = Object.keys(obj);
+	  features.forEach(function (feature, index) {
+	    var value = obj[feature];
+	    feature = camel2hyphen(feature);
+	    // Add px to dimension features
+	    if (isDimension(feature) && typeof value === 'number') {
+	      value = value + 'px';
+	    }
+	    if (value === true) {
+	      mq += feature;
+	    } else if (value === false) {
+	      mq += 'not ' + feature;
+	    } else {
+	      mq += '(' + feature + ': ' + value + ')';
+	    }
+	    if (index < features.length-1) {
+	      mq += ' and '
+	    }
+	  });
+	  return mq;
+	};
+
+	var json2mq = function (query) {
+	  var mq = '';
+	  if (typeof query === 'string') {
+	    return query;
+	  }
+	  // Handling array of media queries
+	  if (query instanceof Array) {
+	    query.forEach(function (q, index) {
+	      mq += obj2mq(q);
+	      if (index < query.length-1) {
+	        mq += ', '
+	      }
+	    });
+	    return mq;
+	  }
+	  // Handling single media query
+	  return obj2mq(query);
+	};
+
+	module.exports = json2mq;
+
+/***/ },
+/* 360 */
+/***/ function(module, exports) {
+
+	var camel2hyphen = function (str) {
+	  return str
+	          .replace(/[A-Z]/g, function (match) {
+	            return '-' + match.toLowerCase();
+	          })
+	          .toLowerCase();
+	};
+
+	module.exports = camel2hyphen;
+
+/***/ },
+/* 361 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var canUseDOM = __webpack_require__(362);
+	var enquire = canUseDOM && __webpack_require__(363);
+	var json2mq = __webpack_require__(359);
+
+	var ResponsiveMixin = {
+	  media: function (query, handler) {
+	    query = json2mq(query);
+	    if (typeof handler === 'function') {
+	      handler = {
+	        match: handler
+	      };
+	    }
+	    canUseDOM && enquire.register(query, handler);
+
+	    // Queue the handlers to unregister them at unmount  
+	    if (! this._responsiveMediaHandlers) {
+	      this._responsiveMediaHandlers = [];
+	    }
+	    this._responsiveMediaHandlers.push({query: query, handler: handler});
+	  },
+	  componentWillUnmount: function () {
+	    if (this._responsiveMediaHandlers) {
+	      this._responsiveMediaHandlers.forEach(function(obj) {
+	        canUseDOM && enquire.unregister(obj.query, obj.handler);
+	      });
+	    }
+	  }
+	};
+
+	module.exports = ResponsiveMixin;
+
+
+/***/ },
+/* 362 */
+/***/ function(module, exports) {
+
+	var canUseDOM = !!(
+	  typeof window !== 'undefined' &&
+	  window.document &&
+	  window.document.createElement
+	);
+
+	module.exports = canUseDOM;
+
+/***/ },
+/* 363 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_RESULT__;/*!
+	 * enquire.js v2.1.1 - Awesome Media Queries in JavaScript
+	 * Copyright (c) 2014 Nick Williams - http://wicky.nillia.ms/enquire.js
+	 * License: MIT (http://www.opensource.org/licenses/mit-license.php)
+	 */
+
+	;(function (name, context, factory) {
+		var matchMedia = window.matchMedia;
+
+		if (typeof module !== 'undefined' && module.exports) {
+			module.exports = factory(matchMedia);
+		}
+		else if (true) {
+			!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
+				return (context[name] = factory(matchMedia));
+			}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+		}
+		else {
+			context[name] = factory(matchMedia);
+		}
+	}('enquire', this, function (matchMedia) {
+
+		'use strict';
+
+	    /*jshint unused:false */
+	    /**
+	     * Helper function for iterating over a collection
+	     *
+	     * @param collection
+	     * @param fn
+	     */
+	    function each(collection, fn) {
+	        var i      = 0,
+	            length = collection.length,
+	            cont;
+
+	        for(i; i < length; i++) {
+	            cont = fn(collection[i], i);
+	            if(cont === false) {
+	                break; //allow early exit
+	            }
+	        }
+	    }
+
+	    /**
+	     * Helper function for determining whether target object is an array
+	     *
+	     * @param target the object under test
+	     * @return {Boolean} true if array, false otherwise
+	     */
+	    function isArray(target) {
+	        return Object.prototype.toString.apply(target) === '[object Array]';
+	    }
+
+	    /**
+	     * Helper function for determining whether target object is a function
+	     *
+	     * @param target the object under test
+	     * @return {Boolean} true if function, false otherwise
+	     */
+	    function isFunction(target) {
+	        return typeof target === 'function';
+	    }
+
+	    /**
+	     * Delegate to handle a media query being matched and unmatched.
+	     *
+	     * @param {object} options
+	     * @param {function} options.match callback for when the media query is matched
+	     * @param {function} [options.unmatch] callback for when the media query is unmatched
+	     * @param {function} [options.setup] one-time callback triggered the first time a query is matched
+	     * @param {boolean} [options.deferSetup=false] should the setup callback be run immediately, rather than first time query is matched?
+	     * @constructor
+	     */
+	    function QueryHandler(options) {
+	        this.options = options;
+	        !options.deferSetup && this.setup();
+	    }
+	    QueryHandler.prototype = {
+
+	        /**
+	         * coordinates setup of the handler
+	         *
+	         * @function
+	         */
+	        setup : function() {
+	            if(this.options.setup) {
+	                this.options.setup();
+	            }
+	            this.initialised = true;
+	        },
+
+	        /**
+	         * coordinates setup and triggering of the handler
+	         *
+	         * @function
+	         */
+	        on : function() {
+	            !this.initialised && this.setup();
+	            this.options.match && this.options.match();
+	        },
+
+	        /**
+	         * coordinates the unmatch event for the handler
+	         *
+	         * @function
+	         */
+	        off : function() {
+	            this.options.unmatch && this.options.unmatch();
+	        },
+
+	        /**
+	         * called when a handler is to be destroyed.
+	         * delegates to the destroy or unmatch callbacks, depending on availability.
+	         *
+	         * @function
+	         */
+	        destroy : function() {
+	            this.options.destroy ? this.options.destroy() : this.off();
+	        },
+
+	        /**
+	         * determines equality by reference.
+	         * if object is supplied compare options, if function, compare match callback
+	         *
+	         * @function
+	         * @param {object || function} [target] the target for comparison
+	         */
+	        equals : function(target) {
+	            return this.options === target || this.options.match === target;
+	        }
+
+	    };
+	    /**
+	     * Represents a single media query, manages it's state and registered handlers for this query
+	     *
+	     * @constructor
+	     * @param {string} query the media query string
+	     * @param {boolean} [isUnconditional=false] whether the media query should run regardless of whether the conditions are met. Primarily for helping older browsers deal with mobile-first design
+	     */
+	    function MediaQuery(query, isUnconditional) {
+	        this.query = query;
+	        this.isUnconditional = isUnconditional;
+	        this.handlers = [];
+	        this.mql = matchMedia(query);
+
+	        var self = this;
+	        this.listener = function(mql) {
+	            self.mql = mql;
+	            self.assess();
+	        };
+	        this.mql.addListener(this.listener);
+	    }
+	    MediaQuery.prototype = {
+
+	        /**
+	         * add a handler for this query, triggering if already active
+	         *
+	         * @param {object} handler
+	         * @param {function} handler.match callback for when query is activated
+	         * @param {function} [handler.unmatch] callback for when query is deactivated
+	         * @param {function} [handler.setup] callback for immediate execution when a query handler is registered
+	         * @param {boolean} [handler.deferSetup=false] should the setup callback be deferred until the first time the handler is matched?
+	         */
+	        addHandler : function(handler) {
+	            var qh = new QueryHandler(handler);
+	            this.handlers.push(qh);
+
+	            this.matches() && qh.on();
+	        },
+
+	        /**
+	         * removes the given handler from the collection, and calls it's destroy methods
+	         * 
+	         * @param {object || function} handler the handler to remove
+	         */
+	        removeHandler : function(handler) {
+	            var handlers = this.handlers;
+	            each(handlers, function(h, i) {
+	                if(h.equals(handler)) {
+	                    h.destroy();
+	                    return !handlers.splice(i,1); //remove from array and exit each early
+	                }
+	            });
+	        },
+
+	        /**
+	         * Determine whether the media query should be considered a match
+	         * 
+	         * @return {Boolean} true if media query can be considered a match, false otherwise
+	         */
+	        matches : function() {
+	            return this.mql.matches || this.isUnconditional;
+	        },
+
+	        /**
+	         * Clears all handlers and unbinds events
+	         */
+	        clear : function() {
+	            each(this.handlers, function(handler) {
+	                handler.destroy();
+	            });
+	            this.mql.removeListener(this.listener);
+	            this.handlers.length = 0; //clear array
+	        },
+
+	        /*
+	         * Assesses the query, turning on all handlers if it matches, turning them off if it doesn't match
+	         */
+	        assess : function() {
+	            var action = this.matches() ? 'on' : 'off';
+
+	            each(this.handlers, function(handler) {
+	                handler[action]();
+	            });
+	        }
+	    };
+	    /**
+	     * Allows for registration of query handlers.
+	     * Manages the query handler's state and is responsible for wiring up browser events
+	     *
+	     * @constructor
+	     */
+	    function MediaQueryDispatch () {
+	        if(!matchMedia) {
+	            throw new Error('matchMedia not present, legacy browsers require a polyfill');
+	        }
+
+	        this.queries = {};
+	        this.browserIsIncapable = !matchMedia('only all').matches;
+	    }
+
+	    MediaQueryDispatch.prototype = {
+
+	        /**
+	         * Registers a handler for the given media query
+	         *
+	         * @param {string} q the media query
+	         * @param {object || Array || Function} options either a single query handler object, a function, or an array of query handlers
+	         * @param {function} options.match fired when query matched
+	         * @param {function} [options.unmatch] fired when a query is no longer matched
+	         * @param {function} [options.setup] fired when handler first triggered
+	         * @param {boolean} [options.deferSetup=false] whether setup should be run immediately or deferred until query is first matched
+	         * @param {boolean} [shouldDegrade=false] whether this particular media query should always run on incapable browsers
+	         */
+	        register : function(q, options, shouldDegrade) {
+	            var queries         = this.queries,
+	                isUnconditional = shouldDegrade && this.browserIsIncapable;
+
+	            if(!queries[q]) {
+	                queries[q] = new MediaQuery(q, isUnconditional);
+	            }
+
+	            //normalise to object in an array
+	            if(isFunction(options)) {
+	                options = { match : options };
+	            }
+	            if(!isArray(options)) {
+	                options = [options];
+	            }
+	            each(options, function(handler) {
+	                queries[q].addHandler(handler);
+	            });
+
+	            return this;
+	        },
+
+	        /**
+	         * unregisters a query and all it's handlers, or a specific handler for a query
+	         *
+	         * @param {string} q the media query to target
+	         * @param {object || function} [handler] specific handler to unregister
+	         */
+	        unregister : function(q, handler) {
+	            var query = this.queries[q];
+
+	            if(query) {
+	                if(handler) {
+	                    query.removeHandler(handler);
+	                }
+	                else {
+	                    query.clear();
+	                    delete this.queries[q];
+	                }
+	            }
+
+	            return this;
+	        }
+	    };
+
+		return new MediaQueryDispatch();
+
+	}));
+
+/***/ },
 /* 364 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -51000,7 +51004,7 @@
 
 
 	// module
-	exports.push([module.id, ".content {\n  width: 100%; }\n  .content .content-left {\n    width: 70%;\n    padding: 0 0 0 4%;\n    float: left; }\n    .content .content-left .content-header {\n      width: 100%;\n      min-height: 200px;\n      border-bottom: 1px solid #CCC; }\n      .content .content-left .content-header .recognitionby-image {\n        position: relative;\n        width: 10%;\n        float: left;\n        margin-top: 5%; }\n        .content .content-left .content-header .recognitionby-image img {\n          height: 15%;\n          border-radius: 50%; }\n      .content .content-left .content-header .recognitionby-username-tagline {\n        width: 50%;\n        float: left;\n        margin-top: 6%;\n        margin-left: 20px;\n        font-weight: 500; }\n        .content .content-left .content-header .recognitionby-username-tagline .recognitionby-username {\n          font-size: 36px;\n          color: #f06424; }\n        .content .content-left .content-header .recognitionby-username-tagline .recognitionby-tagline {\n          font-size: 18px;\n          color: #FFF;\n          font-style: italic;\n          margin-top: 2%; }\n      .content .content-left .content-header .recognitionby-time {\n        float: right;\n        width: 20%;\n        margin-top: 16%;\n        text-align: right;\n        color: #86939e;\n        font-size: 18px; }\n      .content .content-left .content-header .parallax-anime {\n        transform-style: preserve-3d !important;\n        transition: all 2.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;\n        transform: translate3d(0, 50px, 0) !important; }\n      .content .content-left .content-header .slick-list {\n        padding: 0 !important; }\n    .content .content-left .content-main {\n      clear: both;\n      /*min-height: 40%;*/\n      min-height: 500px;\n      border-bottom: 1px solid #CCC; }\n      .content .content-left .content-main .recognized-message-content img {\n        display: inline-block;\n        margin-top: 30px; }\n      .content .content-left .content-main .recognized-message-content .recogninized-text, .content .content-left .content-main .recognized-message-content p {\n        display: inline-block;\n        text-align: left;\n        vertical-align: top;\n        margin-left: 2%;\n        color: #FFF;\n        font-size: 30px; }\n    .content .content-left .content-footer {\n      float: left;\n      width: 100%;\n      min-height: 25%; }\n      .content .content-left .content-footer .recognized-by {\n        float: right;\n        text-align: right;\n        width: 16%;\n        margin-top: 2%; }\n        .content .content-left .content-footer .recognized-by .recognized-sentby {\n          float: left;\n          padding-right: 4%; }\n          .content .content-left .content-footer .recognized-by .recognized-sentby span {\n            display: block;\n            color: #f06424; }\n        .content .content-left .content-footer .recognized-by .recognizedby-image {\n          float: left; }\n  .content .content-right {\n    width: 23%;\n    padding: 0 2% 0 0;\n    float: left; }\n    .content .content-right .recognized-items {\n      margin-top: 17%;\n      margin-left: 10%;\n      height: 700px;\n      overflow-y: auto; }\n      .content .content-right .recognized-items ul {\n        margin: 0;\n        padding: 0;\n        list-style: none; }\n        .content .content-right .recognized-items ul .recognized-list {\n          clear: both;\n          min-height: 110px;\n          background: #484d52;\n          width: 100%;\n          margin-bottom: 4%;\n          border-radius: 1%; }\n          .content .content-right .recognized-items ul .recognized-list .recognized-list-info {\n            display: block;\n            color: #f06424; }\n            .content .content-right .recognized-items ul .recognized-list .recognized-list-info .recognized-list-image {\n              float: left;\n              margin: 4%; }\n              .content .content-right .recognized-items ul .recognized-list .recognized-list-info .recognized-list-image img {\n                height: 8%;\n                border-radius: 50%; }\n              .content .content-right .recognized-items ul .recognized-list .recognized-list-info .recognized-list-image .more-people {\n                display: inline-block;\n                min-height: 8%;\n                width: 80px;\n                background: #CCC;\n                height: 80px;\n                border-radius: 50%; }\n            .content .content-right .recognized-items ul .recognized-list .recognized-list-info .recognized-list-message {\n              float: left;\n              margin-top: 7%;\n              font-size: 0.7em;\n              display: table;\n              min-height: 80px; }\n              .content .content-right .recognized-items ul .recognized-list .recognized-list-info .recognized-list-message span {\n                display: table-cell;\n                vertical-align: middle;\n                font-size: 20px;\n                font-weight: 500;\n                font-style: normal; }\n        .content .content-right .recognized-items ul li.selected {\n          background: #f06424; }\n          .content .content-right .recognized-items ul li.selected a {\n            color: #FFF; }\n            .content .content-right .recognized-items ul li.selected a span {\n              color: #FFF; }\n", ""]);
+	exports.push([module.id, ".content {\n  width: 100%; }\n  .content .content-left {\n    width: 70%;\n    padding: 0 0 0 4%;\n    float: left; }\n    .content .content-left .recognition-inner-slides .slick-slide {\n      height: 850px; }\n    .content .content-left .recognition-inner-slides .slick-list {\n      padding: 0 !important; }\n    .content .content-left .content-header {\n      width: 100%;\n      min-height: 200px;\n      border-bottom: 1px solid #CCC; }\n      .content .content-left .content-header .recognitionby-image {\n        position: relative;\n        width: 10%;\n        float: left;\n        margin-top: 5%; }\n        .content .content-left .content-header .recognitionby-image img {\n          height: 15%;\n          border-radius: 50%; }\n      .content .content-left .content-header .recognitionby-username-tagline {\n        width: 50%;\n        float: left;\n        margin-top: 6%;\n        margin-left: 20px;\n        font-weight: 500; }\n        .content .content-left .content-header .recognitionby-username-tagline .recognitionby-username {\n          font-size: 36px;\n          color: #f06424; }\n        .content .content-left .content-header .recognitionby-username-tagline .recognitionby-tagline {\n          font-size: 18px;\n          color: #FFF;\n          font-style: italic;\n          margin-top: 2%; }\n      .content .content-left .content-header .recognitionby-time {\n        float: right;\n        width: 20%;\n        margin-top: 16%;\n        text-align: right;\n        color: #86939e;\n        font-size: 18px; }\n      .content .content-left .content-header .parallax-anime {\n        transform-style: preserve-3d !important;\n        transition: all 2.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;\n        transform: translate3d(0, 50px, 0) !important; }\n      .content .content-left .content-header .slick-list {\n        padding: 0 !important; }\n    .content .content-left .content-main {\n      clear: both;\n      /*min-height: 40%;*/\n      min-height: 500px;\n      border-bottom: 1px solid #CCC; }\n      .content .content-left .content-main .recognized-message-content img {\n        display: inline-block;\n        margin-top: 30px; }\n      .content .content-left .content-main .recognized-message-content .recogninized-text, .content .content-left .content-main .recognized-message-content p {\n        display: inline-block;\n        text-align: left;\n        vertical-align: top;\n        margin-left: 2%;\n        color: #FFF;\n        font-size: 30px; }\n    .content .content-left .content-footer {\n      float: left;\n      width: 100%;\n      min-height: 25%; }\n      .content .content-left .content-footer .recognized-by {\n        float: right;\n        text-align: right;\n        width: 230px;\n        margin-top: 2%; }\n        .content .content-left .content-footer .recognized-by .recognized-sentby {\n          float: left;\n          padding-right: 4%; }\n          .content .content-left .content-footer .recognized-by .recognized-sentby span {\n            display: block;\n            color: #f06424; }\n        .content .content-left .content-footer .recognized-by .recognizedby-image {\n          float: left; }\n          .content .content-left .content-footer .recognized-by .recognizedby-image img {\n            border-radius: 50%;\n            width: 85%; }\n  .content .content-right {\n    width: 23%;\n    padding: 0 2% 0 0;\n    float: left; }\n    .content .content-right .recognized-items {\n      margin-top: 17%;\n      margin-left: 10%;\n      height: 750px;\n      overflow-y: auto; }\n      .content .content-right .recognized-items ul {\n        margin: 0;\n        padding: 0;\n        list-style: none; }\n        .content .content-right .recognized-items ul .recognized-list {\n          clear: both;\n          height: 150px;\n          width: 100%;\n          border-radius: 1%; }\n          .content .content-right .recognized-items ul .recognized-list .recognized-list-info {\n            display: block;\n            color: #f06424;\n            background: #484d52;\n            margin-bottom: 20px;\n            height: 130px; }\n            .content .content-right .recognized-items ul .recognized-list .recognized-list-info .recognized-list-image {\n              float: left;\n              margin: 4%; }\n              .content .content-right .recognized-items ul .recognized-list .recognized-list-info .recognized-list-image img {\n                height: 8%;\n                border-radius: 50%; }\n              .content .content-right .recognized-items ul .recognized-list .recognized-list-info .recognized-list-image .more-people {\n                display: inline-block;\n                min-height: 8%;\n                width: 80px;\n                background: #CCC;\n                height: 80px;\n                border-radius: 50%; }\n            .content .content-right .recognized-items ul .recognized-list .recognized-list-info .recognized-list-message {\n              float: left;\n              margin-top: 7%;\n              font-size: 0.7em;\n              display: table;\n              min-height: 80px; }\n              .content .content-right .recognized-items ul .recognized-list .recognized-list-info .recognized-list-message span {\n                display: table-cell;\n                vertical-align: middle;\n                font-size: 20px;\n                font-weight: 500;\n                font-style: normal; }\n        .content .content-right .recognized-items ul li.selected {\n          background: #f06424; }\n          .content .content-right .recognized-items ul li.selected a {\n            color: #FFF; }\n            .content .content-right .recognized-items ul li.selected a span {\n              color: #FFF; }\n", ""]);
 
 	// exports
 

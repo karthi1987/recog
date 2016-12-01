@@ -8,6 +8,15 @@
 		padding: 0 0 0 4%;
 		float:left;
 
+		.recognition-inner-slides {
+			.slick-slide {
+				height: 850px;
+			}
+			.slick-list {
+				padding: 0 !important;
+			}
+		}
+
 		.content-header {
 			width:100%;
 			min-height: 200px;
@@ -83,7 +92,6 @@
 				}
 
 			}
-
 		}
 
 		.content-footer {
@@ -93,7 +101,7 @@
 			.recognized-by {
 				float: right;
 				text-align: right;
-				width: 16%;
+				width: 230px;
 				margin-top: 2%;
 				.recognized-sentby {
 					float: left;
@@ -105,6 +113,10 @@
 				}
 				.recognizedby-image {
 					float: left;
+					img {
+						border-radius: 50%;
+						width:85%;
+					}
 				}
 			}
 		}
@@ -117,7 +129,7 @@
 		.recognized-items {
 			margin-top: 17%;
 			margin-left: 10%;
-			height: 700px;
+			height: 750px;
 			overflow-y: auto;
 			ul {
 				margin: 0;
@@ -126,14 +138,15 @@
 
 				.recognized-list {
 					clear:both;
-					min-height: 110px;
-					background: #484d52;
+					height: 150px;
 					width:100%;
-					margin-bottom: 4%;
 					border-radius: 1%;
 					.recognized-list-info {
 						display: block;
 						color: #f06424;
+						background: #484d52;
+						margin-bottom: 20px;
+						height:130px;
 						.recognized-list-image {
 							float: left;
 							margin: 4%;
