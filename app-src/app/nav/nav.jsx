@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import Slider from 'react-slick';
 import $ from 'jquery';
 import Moment from 'moment';
+import Striptags from 'striptags';
 
 //scss
 import './nav.scss';
@@ -190,9 +191,18 @@ class RecognitionHeartContent extends React.Component{
 					this.props.item.comments
 					?
 					<div className="recognized-message-content">
-					<img src={this.props.item.eCardUrl} />
+					{
+						this.props.item.eCardUrl
+						&&
+						<img src={this.props.item.eCardUrl} />
+					}
+					
 					<p className="recogninized-text" >
-						<span dangerouslySetInnerHTML={{__html: this.props.item.comments}} />
+						<span className="strip-tags-text">
+							{
+								Striptags(this.props.item.comments, '<a><strong>')
+							}
+						</span>
 					</p>
 					</div>
 					:
@@ -239,7 +249,8 @@ class RecognitionFooter extends React.Component {
 					?
 					<div className="recognized-by">
 						<div className="recognized-sentby">
-							<p> sent by
+							<p> 
+								<span className="sent-by">sent by</span>
 								<span> {this.props.item.firstName +" "+this.props.item.lastName} </span>
 							</p>
 						</div>
@@ -360,6 +371,7 @@ class ReactSlickDemo extends React.Component{
 		rtl:false,
 		initialSlide: 0,
 		easing: 'easeOutBounce',
+		className: 'recognition-feed-slides',
 		beforeChange: function (currentSlide, nextSlide) {
 			//self.highlightActiveItem(nextSlide);
 		},
@@ -375,7 +387,8 @@ class ReactSlickDemo extends React.Component{
 				"margin": "0 auto",
 				"padding": "0",
 				"height": "850px",
-				"overflow": "hidden"
+				"overflow": "hidden",
+				"perspective": "1000px"
 			}
 		}>
 		<ul>
@@ -451,7 +464,8 @@ class ReactLeftSlickDemo extends React.Component{
 				"margin": "0 auto",
 				"padding": "0",
 				"height": "850px",
-				"overflow": "hidden"
+				"overflow": "hidden",
+				"perspective": "1000px"
 			}
 		}>
 		<ul>

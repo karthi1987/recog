@@ -15,6 +15,9 @@
 			.slick-list {
 				padding: 0 !important;
 			}
+			.slick-track {
+		        transition: transform 1.5s ease-in-out;
+			}
 		}
 
 		.content-header {
@@ -24,9 +27,9 @@
 
 			.recognitionby-image {
 				position: relative;
-				width:10%;
+				width:100px;
 				float:left;
-				margin-top: 5%;
+				margin-top: 50px;
 				img {
 					height:15%;
 					border-radius: 50%;
@@ -35,9 +38,9 @@
 			.recognitionby-username-tagline {
 				width:50%;
 				float:left;
-				margin-top: 6%;
+				margin-top: 65px;
 				margin-left: 20px;
-				font-weight: 500;
+				font-weight: lighter;
 				.recognitionby-username {
 					font-size: 36px;
 					color: #f06424;
@@ -46,16 +49,17 @@
 					font-size: 18px;
 					color: #FFF;
 					font-style: italic;
-					margin-top: 2%;
+					margin-top: 10px;
 				}
 			}
 			.recognitionby-time {
 				float:right;
 				width:20%;
-				margin-top: 16%;
+				margin-top: 150px;
 				text-align:right;
 				color: #86939e;
 				font-size: 18px;
+				font-weight: lighter;
 			}
 
 			.parallax-anime {
@@ -71,11 +75,11 @@
 
 		.content-main {
 			clear:both;
-			/*min-height: 40%;*/
 			min-height: 500px;
 			border-bottom: 1px solid #CCC;
 
 			.recognized-message-content {
+				height:500px;
 
 				img {
 					display: inline-block;
@@ -89,6 +93,13 @@
 					margin-left: 2%;
 					color: #FFF;
 					font-size: 30px;
+					height: 500px;
+					.strip-tags-text {
+						display: table-cell;
+						vertical-align: middle;
+						height: 500px;
+						font-weight: lighter;
+					}
 				}
 
 			}
@@ -101,21 +112,28 @@
 			.recognized-by {
 				float: right;
 				text-align: right;
-				width: 230px;
+				width: 290px;
 				margin-top: 2%;
 				.recognized-sentby {
 					float: left;
-					padding-right: 4%;
+					padding-right: 10px;
 					span {
 						display:block;
 						color: #f06424;
+						font-size:24px;
+						padding-bottom: 1px;
+						font-weight: 500;
+					}
+					.sent-by {
+						color: #FFF;
+						font-size: 18px;
 					}
 				}
 				.recognizedby-image {
 					float: left;
 					img {
 						border-radius: 50%;
-						width:85%;
+						width:55%;
 					}
 				}
 			}
@@ -126,6 +144,17 @@
 		width: 23%;
 		padding: 0 2% 0 0;
 		float: left;
+		.recognition-feed-slides {
+			/*.slick-slide {
+				height: 850px;
+			}
+			.slick-list {
+				padding: 0 !important;
+			}*/
+			.slick-track {
+		        transition: transform 1.5s ease-in-out;
+			}
+		}
 		.recognized-items {
 			margin-top: 17%;
 			margin-left: 10%;
@@ -173,7 +202,7 @@
 								display: table-cell;
 								vertical-align: middle;
 								font-size: 20px;
-								font-weight: 500;
+								font-weight: lighter;
 								font-style: normal;
 						    }
 						}
